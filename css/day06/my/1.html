@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+    #comments {
+      /* 宽度，高度，边框，内边距，box-sizing */
+      width: 90%;
+      min-height: 100px;
+      border: 1px solid #D0E4C2;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+     #p>a {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 3px 10px;
+    }
+
+     #pages a.active{
+      border: none ;
+    }  
+  </style>
+
+</head>
+
+<body>
+  
+    <!-- 1.评论区域 -->
+    <div id="comments">测试文本</div>
+    <!-- 2.页码区域 -->
+    <p id="pages">
+      <a class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+    </p>
+  
+</body>
+
+</html>
