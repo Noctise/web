@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Insert a title</title>
+    <meta charset="utf-8">
+    <style>
+      #comments{
+        /*宽度，高度，边框，内边距，box-sizing*/
+        width:90%;
+        min-height:100px;
+        border:1px solid #D0E4C2;
+        padding:10px;
+        box-sizing:border-box;
+      }
+
+      #pages>a{
+        /*边框，倒角，内边距*/
+        border:1px solid #ccc;
+        border-radius:5px;
+        padding:3px 10px;
+      }
+
+      #pages a.active{
+        border:none;
+      }
+      /***********作业**************/
+      #comments{
+        background:#FDFFFA;
+      }
+      #comments div.topic{
+        /*下边框，左内边距，下内边距*/
+        border-bottom:1px solid #D0E4C2;
+        padding:0 0 5px 5px;
+      }
+
+      .star{
+        /*宽度，高度，背景图像*/
+        width:76px;
+        height:15px;
+        background-image:url(images/iconlist_1.png);
+      }
+      .star5{
+        /*背景图像偏移*/
+        background-position:-108px -238px;
+      }
+      .star4{
+        /*背景图像偏移*/
+        background-position:-123px -238px;
+      }
+      .star3{
+        /*背景图像偏移*/
+        background-position:-138px -238px;
+      }
+      .star2{
+        /*背景图像偏移*/
+        background-position:-153px -238px;
+      }
+      .star1{
+        /*背景图像偏移*/
+        background-position:-168px -238px;
+      }
+
+      #comments b{
+        /*背景颜色，内边距*/
+        background:#FFEBD3;
+        padding:3px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1、评论区域 -->
+    <div id="comments">
+      <!-- 1、五角星区域 -->
+      <div class="topic">
+        <div class="star star1"></div>
+      </div>
+      <!-- 2、标签 -->
+      <p>
+        标&nbsp;&nbsp;签：
+        <b>比洗衣粉好</b>
+        <b>去污能力强</b>
+      </p>
+      <!-- 3、心得 -->
+      <p>
+        心&nbsp;&nbsp;得：
+        买了几次了，挺好用的，以后就是它了!
+      </p>
+      <!-- 4、购买日期 -->
+      <p>
+        购买日期：
+        2014-11-11
+      </p>
+      <!-- 5、按钮 -->
+    </div>
+    <!-- 2、页码区域 -->
+    <p id="pages">
+      <a class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+    </p>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+

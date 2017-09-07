@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Insert a title</title>
+    <meta charset="utf-8">
+    <style>
+      #tbl{
+        border-top:1px solid #000;
+        border-left:1px solid #000;
+        width:400px;
+      }
+      #tbl td{
+        border-right:1px solid #000;
+        border-bottom:1px solid #000;
+        padding:5px;
+        /*外边距 ？？？*/
+        margin:10px;
+        width:100px;
+        height:50px;
+        vertical-align:bottom;
+      }
+
+      #tbl-1{
+        border:1px solid #000;
+        width:400px;
+        /*合并边框 */
+        border-collapse:collapse;
+        /*边框边距*/
+        /*border-spacing:10px;*/
+        /*标题位置*/
+        caption-side:bottom;
+        /*显示规则-表格布局方式(算法)*/
+        table-layout:fixed;
+      }
+      #tbl-1 td{
+        border:1px solid #000;
+        width:100px;
+        height:50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--写代码的位置-->
+    <table id="tbl" cellspacing="0">
+      <tr>
+        <td>编号</td>
+        <td>姓名</td>
+        <td>爱好</td>
+        <td>操作</td>
+      </tr>
+      <tr>
+        <td>1001</td>
+        <td>张三丰</td>
+        <td>太极拳</td>
+        <td>
+          <a href="#">更改</a>
+        </td>
+      </tr>
+      <tr>
+        <td>1002</td>
+        <td>张翠山</td>
+        <td>殷素素</td>
+        <td>
+          <a href="#">更改</a>
+        </td>
+      </tr>
+      <tr>
+        <td>1003</td>
+        <td>张无忌</td>
+        <td>金花婆婆</td>
+        <td>
+          <a href="#">更改</a>
+        </td>
+      </tr>
+    </table>
+    <h3>合并边框</h3>
+    <table id="tbl-1">
+      <caption>倚天屠龙记</caption>
+      <tr>
+        <td>编号</td>
+        <td>姓名</td>
+        <td>爱好</td>
+        <td>操作</td>
+      </tr>
+      <tr>
+        <td>1001</td>
+        <td>dfafdsafdsafd  safdsafdsafdsafdsafdsafdafdsafdsa</td>
+        <td>太极拳</td>
+        <td>
+          <a href="#">更改</a>
+        </td>
+      </tr>
+      <tr>
+        <td>1002</td>
+        <td>张翠山</td>
+        <td>殷素素</td>
+        <td>
+          <a href="#">更改</a>
+        </td>
+      </tr>
+      <tr>
+        <td>1003</td>
+        <td>张无忌</td>
+        <td>金花婆婆</td>
+        <td>
+          <a href="#">更改</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
