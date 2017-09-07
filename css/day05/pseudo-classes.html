@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        a:link {
+            color: black;
+            /* 取消下划线 */
+            text-decoration: none;
+        }
+        /* 悬停在a的状态 */
+        
+        a:hover {
+            color: orange;
+        }
+        /* a被激活时的状态 */
+        
+        a:visited {
+            color: pink;
+        }
+        
+        #txtName {
+            color: gray;
+            font-style: italic;
+        }
+        
+        #txtName:active {
+            font-style: normal;
+        }
+        
+        #txtName:focus {
+            color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>
+        用户名：
+        <inpute id="txtName" type="text" value="lalallalalalal">balala</inpute>
+    </p>
+    <a href="http://www.oschina.net">oschina</a>
+</body>
+
+</html>

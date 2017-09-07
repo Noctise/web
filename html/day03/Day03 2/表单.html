@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Insert a title</title>
+    <meta charset="utf-8">
+    <style></style>
+  </head>
+  <body>
+     <form action="" method="get">
+       <fieldset>
+         <legend>员工基本信息</legend>
+       姓名：<input type="text" maxlength="4" name="txtName" placeholder="请输入用户名"  ><br>
+       密码：<input type="password" name="txtPwd" placeholder="请输入密码" ><br>
+       性别：<input type="radio" name="rdoGender" value="M" id="rdoMale" checked>
+       <label for="rdoMale">男</label>
+        <input type="radio" name="rdoGender" value="F" id="rdoF">
+         <label for="rdoF">女</label>
+             <br>
+       爱好：
+        <input type="checkbox" name="chkHoppy" value="Eat" id="chkEat">
+        <label for="chkEat">吃</label>
+        <input type="checkbox" name="chkHoppy" value="Drink" checked>喝
+        <input type="checkbox" name="chkHoppy" value="Play">玩
+        <input type="checkbox" name="chkHoppy" value="happy">乐
+        </fieldset>
+        <br>
+        <input type="hidden" name="txtID" value="10001">
+        <p>
+        <input type="file" name="txtFile">
+        </p>
+        <br>
+        籍贯地址：
+          <select name="selAddress" size="1">
+            <option value="bj">北京</option>
+            <option value="sh" selected>上海</option>
+            <option value="xa">西安</option>
+            <option value="gz">广州</option>
+            <option value="sy">三亚</option>
+            <option value="cq">重庆</option>
+          </select>
+          <p>
+          就业城市：
+          <select name="selCity" size="6" multiple>
+            <option value="bj">阿富汗</option>
+            <option value="sh">伊拉克</option>
+            <option value="xa">迪拜</option>
+            <option value="gz">叙利亚</option>
+            <option value="sy">印度</option>
+          </select>
+          </p>
+        <br>
+        自我介绍：<textarea name="txtIntro" cols="50" rows="8" readonly>这家伙很懒，什么都没留下......</textarea>
+        <br>
+        <input type="submit" value="提交">
+        <input type="reset" value="重置">
+        <input type="button" value="普通按钮">
+        <input type="image" src="btn_login.JPG">
+        <button>button按钮</button>
+     </form>
+  </body>
+</html>

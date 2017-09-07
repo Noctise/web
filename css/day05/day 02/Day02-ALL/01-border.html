@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Insert a title</title>
+    <meta charset="utf-8">
+    <style>
+      #d1{
+        width:200px;
+        height:200px;
+        border:5px dotted transparent;
+        /*左边框，宽度2px ，dashed ， #666*/
+        border-left:2px dashed #666;
+        /*下边框，颜色为 #005aa0*/
+        border-bottom-color:#005aa0;
+      }
+      #d2{
+        width:0;
+        height:0;
+        /*border:5px solid #f00;
+        border-right-color:#0f0;
+        border-bottom-color:#00f;
+        border-left-color:#ff0;*/
+
+        border:5px solid transparent;
+        border-top-color:#666;
+      }
+      #d3{
+        width:200px;
+        height:200px;
+        border:2px solid #000;
+        border-radius:5px;
+      }
+      #d4{
+        width:200px;
+        height:400px;
+        border:2px solid #000;
+        border-radius:50%;
+      }
+      #d5{
+        width:200px;
+        height:200px;
+        border:2px solid #f00;
+        box-shadow:0px 0px 5px #f00 inset;
+      }
+
+      #txtName{
+        outline:none;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>四个方向的边框</h3>
+    <div id="d1"></div>
+    <h3>边框的组成</h3>
+    <div id="d2"></div>
+    <h3>边框倒角</h3>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <h3>边框阴影</h3>
+    <div id="d5"></div>
+    <h3>边框轮廓</h3>
+    <div>
+      用户名：<input type="text" id="txtName">
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </body>
+</html>

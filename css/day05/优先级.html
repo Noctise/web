@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        /* 100 */
+        
+        #s1 {
+            color: red;
+        }
+        /* 1 */
+        
+        span {
+            color: green;
+            font-size: 48px;
+        }
+        /* 101 */
+        
+        #p1 span {
+            color: orange;
+        }
+        /* 200 */
+        
+        #d1 #s1 {
+            color: yellow;
+        }
+        /* 111 */
+        
+        D1 .pp span {
+            color: pink;
+        }
+        /* 102 */
+        
+        #d1 p span {
+            color: blue;
+        }
+        /* 101 */
+        
+        #d1 span {
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d1">
+        <p id="p1" class="pp"><span id="s1">p1 of d1 span</span></p>
+    </div>
+</body>
+
+</html>

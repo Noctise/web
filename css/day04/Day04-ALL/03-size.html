@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Insert a title</title>
+    <meta charset="utf-8">
+    <style>
+      #d1{
+        width:200px;
+        height:200px;
+        background-color:pink;
+        /*溢出处理*/
+        overflow:auto;
+
+      }
+      #s1{
+        width:200px;
+        height:200px;
+      }
+
+      #d2{
+        width:500px;
+        height:150px;
+        border:1px solid #000;/*边框*/
+        /*溢出处理*/
+        overflow:auto;
+      }
+      #d2>p{
+        height:100px;
+        width:800px;
+        background-color:red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="d2">
+      <p></p>
+    </div>
+    <div id="d1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque repudiandae sed porro veritatis quia amet alias eum enim recusandae debitis ex dolor repellat voluptate vero quaerat nisi ratione voluptates. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque hic neque porro iusto iure eligendi itaque. At deleniti facere debitis ipsum modi accusamus dolorem culpa. Perferendis vero explicabo modi suscipit.</div>
+    <!-- <span id="s1">这是一个span</span> -->
+  </body>
+</html>

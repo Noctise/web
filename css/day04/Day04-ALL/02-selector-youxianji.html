@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>优先级</title>
+    <meta charset="utf-8">
+    <style>
+      #s1{color:red;}/*100*/
+      span{color:green;font-size:48px;}/*1*/
+      #p1 span{color:orange;}/*100+1 = 101*/
+      #d1 #s1{color:yellow;}/*100+100=200*/
+      #d1 .pp span{color:pink;}/*100+10+1=111*/
+      #d1 #p1 span{color:blue;}/*100+100+1=201*/
+      #d1 span{color:gray;}/*100+1=101*/
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <div id="d1">
+      <p id="p1" class="pp">
+        <span id="s1">
+          d1 中的 p1 中的 span
+        </span>
+      </p>
+    </div>
+  </body>
+</html>
