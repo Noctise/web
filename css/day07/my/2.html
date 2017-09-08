@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  #d1,#d2{
+    width: 200px;
+    height: 200px;
+  }
+
+  #d1{
+    background: red;
+    float:left;
+    margin-left: 50px;
+  }
+
+  #s1{
+    background: pink;
+    float: left;
+  }
+
+#d2{
+  background: greenyellow;
+}
+</style>
+</head>
+<body>
+  <div id="d1"></div>
+  <!-- <span id="s1">this is span</span> -->
+
+  <!-- 文本永远不可能被浮动元素压地下 -->
+  <div id="d2">this is div</div>
+</body>
+</html>

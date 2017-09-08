@@ -1,0 +1,85 @@
+#discuss{
+  /*宽度，水平居中*/
+  width:990px;
+  margin:0 auto;
+  min-height:100px;/*测试*/
+}
+#discuss div.mt{
+  /*高度，边框，背景*/
+  height:30px;
+  border:1px solid #ddd;
+  border-top:2px solid #999;
+  background:#F7F7F7;
+}
+body{
+  font-size:12px;
+  color:#9C9A9C;
+}
+#discuss-datas{
+  width:990px;
+}
+#discuss-datas th{
+  /*下边框，上下内边距，文本颜色*/
+  border-bottom:1px solid #ddd;
+  padding:5px 0;
+  color:#666;
+}
+#discuss-datas .col1{
+  /*宽度，文本左对齐*/
+  width:600px;
+  text-align:left;
+}
+#discuss-datas td{
+  /*文本居中对齐，下边框，上下内边距*/
+  text-align:center;
+  border-bottom:1px dotted #ddd;
+  padding:5px 0;
+}
+#discuss a{
+  /*取消下划线，文本颜色*/
+  text-decoration:none;
+  color:#005aa0;
+}
+#discuss a:hover{
+  /*显示下划线*/
+  text-decoration:underline;
+}
+
+#discuss i{
+  /*左内边距（模拟宽度），上内边距（模拟高度）*/
+  padding-left:21px;
+  padding-top:3px;
+  padding-bottom:2px;
+  /*背景图*/
+  background:url(images/iconlist_1.png) no-repeat;
+  /*右外边距*/
+  margin-right:5px;
+}
+#discuss i.shai{
+  background-position:-110px -220px;
+}
+#discuss i.lun{
+  background-position:-152px -220px;
+}
+
+ /* 浮动练习  */
+ #discuss div.mt a{
+   float: left;
+   width: 100px;
+   height: 30px;
+   text-align: center;
+   line-height: 30px;
+   text-decoration: none;
+   font-size: 14px;
+ }
+
+ #discuss div.mt a.active{
+  border: 1px solid #ddd;
+  border-bottom: none;
+  border-top: 2px solid red;
+  background: #fff;
+  margin-top: -6px;
+  height: 35px;
+  line-height: 35px;
+} 
+
