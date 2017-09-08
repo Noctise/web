@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Insert a title</title>
+    <meta charset="utf-8">
+    <style>
+      p{
+        margin:0;
+      }
+      #nav{
+        width:990px;
+        height:40px;
+        background:#E64346;
+        margin:20px auto;
+      }
+
+      #nav p{
+        width:210px;
+        height:40px;
+        background:#CD2A2C;
+        float:left;
+      }
+      #nav p a{
+        /*左浮动，高度，行高，左内边距，文本颜色，取消下划线，文字大小*/
+        float:left;
+        height:40px;
+        line-height:40px;
+        padding-left:15px;
+        color:#fff;
+        text-decoration:none;
+        font-size:14px;
+        font-weight:bold;
+      }
+      #nav p b{
+        /*右浮动，宽度，高度，背景属性，位置偏移*/
+        float:right;
+        width:20px;
+        height:20px;
+        background:url(images/iconlist_2.png) no-repeat -65px 0;
+        margin-top:10px;
+        margin-right:10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="nav">
+      <!-- 1、左侧 -->
+      <p>
+        <a href="#">全部商品分类</a>
+        <b></b>
+      </p>
+      <!-- 2、右侧：导航 -->
+    </nav>
+  </body>
+</html>

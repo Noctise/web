@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Insert a title</title>
+    <meta charset="utf-8">
+    <style>
+      #d1,#d2,#d3{
+        width:200px;
+        height:200px;
+      }
+      #d1{
+        background:red;
+        float:left;
+      }
+      #d2{
+        background:green;
+        float:left;
+      }
+      #d3{
+        background:blue;
+        float:left;
+      }
+      #parent{
+        border:1px solid #000;
+        /*方案1：指定父元素高度*/
+        /*height:200px;*/
+        /*方案2：设置父元素也浮动*/
+        /*float:left;*/
+        /*方案3：为为父元素设置 overflow*/
+        /*overflow:hidden;*/
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="d1"></div>
+      <div id="d2"></div>
+      <div id="d3"></div>
+      <div style="clear:both;"></div>
+    </div>
+    <div>测试的文本</div>
+  </body>
+</html>

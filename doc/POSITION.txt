@@ -1,0 +1,87 @@
+1、定位-浮动
+	1、普通流定位(文档流定位)
+	2、浮动定位
+		解决问题：多个块级元素能够在一行内显示
+		语法：
+			属性：float
+			取值：none / left / right
+		清除浮动影响：
+			属性：clear
+			取值：none / left / right / both
+		特殊效果 & 父元素高度：
+		1、浮动元素都是块级
+		2、宽度由内容来决定(非指定)
+		3、父元素宽度不够，最后一个换行显示，有可能被卡住
+		4、文本，图片，行内块 是采用环绕的方式排列的，不能被压住
+		5、父元素高度
+			1、设置父元素高度
+			2、父元素浮动
+			3、overflow
+			4、追加空子元素
+2、显示
+	1、显示方式
+		display:
+			none
+			block
+			inline
+			inline-block
+			table
+			...
+	2、显示效果
+		1、可见性
+			visibility
+				visible
+				hidden
+				collapse
+		2、透明度
+			opacity
+				0.0 ~ 1.0
+		3、垂直对齐
+			vertical-align
+				top / middle / bottom / baseline
+	3、光标
+		属性：cursor
+		取值：pointer
+3、列表
+	1、列表项标识
+		属性：list-style-type
+		取值：none
+	2、列表项图像
+		属性：list-style-image
+		取值：url()
+	3、列表项位置
+		属性：list-style-position
+		取值：outside / inside
+4、定位
+	1、属性
+		1、定位方式
+			属性：position
+			取值：static / relative / absolute / fixed
+		2、偏移属性
+			top / right / bottom / left
+		3、堆叠顺序
+			z-index
+	2、定位-相对定位
+	3、定位-绝对定位
+		会相对于 离他最近的 已定位的 祖先元素 实现位置初始化
+================================================
+1、定位
+	1、堆叠顺序
+		1、什么是堆叠顺序
+			只能设置 已定位(relative/absolute/fixed) 元素的堆叠顺序
+		2、语法
+			属性：z-index
+			取值：无单位的数值
+				数值越大越靠前
+				数值越小越靠后
+				如果设置为负数的话，那么将在页面的所有内容之下
+		3、注意
+			1、默认堆叠顺序，平级元素，是后来者居上
+			2、对于父子级元素来说，永远都是子压在父上，是不能通过 z-index 来调整的
+
+
+
+
+
+
+

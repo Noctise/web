@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Insert a title</title>
+    <meta charset="utf-8">
+    <style>
+      #my-jd{
+        border:1px solid #000;
+        padding:15px 0;
+        cursor:pointer;
+        width:100px;
+        text-align:center;
+        /*相对定位：配合 #menu 做绝对定位*/
+        position:relative;
+        background:#fff;
+      }
+      #menu{
+        width:400px;
+        height:300px;
+        border:1px solid #000;
+        background:#fff;
+        /*绝对定位：*/
+        position:absolute;
+        top:48px;
+        left:-1px;
+        /*默认隐藏*/
+        display:none;
+      }
+      /*当鼠标移入到我的京东时，弹出菜单*/
+      #my-jd:hover #menu{
+        /*显示菜单*/
+        display:block;
+      }
+      /*当鼠标移入到我的京东时，下边框变白色*/
+      #my-jd:hover{
+        border-bottom-color:#fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="my-jd">
+      我的京东
+      <!-- 弹出菜单 -->
+      <div id="menu">
+        <b>我的京东弹出菜单</b>
+      </div>
+    </div>
+  </body>
+</html>

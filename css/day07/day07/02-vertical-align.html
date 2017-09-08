@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Insert a title</title>
+    <meta charset="utf-8">
+    <style>
+      #d1{
+        width:200px;
+        height:200px;
+        border:1px solid black;
+        text-align:center;
+        display:table-cell;
+        vertical-align:middle;
+      }
+      #s1,#s2{
+        border:1px solid #000;
+      }
+      #s1{
+        width:120px;
+        height:150px;
+        display:inline-block;
+        vertical-align:middle;
+      }
+      .show-img{
+        border:1px solid #000;
+        cursor:wait;
+      }
+      .show-img img{
+        vertical-align:bottom;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="show-img">
+      <img src="images/p01.jpg">
+    </div>
+    <span id="s1">display:inline-block的span元素</span>
+    <span id="s2">span</span>
+
+    <div id="d1">
+      这是一段文本
+    </div>
+  </body>
+</html>

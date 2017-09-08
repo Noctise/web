@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Insert a title</title>
+    <meta charset="utf-8">
+    <style>
+      #d1{
+        width:400px;
+        height:400px;
+        background:red;
+        float:right;
+        /*相对定位*/
+        position:relative;
+      }
+      #d2{
+        width:200px;
+        height:200px;
+        background:green;
+        /*绝对定位*/
+        position:absolute;
+        bottom:0;
+        left:0;
+      }
+      #d3{
+        width:100px;
+        height:100px;
+        background:blue;
+        /*绝对定位*/
+        position:absolute;
+        right:0px;
+        bottom:0px;
+        
+        /*margin:0 auto;*/
+        /*非正常情况的auto*/
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        margin:auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="d1">
+      <div id="d2">
+        <div id="d3"></div>
+      </div>
+    </div>
+  </body>
+</html>
