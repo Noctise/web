@@ -82,4 +82,18 @@ body{
   height: 35px;
   line-height: 35px;
 } 
+#others{
+  border-bottom: 1px solid #ddd;
+  padding: 5px;
+  overflow: hidden;
+}
+/* #others div.new{
+  float: left;
+}
+#others div.total{
+  float: right;
+} */
 
+ #others div.total{
+  float: right;
+} 
