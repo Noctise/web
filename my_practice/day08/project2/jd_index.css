@@ -1,0 +1,170 @@
+/* 为了便于观察，加上边框，项目完成后删除 */
+#top-box,#top-main,#nav,#banner,#main,#foot-box,#footer{
+    border: 1px solid #000;
+}
+
+/* 1.通用CSS */
+/* 先设置字体 */
+body{
+    font: 12px "micsoft yahei",Arial,Helvetica,sans-serif;
+    color: #666;
+    margin: 0;
+}
+
+/* 统一取消内外边距 */
+p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img{
+    vertical-align: bottom;
+}
+
+a{
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ff0700;
+    text-decoration: underline;
+}
+
+.lf{float: left;}
+.rf{float: right;}
+.clear{clear: both;}
+
+
+/* 2.做整体布局的样式 */
+#top-box,#top-main,#nav,#banner,#main,#foot-box,#footer{
+    width: 1211px;
+    margin: 0 auto;
+}
+
+/* 第一模块：页面顶部 */
+#top{
+    /* 高度，行高，背景，下边框 */
+    height: 30px;
+    line-height: 30px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #000;
+}
+
+#top-box>img{
+margin: 9.5px 5px 0 0;
+}
+
+#top-box>ul>li{
+    float: left;
+    margin-left: 5px;
+}
+#top-box>ul>li>b{
+    border-left: 1px solid #ddd;
+    margin-right:5px;
+}
+
+#top-box li.vip>a{
+    /* 左内边距，背景属性 */
+    padding-left: 29px;
+    background: url(img/vip.jpg) no-repeat 0 center;
+}
+
+#top-box li.bjd>a{
+    padding-left:29px;
+    background: url(img/dakehu.jpg) no-repeat 0 center;
+}
+
+#top-box li.phone>a{
+    /* 行内块，高度，行高，左内边距，背景 */
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    padding-left:20px;
+    background: url(img/iconlist_2.png) no-repeat -128px -360px ;
+}
+
+#top-box li.phone>a:hover{
+    background:url(img/iconlist_2.png) no-repeat -128px -399px;
+}
+
+#top-box li.service>a{
+/* 左右内边距，行内快 ，高度，边框（左右上，透明）*/
+    padding:0 15px;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid transparent;
+    border-bottom:none;
+}
+/* #top-box li.service>a:hover{
+边框颜色，背景颜色
+border-color: #ddd;
+background-color: #fff;
+} */
+
+/* 弹出菜单 */
+
+#top-box li.service{
+    position: relative;
+}
+
+#service_item{
+    width: 78px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-top: none;
+    text-align: center;
+    position: absolute;
+    top: 28px;
+    left: 6px;
+    display: none;
+}
+
+    /* 当鼠标移动到li.service 上时，显示#service_item */
+#top-box li.service:hover #service_item{
+        display: block;
+    }
+
+#top-box li.service:hover>a{
+        border-color: #ddd;
+        background-color: #fff;
+    }
+
+
+/* 第二模块：LOGO 和 搜索框 */
+#top-main{
+    padding:10px 0;
+}
+
+#search-box{
+    /* 左浮动，宽度，min-height,左右外边距 */
+    float: left;
+    width: 500px;
+    min-height: 30px;
+    margin: 0 80px 0 40px;
+}
+
+#search-box div.search{
+    height: 30px;
+    background: #E4393C;
+    /* 内边距 */
+padding: 3px;
+
+}
+
+#search-box input{
+    width: 410px;
+    height: 30px;
+    border: 0;
+    padding: 0;
+}
+
+#search-box button{
+    /* 高度，宽度，取消边框，背景颜色 */
+    width:80px;
+    height: 28px;
+    border:0;
+
+}
