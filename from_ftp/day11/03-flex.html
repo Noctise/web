@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Insert a title</title>
+    <meta charset="utf-8">
+    <style>
+      #container{
+        border:1px solid #000;
+        width:400px;
+        height:800px;
+        /*0、将元素变为弹性布局容器*/
+        display:flex;
+        /*1、决定主轴，及其排列方式*/
+        flex-direction:row;
+        /*2、指定换行方式*/
+        flex-wrap:wrap;
+        /*3、在主轴的排列方式*/
+        justify-content:flex-start;
+        /*4、在交叉轴的排列方式*/
+        /*align-items:stretch;*/
+        /*5、align-content*/
+        align-content:space-around;
+      }
+      #container div{
+        width:200px;
+        height:200px;
+      }
+      .c1{background:red;}
+      .c2{background:green;}
+      .c3{background:blue;}
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="c1">
+        测试文本
+      </div>
+      <div class="c2">
+        <h1>测试文本测试文本测试文本测试文本</h1>
+      </div>
+      <div class="c3">
+        测试文本
+      </div>
+    </div>
+  </body>
+</html>

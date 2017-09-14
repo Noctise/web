@@ -1,0 +1,293 @@
+CSS3Core 
+*********************
+1、复杂选择器
+2、内容生成
+3、弹性布局
+4、CSSHack(兼容性)
+*********************
+1、复杂选择器
+	1、兄弟选择器
+		兄弟选择器：
+			具备相同父元素的元素，称之为 兄弟元素
+			兄弟选择器，只能向后找，不能向前找
+		1、相邻兄弟选择器
+			相邻：紧紧挨着
+			语法：选择器1+选择器2
+				ex:
+					1、div+p
+					2、#container+.menu
+		2、通用兄弟选择器
+			通用：后面所有
+			语法：选择器1~选择器2
+				ex:
+					1、div~p
+	2、属性选择器
+		允许通过元素所附带的属性及其值来匹配页面的元素
+		<input type="text" id="" class="" title="" reaonly>
+		语法：
+			基本语法：[attr]
+				attr:表示任意属性
+			1、[attr]
+				作用：匹配页面中附带 attr 属性的元素
+				ex:
+					1、[id]
+			2、elem[attr]
+				elem : element，表示页面任意元素
+				作用：匹配页面中附带 attr 属性的 elem 元素
+				ex:
+					1、div[id]
+			3、[attr1][attr2]
+				作用：匹配同时附带 attr1 属性 以及 attr2 属性的元素
+				ex:
+					[id][class]
+			4、[attr=value]
+				value : 某一具体属性值
+				ex:想获取页面中所有的文本框 
+					input[type=text]
+					input[type="text"]
+					input[type='text']
+			5、[class~=value]
+				在多类选择器引用中使用
+				class属性值是一个由空格隔开的值列表，并且value是该值列表中的一个独立的选择器
+
+				[class="important"] 和 [class~=important]
+				ex：
+					将页面中所有包含 important 类选择器的元素匹配出来
+			6、[attr ^= value]
+				^= : 以 ... 作为开始的
+				<div class="col-md-5"></div>
+				<div class="col-sm-3"></div>
+				... ...
+				匹配 页面中所有class以 col 作为开始的元素
+				[class^=col]
+			7、[attr *= value]
+				*= : 包含该 ... 
+				<div class="col-md-1"></div>
+				<div class="col-md-3"></div>
+				<div class="col-md-5"></div>
+				匹配 页面中所有class值中包含md的元素
+				[class*=md]
+			8、[attr $= value]
+				$= : 以 ... 作为结尾的
+	3、伪类选择器
+		1、目标伪类
+			作用：匹配 页面中 被激活的 html 锚点元素
+			语法： :target
+		2、结构伪类
+			1、:first-child
+				作用：匹配 属于其 父元素中的 首个子元素
+				<table id="tbl">
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+				<table>
+				ex:
+					1、td:first-child
+					2、#tbl td:first-child
+			2、:last-child
+				作用：匹配 属于其 父元素中的 最后一个子元素
+			3、:nth-child(n)
+				作用：匹配 属于其 父元素中的 第n个子元素
+			4、:empty
+				作用:匹配没有子元素的元素(不能包含文本，空格，回车)
+				<div></div> --> div:empty{}
+			5、:only-child
+				作用：匹配属于其父元素中的唯一子元素
+		3、否定伪类
+			作用：将满足指定选择器的元素排除在外
+			语法：:not(selector)
+				div:not(".container") : 获取页面中所有 除class 为container 的 div元素
+	4、伪元素选择器
+		伪类：匹配到的是 "元素"
+		伪元素：匹配到的是元素中的某部分 "内容"
+		1、:first-letter 或 ::first-letter
+			作用：匹配 某元素中的首字符
+		2、:first-line 或 ::first-line
+			作用：匹配 某元素中的首行
+		3、::selection
+			作用：匹配被用户选取的部分
+			注意：只能改 文本颜色 和 背景颜色
+
+		: VS ::
+		1、在CSS2中，: 即表示伪类选择器，也表示伪元素选择器
+		2、在CSS3中，: 只代表伪类选择器，::只代表伪元素选择器
+		推荐使用 : 取代 ::
+		:first-child : 在 CSS3 以及 CSS2中都支持
+		::first-child: 只在CSS3中支持
+2、内容生成
+	1、什么是内容生成
+		通过css，动态的向某元素区域内增加东西
+	2、伪元素选择器
+		1、:before 或 ::before
+			定位到某元素的内容区域之前
+			<div>(内容区域之前)这是一个div</div>
+		2、:after 或 ::after
+			定位到某元素的内容区域之后
+			<div>这是一个div(内容区域之后)</div>
+	3、属性 - content
+		配合着 :after 或 :before 一起使用
+		作用：生成内容
+		语法：
+			属性：content
+			取值：
+				1、url() : 生成图像
+				2、字符串 : 用 "" 或 ''引起来的纯文本
+				3、计算器
+		解决问题：
+			1、浮动元素父元素高度
+				<div>
+					<div style="float:left">111</div>
+					<div style="float:left">222</div>
+					<div style="clear:both;"></div>
+					<!-- 
+						1、最后一个子元素位置处
+							div:after
+						2、空子元素:生成空元素
+							content:"";
+						3、块级元素
+							display:block;
+						4、clear:both 
+							clear:both;
+					-->
+				</div>
+			2、外边距溢出
+				<div>
+					<!-- 
+						1、第一个子元素 - :before
+						2、空子元素 - content:"";
+						3、table元素 - display:table
+					-->
+					<table></table>
+					<div style="margin-top:20px;"></div>
+				</div>
+3、弹性布局
+	1、什么是弹性布局
+		弹性布局(Flexible box)，简称为 ：flex布局。指定某元素中的子元素的排列布局方式。
+		弹性布局容器：简称 "容器"，使用弹性布局属性的元素，其子元素能够按照弹性布局的方式进行排列
+		弹性布局项目：简称 "项目"，弹性布局容器中的子元素，允许按照弹性布局的方式进行排列
+
+		语法：
+			属性：display
+			取值：
+				1、flex
+					作用：将块级元素设置为弹性布局的容器
+				2、inline-flex
+					作用：将行内元素设置为弹性布局的容器
+			注意：
+				1、元素设置为flex布局后，子元素的float,cleart,vertical-align,text-align全部失效
+				2、容器中的项目，允许直接修改尺寸
+				3、容器中的项目，外边距合并问题被解决
+	2、容器属性
+		将属性设置给容器元素，从而实现所有子元素的排列布局方式
+		1、flex-direction
+			作用：决定主轴以及项目在主轴上的排列方向
+			取值：
+				1、row:主轴为水平方向的轴，起点在左端，默认值
+				2、row-reverse
+					主轴为水平方向的轴，起点在右端
+				3、column(重点)
+					主轴 更改为 交叉轴，起点在上端
+				4、column-reverse
+					主轴 更改为 交叉轴，起点在底端
+		2、flex-wrap
+			作用：默认情况下，项目们都在一条线上排列(轴线)，如果 项目们 在一条轴线上排不下时，如何换行
+			取值：
+				1、nowrap
+					默认值，不换行,但是会缩放项目
+				2、wrap
+					换行
+				3、wrap-reverse
+					换行，第一行在下方
+		3、flex-flow
+			作用：flex-direction 和 flex-wrap 的缩写
+			取值：
+				row nowrap : 默认值
+				direction wrap ;
+		4、justify-content(重点)
+			作用：指定项目在主轴上的对齐方式
+			注意：
+				如果主轴为横轴,则指定横向的排列对齐方式
+				如果主轴为交叉轴,则指定纵向排列对齐方式
+			取值：
+				1、flex-start
+					在轴的起点对齐
+				2、flex-end
+					在轴的终点对齐
+				3、center
+					居中对齐
+				4、space-between(终点)
+					两端对齐，项目之间的间隔都相等
+				5、space-around
+					每个项目两侧的间隔是相等的
+		5、align-items
+			作用：定义项目在交叉轴上如何对齐
+			取值：
+				1、flex-start
+					交叉轴的起点对齐
+				2、flex-end
+					交叉轴的终点对齐
+				3、center	
+					交叉轴的中间对齐
+				4、baseline
+					基线对齐，以最大的文本第一行的基线为准
+				5、stretch
+					默认值，如果项目未设置高度或高度为auto的话， 将占满整个容器的高度
+		6、align-content
+			作用：该属性定义项目们有多跟轴线时的对齐方式(仅在项目自动换行时有效)
+			取值：
+				1、flex-start
+					在轴的起点对齐
+				2、flex-end
+					在轴的终点对齐
+				3、center
+					在轴的中间对齐
+				4、space-between
+					与轴的两端对齐，轴线之间的间隔相等
+				5、space-around
+					每个轴线两侧的间隔相等
+				6、stretch
+					默认值，占满轴线 
+	3、项目属性
+		1、order
+			作用：排序,取值越小，排列越靠前。默认值为 0
+			取值：整数数字
+		2、flex-grow(重点)
+			作用：父元素有剩余空间的条件下,定义项目放大比例,默认为0,即便有剩余空间，也不放大
+			取值：整数数字
+		3、flex-shrink
+			作用：父元素剩余空间不足的情况下，定义了项目如何缩小即缩小比例，默认值为1
+			取值：整数数字
+			ex:
+				如果一个项目的 flex-shrink 设置为0，其它项目设置为 1，如果空间不足时，如何排列？？
+				flex-shrink 为0的元素 宽度不变，为1的元素会缩小
+		4、flex-basis
+			作用：定义项目所占据容器空间的大小(主轴)
+			取值：
+				1、auto
+					项目本身大小
+				2、具体数值
+		5、flex
+			作用：flex-grow flex-shrink flex-basis 的简写方式
+			取值：
+				1、auto 
+					等同于 1 1 auto;
+				2、none
+					等同于 0 0 auto;
+				3、grow[,shrink,basis]
+		6、align-self
+			作用：定义 自己 与其他项目不一样的在交叉轴的对齐方式,可以覆盖父元素的 align-items 属性
+			取值:
+				1、auto
+					默认值，继承父元素align-items的值,如果没有父元素的话，则等同于stretch
+				2、flex-start
+				3、flex-end
+				4、center
+				5、baseline
+				6、stretch 
+
+
