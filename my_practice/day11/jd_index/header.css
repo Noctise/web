@@ -1,94 +1,33 @@
-#top {
-    /*高度，行高，背景，下边框*/
-    height: 30px;
-    line-height: 30px;
-    background: #f7f7f7;
-    border-bottom: 1px solid #eee;
-}
-
-#top-box>img {
-    margin: 9.5px 5px 0 0;
-}
-
-#top-box>ul>li {
-    float: left;
-    margin-left: 5px;
-}
-
-#top-box>ul>li>b {
-    border-left: 1px solid #ddd;
-    margin-right: 5px;
-}
-
-#top-box li.vip>a {
-    /*左内边距，背景属性*/
-    padding-left: 29px;
-    background: url(Images/vip.jpg) no-repeat 0 center;
-}
-
-
-/*手机京东*/
-
-#top-box li.app-jd>a {
-    /*行内块，高度，行高，左内边距，背景*/
-    display: inline-block;
-    height: 22px;
-    line-height: 22px;
-    padding-left: 18px;
-    background: url(Images/iconlist_2.png) no-repeat -128px -360px;
-}
-
-#top-box li.app-jd>a:hover {
-    background-position: -128px -399px;
-}
-
-
-/*客户服务*/
-
-#top-box li.service>a {
-    /*左右内边距，行内块，高度，边框(左右上，透明)*/
-    padding: 0 15px;
-    display: inline-block;
-    height: 26px;
-    line-height: 26px;
-    border: 1px solid transparent;
-    border-bottom: none;
-}
-
-
-/*弹出菜单*/
-
-#top-box li.service {
-    /*相对定位：配合#service-items做绝对定位*/
-    position: relative;
-}
-
-#service-items {
-    /*宽度，背景颜色，边框(左右下)，定位：绝对定位及其位置摆放*/
-    width: 78px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-top: none;
-    text-align: center;
-    position: absolute;
-    top: 28px;
-    left: 6px;
-    /*默认隐藏*/
-    display: none;
-}
-
-
-/*当鼠标移入到 li.service 上时，显示 #service-items*/
-
-#top-box li.service:hover #service-items {
-    display: block;
-}
-
-
-/*当鼠标移入到 li.service 上时，显示 a 标记的边框，背景 ...*/
-
-#top-box li.service:hover>a {
-    /*边框颜色，背景颜色*/
-    border-color: #ddd;
-    background-color: #fff;
-}
+    #top,
+    #top-box,
+    img,
+    ul {
+        border: 1px solid black;
+    }
+    
+    #top {
+        height: 30px;
+        line-height: 30px;
+        background: #f7f7f7;
+        border-bottom: 1px solid #eee;
+    }
+    
+    #top-box>img {
+        margin: 10px 5px 0 0;
+    }
+    
+    #top-box>ul>li {
+        float: left;
+        margin-left: 10px;
+    }
+    
+    #top-box>ul>li>b {
+        border-left: 1px solid #ddd;
+        margin-right: 5px;
+    }
+    
+    #top-box li.vip>a {
+        /*左内边距，背景属性*/
+        padding-left: 29px;
+        background: url(Images/vip.jpg) no-repeat 0 center;
+    }
