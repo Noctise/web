@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Insert a title</title>
+    <meta charset="utf-8">
+    <style>
+      #container{
+        perspective:1000px;
+      }
+      #parent{
+        width:800px;
+        height:400px;
+        margin:100px auto;
+        border:1px solid #000;
+        position:relative;
+        transform-style:preserve-3d;
+        transform:rotatex(-20deg) rotatey(0deg);
+      }
+      #parent:hover{
+        transition:transform 3s linear;
+        transform:rotatex(-20deg) rotatey(360deg);
+      }
+      #parent div{
+        width:100px;
+        height:100px;
+        background-color:#E4393C;
+        color:#fff;
+        font-size:24px;
+        font-weight:bold;
+        position:absolute;
+        top:150px;
+        left:350px;
+      }
+      #parent div:nth-child(1){
+        transform:translateZ(200px);
+      }
+      #parent div:nth-child(2){
+        transform:rotateY(60deg) translateZ(200px);
+      }
+      #parent div:nth-child(3){
+        transform:rotateY(120deg) translateZ(200px);
+      }
+      #parent div:nth-child(4){
+        transform:rotateY(180deg) translateZ(200px);
+      }
+      #parent div:nth-child(5){
+        transform:rotateY(240deg) translateZ(200px);
+      }
+      #parent div:nth-child(6){
+        transform:rotateY(300deg) translateZ(200px);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="parent">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+      </div>
+    </div>
+  </body>
+</html>

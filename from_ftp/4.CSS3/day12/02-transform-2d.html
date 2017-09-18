@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title>2D转换</title>
+    <meta charset="utf-8">
+    <style>
+      #d1,#d2{
+        width:200px;
+        height:200px;
+        position:absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        margin:auto;
+      }
+      #d1{
+        background-color:#ddd;
+        border:1px solid #000;
+      }
+      #d2{
+        background-color:rgba(255,0,0,0.5);
+        border:1px solid #333;
+        /*位移*/
+        /*transform:translate(50px,50px);*/
+        /*缩放*/
+        /*transform:scale(-2);*/
+        /*旋转*/
+        /*transform:translate(50px) rotate(45deg);*/
+        /*transform-origin:top left;*/
+        /*transform:rotate(45deg);*/
+        /*倾斜*/
+        transform:skewY(30deg);
+        
+      }
+    </style>
+  </head>
+  <body>
+    <!--写代码的位置-->
+    <div id="d1">参考元素</div>
+    <div id="d2">转换元素</div>
+  </body>
+</html>

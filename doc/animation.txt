@@ -1,0 +1,128 @@
+}1、CSS Hack
+	1、CSS类内部Hack
+		+ ：识别 IE6，7
+		- ：识别 IE6
+		\0: 识别 IE8，9，10
+		\9\0 : 识别 IE9，10
+	2、选择器Hack
+	3、头部引用Hack
+		使用HTML条件注释
+		<!--[if 条件 IE 版本]>
+			
+		<![endif]-->
+2、转换
+	1、属性
+		转换属性：transform
+		转换原点：transform-origin
+	2、2d转换
+		1、位移
+			translate(x),translate(x,y),translateX(),translateY()
+		2、旋转
+			rotate(ndeg)
+		3、缩放
+			scale(value),scale(x,y),scaleX(),scaleY()
+		4、倾斜
+			skew(x),skew(x,y),skewX(),skewY()
+	3、3d转换
+		1、属性
+			1、perspective
+			2、transform-style:perserve-3d
+		2、转换效果
+			旋转：rotateX(),rotateY(),rotateZ(),rotate3D(x,y,z,ndeg)
+			位移：translateZ(z),translate3D(x,y,z)
+3、过渡
+	1、指定过渡属性
+		transition-property
+		允许使用过渡的属性：
+		1、颜色
+		2、转换
+		3、渐变
+		4、阴影
+		5、visibility
+		6、取值为数值
+	2、指定过渡时长
+		transition-duration ：以 s 或 ms
+	3、指定过渡速率
+		transition-timing-function
+		取值:
+			ease,linear,ease-in,ease-out,ease-in-out
+	4、指定过渡延迟
+		transition-delay:以s或ms为单位
+	5、过渡简写
+		transition:property duration timing-function delay;
+*********************************
+1、动画-animation
+	1、问题
+		一个矩形元素
+		先变成 红色背景，再变成蓝色背景，再变成绿色背景，再变成黄色背景
+	2、什么是动画
+		使得元素从一种样式逐渐变化为另一种样式
+		(多个样式之间的平缓变化的过程)
+		通过 "关键帧" 来定义动画的每一个步骤
+		关键帧：动作(样式) 和 时间
+	3、动画的使用方式
+		1、声明动画
+			为动画指定 名称 以及 定义关键帧
+			在样式表中，通过 @keyframes 规则来声明动画
+			语法
+				@keyframes 动画名称{
+					/*声明若干关键帧(样式 和 时间)*/
+
+					0%{
+						/*动画开始时的样式*/
+					}
+					...
+					50%{
+						/*动画执行到一半时的样式*/
+					}
+					...
+					100%{
+						/*动画结束时的样式*/
+					}
+				}
+				
+				@-webkit-keyframes 动画名称{}
+				@-moz-keyframes 动画名称{}
+		2、为元素调用动画
+			1、animation-name
+				作用：指定调用动画的名称
+				animation-name:changeBack;
+			2、animation-duration
+				作用：动画完成一个周期的执行时长
+			3、animation-timing-function
+				作用：指定执行速率
+				取值：ease,linear,ease-in,ease-out,ease-in-out
+			4、animation-delay
+				作用：指定动画延迟时长
+			5、animation-iteration-count
+				作用：指定动画的播放次数
+				取值：
+					1、具体数字
+					2、infinite : 无限次播放
+			6、animation-direction
+				作用：播放方向
+				取值：
+					1、normal
+						正常，从0% ~ 100%
+					2、reverse
+						逆向播放 ，从 100% ~ 0%
+					3、alternate
+						轮流播放，单数播放次数时，从0% ~ 100%,偶数播放次数时,从100%~0%
+			7、animation
+				取值：name duration timing-function delay iteration-count direction;
+			8、animation-fill-mode
+				作用：指定动画在播放前或播放后的填充状态 
+				取值：
+					1、none
+					2、forwards
+						当动画完成后，将保持在最后一个帧的状态上
+					3、backwards
+						在动画播放前(延迟时间内)，将元素保持在第一帧的状态上
+					4、both
+						forwards 和 backwards 的结合体
+			9、animation-play-state
+				作用：指定动画的播放状态
+				取值：
+					1、paused 动画暂停
+					2、running 动画播放
+

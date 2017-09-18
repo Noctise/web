@@ -1,0 +1,5 @@
+/*只做 兼容 IE6 浏览器的 CSS属性值*/
+#d1{
+  background-color:orange;
+}
+/*其它的 IE6 中的兼容性代码*/

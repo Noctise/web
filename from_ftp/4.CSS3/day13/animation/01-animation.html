@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Insert a title</title>
+    <meta charset="utf-8">
+    <style>
+      @keyframes changeBack{
+        0%{
+          background-color:red;
+        }
+        33%{
+          background-color:blue;
+        }
+        66%{
+          background-color:green;
+        }
+        100%{
+          background-color:yellow;
+        }
+      }
+
+      #d1{
+        width:200px;
+        height:200px;
+        border:1px solid #000;
+
+        animation-name:changeBack;
+        animation-duration:5s;
+        animation-timing-function:linear;
+        /*animation-delay:5s;*/
+        animation-iteration-count:infinite;
+        animation-direction:alternate;
+        /*animation-fill-mode:backwards;*/
+      }
+      #d1:hover{
+        animation-play-state:paused;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="d1"></div>
+  </body>
+</html>

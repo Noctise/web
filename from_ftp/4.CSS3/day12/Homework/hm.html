@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Insert a title</title>
+    <meta charset="utf-8">
+    <style>
+      img{vertical-align:bottom;}
+      ul{
+        margin:0;
+        padding:0;
+        list-style:none;
+      }
+      #container{
+        width:670px;
+        height:400px;
+        margin:50px auto;
+      }
+      #slider{
+        position:relative;
+      }
+      #slider ul{
+        display:flex;
+        position:absolute;
+        bottom:30px;
+        right:30px;
+      }
+      #slider li{
+        width:20px;
+        height:20px;
+        border-radius:50%;
+        background:#000;
+        color:#fff;
+        text-align:center;
+        line-height:20px;
+        margin-right:10px;
+        font-weight:bold;
+      }
+      
+      #ads{
+        /*弹性布局：为了调整子元素的位置*/
+        display:flex;
+        border:1px solid #ddd;
+        border-top:none;
+        height:159px;
+      }
+      #ads>a{
+        width:25px;
+        height:35px;
+        background:url(Images/ad-arraw.png);
+        /*在 容器 中垂直居中*/
+        align-self:center;
+      }
+      #ads>a.next{
+        background-position:0 -35px;
+      }
+      #ads ul{
+        /*弹性布局容器*/
+        display:flex;
+        /*占据剩余的所有空间*/
+        flex-grow:1;
+      }
+      #ads li{
+        /*平分所有空间*/
+        flex-grow:1;
+        text-align:center;
+        padding:10px 0;
+      }
+      #ads li:nth-child(2){
+        border-left:1px solid #ddd;
+        border-right:1px solid #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <!-- 1、上：banner图 -->
+      <div id="slider">
+        <img src="Images/banner_02.jpg">
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+        </ul>
+      </div>
+      <!-- 2、下：3幅广告 -->
+      <div id="ads">
+        <a class="previous"></a>
+        <ul>
+          <li>
+            <img src="Images/ad_01.jpg">
+          </li>
+          <li>
+            <img src="Images/ad_02.jpg">
+          </li>
+          <li>
+            <img src="Images/ad_03.jpg">
+          </li>
+        </ul>
+        <a class="next"></a>
+      </div>
+    </div>
+  </body>
+</html>
