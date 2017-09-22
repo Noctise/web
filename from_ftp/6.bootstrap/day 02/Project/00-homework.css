@@ -1,0 +1,122 @@
+*{
+  box-sizing:border-box;
+}
+ul,p{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+body{
+  font:14px "microsoft yahei";
+  margin:0;
+  background:#eee;
+}
+.lf{float:left;}
+.rt{float:right;}
+.clear:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+/**/
+#top{
+  background:#034D50;
+  padding:10px;
+  border-radius:5px;
+}
+#top li{
+  float:left;
+  font-size:1.2em;
+  color:#fff;
+  margin-right:10px;
+}
+#main{
+  margin:15px 0;
+}
+#lf-list{
+  /*宽度，背景颜色，倒角，内边距*/
+  width:25%;
+  background:#57085b;
+  border-radius:5px;
+  padding:10px;
+  float:left;
+}
+#lf-list li{
+  /*背景颜色，文本颜色，内边距，下外边距*/
+  background:#eee;
+  color:#333;
+  padding:10px;
+  margin-bottom:5px;
+}
+/*中间：图片 + 文本*/
+#main .content{
+  /*背景色，宽度，左右外边距，倒角，内边距*/
+  background: #fEB951;
+  width:48%;
+  margin:0 1%;
+  border-radius:5px;
+  padding:10px;
+  float:left;
+
+}
+#main .content img{
+  /*宽度，左浮动，左右外边距*/
+  width:23%;
+  float:left;
+  margin:0 1%;
+}
+#main .content p{
+  margin-bottom:10px;
+}
+#main p.rt-text{
+  /*背景，倒角，宽度，内边距，字体颜色*/
+  background:#5A5708;
+  border-radius:5px;
+  width:25%;
+  padding:10px;
+  color:#fff;
+  float:left;
+}
+#footer{
+  margin-top:15px;
+  padding-top:10px;
+  text-align:center;
+  border-top:2px solid #034D50;
+}
+/*响应式*/
+/*1、手机屏幕中 :(w <= 767px)*/
+@media screen and (max-width:767px){
+   #lf-list{
+     width:100%;
+   }
+   #main .content{
+     width:100%;
+     margin:10px 0;
+   }
+   #main .content img{
+     width:48%;
+     margin:10px 1%;
+   }
+   #main .rt-text{
+     display:none;
+   }
+}
+/*2、PAD屏幕中*/
+@media screen and (min-width:768px) and (max-width:991px){
+  #lf-list{
+    width:30%;
+  }
+  #main .content{
+    width:69%;
+    margin:0;
+    margin-left:1%;
+  }
+  #main p.rt-text{
+    display:none;
+  }
+}
+
+
+
+
+

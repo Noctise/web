@@ -1,0 +1,203 @@
+1、响应式网页
+	1、视口 - Viewport
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	2、文字尺寸 - em,rem
+	3、容器尺寸 - %,auto
+	4、图片尺寸 - %,auto
+		width:50%; 无限放大
+		max-width:50%; 最大不能超过图像原始大小
+	5、页面元素使用流式布局
+		1、float
+		2、display:inline-block;
+		3、display:flex;
+
+		一定要配合宽度一起调整布局
+	6、媒体查询 - Media Query
+		语法：
+			@media MEDIA-TYPE and (MEDIA-FEATURE) and .{
+				选择器{
+					
+				}
+
+				...
+			}
+**************************
+Bootstrap 框架
+1、Twitter Bootstrap
+	官网：http://getbootstrap.com
+	中文：http://www.bootcss.com
+	文档：http://v3.bootcss.com
+
+	Bootstrap 分为5部分：
+	1、起步 - Startup
+	2、全局CSS - Global CSS
+	3、组件 - Component
+	4、JS插件 - JS Plugin
+	5、定制 - Customize
+
+	API : Application Programming Interface
+2、Bootstrap - 起步
+	1、为 html 标记 指定 lang 属性
+		lang : language , 语言
+		指定当前文档的基础语言
+		作用：
+			1、为浏览器自动翻译功能指定翻译基础
+			2、为读评软件指定基础发音
+		<html lang="zh-cn">
+		</html>
+	2、<meta name="viewport"> 必须
+	3、指定 跨IE浏览器兼容性
+		<meta http-equiv="x-ua-compatible" content="IE=edge">
+		x-ua-compatible : Cross UserAgent Compatible
+		作用：指定使用 哪个IE的内核进行页面的渲染
+		IE=6 : 指定使用IE6内核渲染页面
+		IE=7 : 指定使用IE7/6内核渲染页面
+		IE=8 : 指定使用IE8/7/6内核渲染页面
+		...
+		IE=edge : 指定使用当前浏览器中支持的最高版本的内核渲染页面
+	4、引入 bootstrap.css
+	5、引入两个 兼容性的 JS 文件
+		1、html5shiv.min.js
+			第三方JS，自调函数，用于让老IE(IE8以及以下)支持新HTML5标记
+		2、respond.min.js
+			第三方JS，自调函数，用于让老IE(IE8以及以下)支持CSS3媒体查询技术
+
+			<!--[if lt IE 9]>
+				<script src="url/**.js"></script>
+				<script src="url/**.js"></script>
+			<![endif]-->
+	6、引入2个JS插件文件
+		作用：制定元素的行为(动作)
+		1、jQuery.1.11.3.js 引入到页面(先)
+		2、bootstrap.js 引入到页面(后)
+		建议：尽量将以上两个文件放在页面最底端</body>之上进行引入
+	7、引入 bootlint.js 文件
+		作用：用于检查页面结构是否符合 bootstrap 的规范
+			1、引入 bootlint.js
+			2、编写检查代码
+				<script>
+					bootlint.showLintReportForCurrentDocument([]);
+				</script>
+3、Bootstrap 第二部分 - 全局CSS样式
+	Bootstrap.css 分为两部分
+	1、CSS Reset
+		*{box-sizing:border-box;}
+		html{font-size:10px;}
+		... ...
+	2、上千个 class
+		.btn .btn-default .btn-danger
+4、Bootstrap 默认将屏幕分成四大类别
+	1、大型屏幕(lg) : w >= 1200px
+	2、中型屏幕(md) : 1199px => w >= 992px
+	3、小型屏幕(sm) : 991px >= w >= 768px
+	4、超小型屏幕(xs) : 767px >= w
+3、Bootstrap 提供的两种容器
+	1、定宽容器
+		在不同大小的设备上提供不同的width固定值
+		类: .container
+			lg : width:1170px
+			md : width:970px
+			sm : width:750px;
+			xs : width:100%
+	2、变宽容器
+		在任何设备中，宽度都是 100%
+		类：.container-fluid
+4、全局Class - 按钮
+	所有的按钮都依赖于 .btn
+	与 按钮相关的 类
+	.btn-default : 白底深字
+	带颜色按钮：
+		.btn-danger : 红色按钮
+		.btn-success : 绿色按钮
+		.btn-warning : 黄色按钮
+		.btn-info : 蓝色按钮(浅)
+		.btn-primary : 蓝色按钮（深）
+		danger/success/warning/info/primary : 表示颜色
+	指定按钮尺寸:
+		btn-lg : 大型按钮
+		btn-sm : 小型按钮
+		btn-xs : 超小型按钮
+	块级按钮：
+		btn-block
+
+	页面中允许做按钮的元素：
+	<a class="btn btn-default"></a>
+	<button type="button" class="btn btn-info"></button>
+	<input type="submit" class="btn btn-default">
+5、全局Class - 列表
+	.list-unstyled 不带标识的列表(ol,ul)
+	.list-inline 行内列表(ol,ul)
+	.dl-horizontal 定义列表水平排列(dl)
+6、全局Class - 图片
+	.img-rounded ?
+	.img-circle ?
+	.img-thumbnail ?
+	.img-responsive ?
+7、全局Class - 表格 table
+	基本表格：.table
+	带边框：.table-bordered
+	隔行表色（条纹）：.table-striped
+	鼠标悬停：.table-hover
+	响应式表格: .table-responsive
+8、全局Class - 文本
+	1、文本颜色相关
+		.text-danger/success/warning/info/primary
+		.bg-danger/success/warning/info/primary
+	2、文本大小写
+		.text-uppercase : 全大写
+		.text-lowercase : 全小写
+		.text-capitalize : 每个单词首字符大写
+	3、文本对齐方式
+		.text-left : 文本左对齐
+		.text-right: 文本右对齐
+		.text-center:文本居中对齐
+		.text-justify:文本两端对齐
+9、全局Class - 栅格布局系统(重中之重)
+	1、网页中实现布局的技术(标记)
+		1、div + css(float)
+			好处：效率高
+			不足：灵活，不易控制
+		2、table 布局 
+			好处：简单，容易控制
+			不足：效率低
+		3、栅格布局系统
+			好处：效率高，容易控制，实现响应式
+			不足：none;
+			本质就是由div组成的table样式的响应式结构
+	2、使用方法
+		1、栅格布局系统的最外层，必须是bootstrap提供的两个容器类之一
+			.container 或 .container-fluid
+		2、允许在容器的任意位置放置若干"行"
+			class ：.row
+			ex:
+				<div class="container">
+					<div class="row"></div>
+					<h3></h3>
+					<div class="row"></div>
+				</div>
+			每行中，最多会被等分为12列
+				12列：每列宽 ：8.33%
+		3、行(div.row)中只能放置列,但需要指定每列所占的宽度(即当前列要占据几列的宽1,2,3,...,12)
+			列 ：
+				占一列的宽：8.33%
+				占两列的宽：16.66%
+		4、列 根据适用的屏幕分成4种类型
+			类：.col-*-*
+				.col-xs-*:在超小屏幕下，所占的列宽数
+					.col-xs-1:超小屏幕下，占一列宽(8.33%)
+					.col-xs-2:超小屏幕下，占两列宽(16.66%)
+					.col-xs-12:超小屏幕下，占12列宽(100%)
+				.col-sm-*:在小屏幕下，所占的列宽数
+					.col-sm-1:
+					.col-sm-6:
+				.col-md-*:在中等屏幕下，所占的列宽数
+				.col-lg-*:在大屏幕下，所占的列宽数
+		5、指定列偏移数量
+			每个列都可以指定 向右 偏移几列的位置
+			.col-xs-offset-n:在xs屏幕下，当前列向右偏移 n 列的位置
+			.col-sm-offset-n:在sm屏幕下，当前列向右偏移 n 列的位置
+			.col-md-offset-n:
+			.col-lg-offset-n:
+
+
+

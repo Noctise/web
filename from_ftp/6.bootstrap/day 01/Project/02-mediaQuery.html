@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,inital-scale=1,user-scalable=no"/>
+  <title></title>
+  <style>
+    #container{
+      height:100px;
+      width:100%;
+    }
+    /*1、在宽度 小于 768px 屏幕中，背景设置为 红*/
+    @media screen and (max-width:767px){
+      #container{
+        background:red;
+      }
+    }
+    /*2、在宽度 大于等于 768px 并且 小于等于 991px时，背景设置为 蓝色*/
+    @media screen and (min-width:768px) and (max-width:991px){
+      #container{
+        background:blue;
+      }
+    }
+    /*3、在宽度 大于等于 992px 时，背景颜色设置为 黄色*/
+    @media screen and (min-width:992px){
+      #container{
+        background:yellow;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="container"></div>
+</body>
+</html>

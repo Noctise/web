@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--1、指定语言基础-->
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <!--2、指定视口信息-viewport-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+  <!--3、指定 跨IE 浏览器的兼容性-->
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <title></title>
+  <!--4、引入 bootstrap.css 主css文件-->
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <!--5、引入两个 兼容性 js文件-->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+
+
+  <!--自定义 样式表-->
+  <style>
+    #uList li:hover{
+      background:#e4393c;
+      cursor:pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>全局Class - 列表</h1>
+    <h3>HTML 默认列表</h3>
+    <ul>
+      <li>三国演义</li>
+      <li>西游记</li>
+      <li>水浒传</li>
+      <li>红楼梦</li>
+    </ul>
+    <ol>
+      <li>貂蝉</li>
+      <li>铁扇公主</li>
+      <li>潘金莲</li>
+      <li>刘姥姥</li>
+    </ol>
+
+    <h3>不带标识的列表</h3>
+    <ul class="list-unstyled">
+      <li>三国演义</li>
+      <li>西游记</li>
+      <li>水浒传</li>
+      <li>红楼梦</li>
+    </ul>
+    <ol class="list-unstyled">
+      <li>貂蝉</li>
+      <li>铁扇公主</li>
+      <li>潘金莲</li>
+      <li>刘姥姥</li>
+    </ol>
+
+    <h3>行内列表</h3>
+    <ul id="uList" class="list-inline">
+      <li>三国演义</li>
+      <li>西游记</li>
+      <li>水浒传</li>
+      <li>红楼梦</li>
+    </ul>
+    <ol class="list-inline">
+      <li>貂蝉</li>
+      <li>铁扇公主</li>
+      <li>潘金莲</li>
+      <li>刘姥姥</li>
+    </ol>
+    <h3>定义列表</h3>
+    <dl>
+      <dt>西游记</dt>
+      <dd>师徒四人取经的故事</dd>
+    </dl>
+    <dl class="dl-horizontal">
+      <dt>水浒传</dt>
+      <dd>105个男人和3个女人的故事!</dd>
+      <dt>三国演义</dt>
+      <dd>三个国家 演电视!!!</dd>
+    </dl>
+  </div>
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!--6、引入 两个JS插件文件-->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--7、引入检查文件-->
+<script src="js/bootlint.js"></script>
+<script>
+  bootlint.showLintReportForCurrentDocument([]);
+</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--1、指定语言基础-->
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <!--2、指定视口信息-viewport-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+  <!--3、指定 跨IE 浏览器的兼容性-->
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <title>栅格布局系统</title>
+  <!--4、引入 bootstrap.css 主css文件-->
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <!--5、引入两个 兼容性 js文件-->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+
+  <style>
+
+    div{
+      border:1px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <!--1、容器：栅格布局系统的基本要求-->
+  <div class="container">
+    <h3>一行中，只放置一个列</h3>
+    <!--1、创建第一行-->
+    <div class="row">
+      <!--1、创建一列，占一列的宽-->
+      <div class="col-md-1">MD-1</div>
+    </div>
+    <!--2、创建第二行-->
+    <div class="row">
+      <!--1、创建一列，占两列的宽-->
+      <div class="col-md-2">MD-2</div>
+    </div>
+    <!--3、创建第三行-->
+    <div class="row">
+      <div class="col-md-6">MD-6</div>
+    </div>
+    <h3>一行中，放置多个列</h3>
+    <div class="row">
+      <div class="col-md-1">MD-1</div>
+      <div class="col-md-1">MD-1</div>
+      <div class="col-md-1">MD-1</div>
+      <div class="col-md-1">MD-1</div>
+      <div class="col-md-1">MD-1</div>
+      <div class="col-md-1">MD-1</div>
+      <div class="col-md-1">MD-1</div>
+      <div class="col-md-1">MD-1</div>
+      <div class="col-md-1">MD-1</div>
+      <div class="col-md-1">MD-1</div>
+      <div class="col-md-1">MD-1</div>
+      <div class="col-md-1">MD-1</div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">MD-4</div>
+      <div class="col-md-4">MD-4</div>
+      <div class="col-md-4">MD-4</div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">MD-3</div>
+      <div class="col-md-6">MD-6</div>
+      <div class="col-md-3">MD-3</div>
+    </div>
+    <h3>偏移列</h3>
+    <div class="row">
+      <div class="col-md-1 col-md-offset-1">MD-1</div>
+    </div>
+    <div class="row">
+      <div class="col-md-1 col-md-offset-11">MD-1</div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">MD-3</div>
+      <div class="col-md-3 col-md-offset-6">MD-3</div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!--6、引入 两个JS插件文件-->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--7、引入检查文件-->
+<script src="js/bootlint.js"></script>
+<script>
+  bootlint.showLintReportForCurrentDocument([]);
+</script>
+</body>
+</html>

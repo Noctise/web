@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--1、指定语言基础-->
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <!--2、指定视口信息-viewport-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+  <!--3、指定 跨IE 浏览器的兼容性-->
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <title></title>
+  <!--4、引入 bootstrap.css 主css文件-->
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <!--5、引入两个 兼容性 js文件-->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="container">
+    <h3>1、基本表单</h3>
+    <form>
+      <!--1、控件小组1：用户名-->
+      <div class="form-group">
+        <label for="txtName1" class="control-label">用户名称</label>
+        <input type="text" id="txtName1" class="form-control" placeholder="Please input your username....">
+        <span class="help-block">用户名称6-12位，由字母，数字，下划线组成</span>
+      </div>
+      <!--2、控件小组2:密码-->
+      <div class="form-group">
+        <label for="txtPwd1">用户密码：</label>
+        <input type="password" id="txtPwd1" placeholder="Please input your password..." class="form-control"/>
+        <span class="help-block">密码6-18位组成</span>
+      </div>
+      <!--3、复选框 小组-->
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"/>记住密码
+        </label>
+      </div>
+      <!--4、按钮-->
+      <div class="form-group">
+        <input type="submit" class="btn btn-success btn-block" value="登录"/>
+      </div>
+    </form>
+    <h3>2、内联表单</h3>
+    <form class="form-inline">
+      <div class="form-group">
+        <label for="" class="control-label sr-only">用户名称：</label>
+        <input type="text" class="form-control"/>
+      </div>
+      <div class="form-group">
+        <label for="" class="sr-only">用户密码：</label>
+        <input type="password" class="form-control">
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"/>记住密码
+        </label>
+      </div>
+    </form>
+    <h3>3、水平排列的表单</h3>
+
+    <form class="form-horizontal">
+      <!--1、第一行：用户名称(div.row 或 div.form-group)-->
+      <div class="form-group">
+        <!--1、列1：label-->
+        <label class="col-md-2 text-right control-label">
+          用户名称：
+        </label>
+        <!--列2：控件-->
+        <div class="col-md-5">
+          <input type="text" class="form-control"/>
+        </div>
+        <!--列3：提示文本-->
+        <span class="col-md-3 help-block">用户名称不能为空</span>
+      </div>
+      <!--2、第二行：用户密码-->
+      <div class="form-group">
+        <div class="col-md-2 text-right">
+          <label class="control-label">用户密码：</label>
+        </div>
+        <div class="col-md-5">
+          <input type="password" class="form-control"/>
+        </div>
+        <div class="col-md-3">
+          <span class="help-block">密码6-18位，不能重复</span>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!--6、引入 两个JS插件文件-->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--7、引入检查文件-->
+<script src="js/bootlint.js"></script>
+<script>
+  bootlint.showLintReportForCurrentDocument([]);
+</script>
+</body>
+</html>

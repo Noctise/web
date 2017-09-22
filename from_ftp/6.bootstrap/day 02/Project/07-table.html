@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<!--1、指定语言基础-->
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <!--2、指定视口信息-viewport-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+  <!--3、指定 跨IE 浏览器的兼容性-->
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <title></title>
+  <!--4、引入 bootstrap.css 主css文件-->
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <!--5、引入两个 兼容性 js文件-->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+  <div class="container">
+    <h1>表格样式</h1>
+    <h3>html默认表格效果</h3>
+    <table>
+      <caption>四大名著</caption>
+      <thead>
+        <tr>
+          <th>编号</th>
+          <th>书名</th>
+          <th>主角</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1001</td>
+          <td>水浒传</td>
+          <td>李师师</td>
+          <td>
+            <input type="button" class="btn btn-success" value="修改">
+          </td>
+        </tr>
+        <tr>
+          <td>1002</td>
+          <td>西游记</td>
+          <td>盘丝大仙</td>
+          <td>
+            <input type="button" class="btn btn-success" value="修改">
+          </td>
+        </tr>
+        <tr>
+          <td>1003</td>
+          <td>三国演义</td>
+          <td>貂蝉</td>
+          <td>
+            <input type="button" class="btn btn-success" value="修改">
+          </td>
+        </tr>
+        <tr>
+          <td>1004</td>
+          <td>红楼梦</td>
+          <td>刘姥姥</td>
+          <td>
+            <input type="button" class="btn btn-success" value="修改">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Boot基本表格</h3>
+    <table class="table">
+      <caption>四大名著</caption>
+      <thead>
+      <tr>
+        <th>编号</th>
+        <th>书名</th>
+        <th>主角</th>
+        <th>操作</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>1001</td>
+        <td>水浒传</td>
+        <td>李师师</td>
+        <td>
+          <input type="button" class="btn btn-success" value="修改">
+        </td>
+      </tr>
+      <tr>
+        <td>1002</td>
+        <td>西游记</td>
+        <td>盘丝大仙</td>
+        <td>
+          <input type="button" class="btn btn-success" value="修改">
+        </td>
+      </tr>
+      <tr>
+        <td>1003</td>
+        <td>三国演义</td>
+        <td>貂蝉</td>
+        <td>
+          <input type="button" class="btn btn-success" value="修改">
+        </td>
+      </tr>
+      <tr>
+        <td>1004</td>
+        <td>红楼梦</td>
+        <td>刘姥姥</td>
+        <td>
+          <input type="button" class="btn btn-success" value="修改">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h3>带边框表格</h3>
+    <table class="table table-bordered">
+      <caption>四大名著</caption>
+      <thead>
+      <tr>
+        <th>编号</th>
+        <th>书名</th>
+        <th>主角</th>
+        <th>操作</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>1001</td>
+        <td>水浒传</td>
+        <td>李师师</td>
+        <td>
+          <input type="button" class="btn btn-success" value="修改">
+        </td>
+      </tr>
+      <tr>
+        <td>1002</td>
+        <td>西游记</td>
+        <td>盘丝大仙</td>
+        <td>
+          <input type="button" class="btn btn-success" value="修改">
+        </td>
+      </tr>
+      <tr>
+        <td>1003</td>
+        <td>三国演义</td>
+        <td>貂蝉</td>
+        <td>
+          <input type="button" class="btn btn-success" value="修改">
+        </td>
+      </tr>
+      <tr>
+        <td>1004</td>
+        <td>红楼梦</td>
+        <td>刘姥姥</td>
+        <td>
+          <input type="button" class="btn btn-success" value="修改">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h3>带条纹的表格</h3>
+    <table class="table table-striped">
+      <caption>四大名著</caption>
+      <thead>
+      <tr>
+        <th>编号</th>
+        <th>书名</th>
+        <th>主角</th>
+        <th>操作</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>1001</td>
+        <td>水浒传</td>
+        <td>李师师</td>
+        <td>
+          <input type="button" class="btn btn-success" value="修改">
+        </td>
+      </tr>
+      <tr>
+        <td>1002</td>
+        <td>西游记</td>
+        <td>盘丝大仙</td>
+        <td>
+          <input type="button" class="btn btn-success" value="修改">
+        </td>
+      </tr>
+      <tr>
+        <td>1003</td>
+        <td>三国演义</td>
+        <td>貂蝉</td>
+        <td>
+          <input type="button" class="btn btn-success" value="修改">
+        </td>
+      </tr>
+      <tr>
+        <td>1004</td>
+        <td>红楼梦</td>
+        <td>刘姥姥</td>
+        <td>
+          <input type="button" class="btn btn-success" value="修改">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h3>带鼠标悬停的表格</h3>
+    <table class="table table-hover">
+      <caption>四大名著</caption>
+      <thead>
+      <tr>
+        <th>编号</th>
+        <th>书名</th>
+        <th>主角</th>
+        <th>操作</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>1001</td>
+        <td>水浒传</td>
+        <td>李师师</td>
+        <td>
+          <input type="button" class="btn btn-success" value="修改">
+        </td>
+      </tr>
+      <tr>
+        <td>1002</td>
+        <td>西游记</td>
+        <td>盘丝大仙</td>
+        <td>
+          <input type="button" class="btn btn-success" value="修改">
+        </td>
+      </tr>
+      <tr>
+        <td>1003</td>
+        <td>三国演义</td>
+        <td>貂蝉</td>
+        <td>
+          <input type="button" class="btn btn-success" value="修改">
+        </td>
+      </tr>
+      <tr>
+        <td>1004</td>
+        <td>红楼梦</td>
+        <td>刘姥姥</td>
+        <td>
+          <input type="button" class="btn btn-success" value="修改">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    <h3>响应式表格</h3>
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <caption>四大名著</caption>
+        <thead>
+        <tr>
+          <th>编号</th>
+          <th>书名</th>
+          <th>主角</th>
+          <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>1001</td>
+          <td>水浒传</td>
+          <td>李师师</td>
+          <td>
+            <input type="button" class="btn btn-success" value="修改">
+          </td>
+        </tr>
+        <tr>
+          <td>1002</td>
+          <td>西游记</td>
+          <td>盘丝大仙</td>
+          <td>
+            <input type="button" class="btn btn-success" value="修改">
+          </td>
+        </tr>
+        <tr>
+          <td>1003</td>
+          <td>三国演义</td>
+          <td>貂蝉</td>
+          <td>
+            <input type="button" class="btn btn-success" value="修改">
+          </td>
+        </tr>
+        <tr>
+          <td>1004</td>
+          <td>红楼梦</td>
+          <td>刘姥姥</td>
+          <td>
+            <input type="button" class="btn btn-success" value="修改">
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!--6、引入 两个JS插件文件-->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--7、引入检查文件-->
+<script src="js/bootlint.js"></script>
+<script>
+  bootlint.showLintReportForCurrentDocument([]);
+</script>
+</body>
+</html>

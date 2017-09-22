@@ -127,6 +127,468 @@
   display:flex;
   align-items:center;
 }
+#store-select:hover h3{
+  border-bottom:1px solid #fff;
+  /*相对定位，堆叠顺序：以便能压在 弹出菜单上*/
+  position:relative;
+  z-index:50;
+}
+/*弹出菜单*/
+#store-select{
+  /*相对定位 ：配合#address做绝对定位*/
+  position: relative;
+}
+#address{
+  /*宽度，高度，内边距，边框，背景，定位*/
+  width:400px;
+  min-height:200px ;
+  padding: 10px;
+  border:1px solid #ddd;
+  background:#fff;
+  position:absolute;
+  top:26px;
+  left:-30px;
+  z-index:10;
+  /*默认隐藏*/
+  display:none;
+}
+#address ul.tab{
+  /*高度，下边框，弹性布局容器*/
+  height:30px;
+  border-bottom:2px solid #EDD28B;
+  display:flex;
+}
+#address ul.tab li{
+  /*左右上边框，行高，右外边距*/
+  border:1px solid #ddd;
+  border-bottom:none;
+  line-height:30px;
+  margin-right:5px;
+  padding:0 10px;
+}
+#address ul.tab li.active{
+  /*左右上边框，背景颜色，高度*/
+  border:2px solid #EDD28B;
+  border-bottom:none;
+  background:#fff;
+  height:30px;
+}
+#address ul.content{
+  /*弹性布局的容器,内边距*/
+  display:flex;
+  padding:10px;
+  flex-wrap:wrap;
+}
+#address ul.content li{
+  width:25%;
+  text-align:center;
+  line-height:2;
+}
+/*当鼠标移入到 #store-select 上时，显示 #address*/
+#store-select:hover #address{
+  display:block;
+}
+#summary li.line{
+  border-bottom:1px dotted #ddd;
+  width:600px;
+}
+/*选择颜色*/
+#choose-color a{
+  border:1px solid #ddd;
+  /*行内块，高度，右外边距*/
+  display:inline-block;
+  height:25px;
+  margin-right:5px;
+  /*内边距*/
+  padding:2px 6px 2px 2px;
+}
+#choose-color img{
+  vertical-align:middle;
+}
+#choose-color a.active{
+  /*相对定位：为了配合 b 标记的绝对定位*/
+  position:relative;
+  border:2px solid #e4393c;
+  padding:1px 5px 1px 1px;
+}
+#choose-color a.active b{
+  /*绝对定位，宽度，高度，背景*/
+  position:absolute;
+  width:15px;
+  height:15px;
+  bottom:0px;
+  right:0px;
+  background:url(My/images/background-list.png) no-repeat -38px -40px;
+}
+/*3、左侧浮动栏*/
+#product-intro{
+  margin-bottom:10px;
+}
+#lf-product p{
+  /*高度，行高，边框，背景，文字大小*/
+  height:30px;
+  line-height:30px;
+  border:1px solid #ddd;
+  background:#f7f7f7;
+  font-size:14px;
+  padding-left:10px;
+}
+#related-sorts ul{
+  /*左右下边框，左右内边距，弹性布局容器*/
+  border:1px solid #ddd;
+  border-top:none;
+  padding:0 10px;
+  display:flex;
+  flex-wrap:wrap;
+}
+#related-sorts li{
+  width:50%;
+  line-height:2;
+}
+/*最终购买*/
+#view-buy{
+  margin:10px 0;
+}
+#view-buy>div{
+  border:1px solid #ddd;
+  border-top:none;
+  text-align:center;
+  padding:0 5px;
+}
+#view-buy dl{
+  padding:5px 0;
+  border-bottom:1px dotted #ddd;
+}
+#view-buy dd{
+  line-height:2;
+}
+#view-buy dd:last-child{
+  color:#e4393c;
+  font-weight:bold;
+}
+#ads li{
+  margin-bottom:10px;
+}
+/*右侧：详细信息*/
+/*优惠套装*/
 
+#fav-suit>div{
+  padding:20px 0;
+  border:1px solid #ddd;
+  border-top:none;
+  /*弹性布局*/
+  display:flex;
+}
+#fav-suit div.master,#fav-suit li{
+  padding-left:10px;
+  width:155px;
+}
+#fav-suit span.add{
+  /*右浮动，宽度，高度，背景，位置*/
+  float:right;
+  width:23px;
+  height: 23px;
+  background:url(My/images/background-list.png) no-repeat -38px -67px ;
+  margin-top:38px;
+}
+#fav-suit>div p{
+  padding:0 10px;
+}
+#fav-suit>div ul{
+  width:660px;
+  display:flex;
+}
+/*页签们的公共样式*/
+.mt{
+  /*高度，行高，边框，左内边距*/
+  height:30px;
+  line-height:30px;
+  border:1px solid #ddd;
+  border-top:2px solid #999;
+  padding-left:10px;
+  background:#f7f7f7;
+}
+ul.mt{
+  /*弹性布局*/
+  display:flex;
+  /*取消左内边距*/
+  padding-left:0;
+}
+ul.mt li{
+  /*左右内边距*/
+  padding:0 15px;
+  margin-left:-1px;
+}
+ul.mt li.active{
+  /*左右上边框，白色背景，上外边距，高度*/
+  border:1px solid #ddd;
+  border-bottom:none;
+  border-top:2px solid #e4393c;
+  background:#fff;
+  margin-top:-6px;
+  height:35px;
+  line-height:35px;
+}
+/*商品介绍，规格参数等*/
+#product-details{
+  margin-top:10px;
+}
 
+/*商品介绍-具体内容*/
+#product-info ul{
+  /*边框，内边距*/
+  border:1px solid #ddd;
+  border-top:none;
+  padding:10px;
+  /*弹性布局，允许换行*/
+  display:flex;
+  flex-wrap:wrap;
+}
+#product-info li{
+  width:33%;
+  line-height:2;
+}
+#product-info div.detail-content{
+  /*宽度，水平居中，上内边距*/
+  width:750px;
+  margin:0 auto;
+  padding-top:10px;
+}
+#product-info p{
+  padding-bottom:10px;
+  margin-bottom:10px;
+  border-bottom:1px dashed #ddd;
+}
+#product-info div.detail-content div{
+  margin-bottom:10px;
+}
+#product-info span{
+  font-size:18px;
+  color:#e4393c;
+}
+
+/*商品评价*/
+#comment>div{
+  border:1px solid #ddd;
+  border-top:none;
+  padding-top:20px;
+  display:flex;
+}
+#comment div.rate{
+  width:200px;
+  text-align:center;
+  padding-bottom:20px;
+}
+#comment div.rate b{
+  font-size:46px;
+  color:#e4393c;
+}
+#comment div.rate span{
+  font-size:24px;
+  color:#e4393c;
+}
+#comment div.percent{
+  width:200px;
+  padding-top:8px;
+}
+#comment div.percent dd{
+  width:100px;
+  height:10px;
+  background:#efefef;
+}
+#comment div.percent p{
+  height:10px;
+  background:linear-gradient(to bottom,#EA0000,#A80000);
+}
+#comment div.percent dl{
+  display:flex;
+  align-items:center;
+  margin:5px 0;
+}
+#comment div.percent dt{
+  width:72px;
+}
+/*4、全部评价等*/
+#comment-list{
+  margin-top:10px;
+}
+#comment-content>div.comment-item{
+  /*弹性布局*/
+  display:flex;
+  margin-top:10px;
+}
+#comment-content>div.comment-item>ul{
+  width:120px;
+  text-align:center;
+  line-height:2;
+}
+div.comment-item>ul img{
+  padding:6px;
+  background:url(My/images/background-list.png) no-repeat 0 -102px;
+}
+div.comment-details{
+  /*占据剩余所有空间，边框，背景，min-height，相对定位，padding*/
+  flex-grow:1;
+  border:1px solid #d0e4c2;
+  background:#FCFFFA;
+  min-height:100px;
+  position:relative;
+  padding:10px;
+}
+div.comment-details>.corner{
+  /*宽度，高度，绝对定位，背景*/
+  width:13px;
+  height:24px;
+  background:url(My/images/corner.jpg);
+  position:absolute;
+  top:15px;
+  left:-13px;
+}
+.comment-details div.topic{
+  border-bottom:1px solid #d0e4c2;
+  padding-bottom:5px;
+}
+.comment-details li{
+  display:flex;
+  margin:10px 0;
+}
+.comment-details li>p{
+  width:60px;
+  text-align:right;
+}
+.comment-details li span{
+  padding:2px 6px;
+  background:#fdedd2;
+  color:#333;
+}
+.comment-details .btns{
+  text-align:right;
+}
+.comment-details button{
+  /*宽度，高度，背景，边框，倒角，颜色*/
+  width:60px;
+  height:28px;
+  background:#f8f8f8;
+  border:1px solid #d5d5d5;
+  border-radius:5px;
+  color:#333;
+  outline:none;
+}
+#pages{
+  width:870px;
+  margin-top:15px;
+  float:right;
+}
+#pages a{
+  color:#005aa0;
+}
+#pages p a{
+  /*边框，内边距，倒角，取消下划线*/
+  border:1px solid #ddd;
+  padding:3px 10px;
+  border-radius:5px;
+  text-decoration:none;
+}
+#pages p a:hover{
+  color:#fff;
+  background:#005aa0;
+}
+#pages p a.active{
+  /*取消边框，取消背景，字体颜色，加粗*/
+  border:none;
+  background:transparent;
+  color:#f60;
+  font-weight:bold;
+}
+/**********解决父元素高度*************/
+.clear:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+/**********************************/
+/*5、购买咨询*/
+#consult{
+  margin-top:10px;
+}
+#consult ul.mt input{
+  /*宽度，高度，边框，box-sizing，右外边距，位置微调*/
+  width:130px;
+  height:28px;
+  border:1px solid #ddd;
+  box-sizing:border-box;
+  margin-right:5px;
+  position:relative;
+  bottom:1px;
+}
+#consult ul.mt button{
+  width:53px;
+  height:28px;
+  border:1px solid #BED6AF;
+  background:#F4FBEF;
+  border-radius:3px;
+  position:relative;
+  bottom:1px;
+}
+#consult a.send-consult{
+  /*行内块,宽度，高度，背景，倒角,文本：水平居中，行高，颜色，大小*/
+  display:inline-block;
+  width:68px;
+  height:28px;
+  background:#e4393c;
+  border-radius:3px;
+  text-align:center;
+  line-height:28px;
+  color:#fff;
+  font-size:14px;
+}
+#consult p.tips{
+  /*左右下边框，内边距，行高*/
+  border:1px solid #ddd;
+  border-top:none;
+  padding:10px;
+  line-height:1.5;
+}
+#consult-related{
+  /*背景颜色，内边距*/
+  background:#f4f9ff;
+  padding:10px 15px;
+}
+/*4、咨询结果*/
+#consult-result ul{
+  display:flex;
+  padding:5px 0;
+  font-family:simsun;
+}
+#consult-result div{
+  padding:5px 0;
+  border-bottom:1px dotted #ddd;
+}
+#consult-result ul:first-child{
+  color:#9c9a9c;
+}
+#consult-result ul:last-child{
+  color:#f60;
+}
+#consult-result ul:first-child li:nth-child(2){
+  margin-right:35px;
+}
+#consult-result ul:last-child li:last-child{
+  /*占据剩余的所有空间，右对齐，颜色*/
+  flex-grow:1;
+  text-align:right;
+  color:#9c9a9c;
+}
+#consult-message a.offline{
+  /*行内块，宽度，高度，box-sizing，左内边距，文字：加粗，颜色，行高*/
+  display:inline-block;
+  width:86px;
+  height:24px;
+  box-sizing:border-box;
+  padding-left:31px;
+  font-weight:bold;
+  color:#ccc;
+  line-height:24px;
+  background:url(My/images/background-list.png) no-repeat -71px -105px;
+}
 

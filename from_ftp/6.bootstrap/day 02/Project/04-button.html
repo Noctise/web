@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--1、指定语言基础-->
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <!--2、指定视口信息-viewport-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+  <!--3、指定 跨IE 浏览器的兼容性-->
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <title></title>
+  <!--4、引入 bootstrap.css 主css文件-->
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <!--5、引入两个 兼容性 js文件-->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="container">
+    <h1>Bootstrap 按钮</h1>
+    <h3>HTML默认按钮</h3>
+    <button type="button">HTML默认按钮</button>
+    <h3>Bootstrap中的按钮</h3>
+    <button type="button" class="btn btn-default">Boot中默认按钮</button>
+    <h3>带颜色的按钮</h3>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+
+    <h3>按钮尺寸</h3>
+    <button type="button" class="btn btn-danger btn-lg">Larger</button>
+    <button type="button" class="btn btn-success">Middle</button>
+    <button type="button" class="btn btn-danger btn-sm">Small</button>
+    <button type="button" class="btn btn-warning btn-xs">Extra Small</button>
+
+    <h3>块级按钮</h3>
+    <button type="button" class="btn btn-success btn-block">块级按钮</button>
+
+    <input type="text" class="btn btn-success">
+  </div>
+
+
+
+
+
+
+
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!--6、引入 两个JS插件文件-->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--7、引入检查文件-->
+<script src="js/bootlint.js"></script>
+<script>
+  bootlint.showLintReportForCurrentDocument([]);
+</script>
+</body>
+</html>

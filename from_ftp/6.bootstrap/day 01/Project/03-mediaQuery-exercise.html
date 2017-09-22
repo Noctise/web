@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <!--视口-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+  <title></title>
+  <style>
+    #container div{
+      height:50px;
+      background:red;
+      margin:1%;
+    }
+    /*1、当屏幕尺寸 大于等于 992px 时*/
+    @media screen and (min-width:992px){
+      #container div{
+        width:14.66%;
+        float:left;
+      }
+    }
+    /*2、当屏幕尺寸在 768px ~ 991px 之间*/
+    @media screen and (min-width:768px) and (max-width:991px){
+      #container div{
+        width:48%;
+        float:left;
+      }
+    }
+    /*3、当屏幕尺寸 小于等于 767px 时*/
+    @media screen and (max-width:767px){
+      #container div{
+        width:98%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</body>
+</html>

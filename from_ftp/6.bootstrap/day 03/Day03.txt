@@ -1,0 +1,213 @@
+1、Bootstrap 屏幕
+	1、lg 
+	2、md
+	3、sm
+	4、xs
+2、容器
+	.container
+	.container-fluid
+3、按钮
+	.btn
+	.btn-default
+	.btn-danger/success/warning/info/primary
+	.btn-lg/sm/xs
+	.btn-block
+4、列表
+	.list-unstyled
+	.list-inline
+	.dl-horizontal
+5、图片
+	.img-rounded
+	.img-circle
+	.img-thumbnail
+	.img-responsive
+6、表格
+	.table
+	.table-bordered
+	.table-striped
+	.table-hover
+	.table-responsive (加在父元素上)
+7、文本
+	1、颜色
+		.text-danger/success/info/warning/primary
+		.bg-danger/success/info/warning/primary
+	2、大小写
+		.text-uppercase
+		.text-lowercase
+		.text-cpaitalize
+	3、对齐方式
+		.text-left
+		.text-center
+		.text-right
+		.text-justify
+8、栅格布局系统
+	本质是由 div+css 组成的 table 样式的响应式结构
+	1、最外层 - 必须是容器
+	2、在容器中 允许出现 若干 "行(.row)"
+	3、在行中允许出现若干列(.col-*-*)
+		每行中最多等分 12 列
+	4、列偏移
+		指定向右偏移几列
+		.col-*-offset-*:
+=============================================
+1、全局Class - 栅格布局系统(下)
+	1、栅格布局系统的嵌套
+		.container>.row>.col-*-*
+		在栅格布局系统中，.col-*-* 允许当做容器(.container/.container-fluid)去看待
+		.container>.row>.col-*-*>.row>.col-*-* ...
+	2、适用于不同屏幕的列的class(xs/sm/md/lg)，可以兼容更大的屏幕
+		col-xs-8 : 在 超小屏幕中，占8列
+
+		.col-xs-* : 适应于 xs/sm/md/lg
+		.col-sm-* : 适应于 sm/md/lg
+		.col-md-* : 适用于 md/lg
+		.col-lg-* : 是英语 lg
+		
+		大屏幕的列的class不能兼容小屏幕的，所以大屏幕的内容放在小屏幕中 占100%的宽
+	3、可以在一个div中，指定在不同屏幕下的宽度占比
+		即在一个列中指定不同屏幕下占的列宽
+		<div class="col-md-3 col-sm-6 col-xs-12">
+		在 md 中，占3列的宽(一行显示4列)
+		在 sm 中，占6列的宽(一行显示2列)
+		在 xs 中，占12列的宽(一行显示1列)
+	4、可以指定在特定屏幕下不显示某个列
+		.hidden-lg : 在 lg 屏幕下 隐藏
+		.hidden-md : 在 md 屏幕下 隐藏
+		.hidden-sm : 在 sm 屏幕下 隐藏
+		.hidden-xs : 在 xs 屏幕下 隐藏
+2、全局Class - 表单
+	1、表单分类
+		1、默认(基本)表单
+			纵向排列
+			1、表单组 
+				.form-group
+			2、标签
+				<label>
+			3、表单控件
+				<input class="form-control">
+				定义表单控件的基本样式(radio,checkbox除外)
+			4、提示文本(可选)
+				.help-block : 定义提示文本的样式
+		2、行内(内联)表单
+			横向排列
+			1、<form class="form-line">
+			2、<label class="control-label">
+		3、水平排列的表单(难点)
+			组与组之间，纵向排列
+			组内的内容，横向排列
+			水平表单 = 栅格布局系统 + 表单
+			栅格布局系统：
+				最外层：.container / .container-fluid
+				行：div.row
+				列：div.col-*-*
+			水平表单：
+				最外层：
+					.container / .container-fluid
+					或
+					<form class="form-horizontal">
+				行：
+					div.row
+					或
+					div.form-group
+				列：
+					div.col-*-*
+					或
+					<label class="col-*-*">
+					或
+					<span class="help-block col-*-*">
+					注意：表单控件，只能放在 <div class="col=*-*">中
+		
+		.sr-only : Screen Reader Only
+			仅针对屏幕读取器有效
+
+		属性：aria-label="xxxx"
+			<label for="" aria-label="用户名:">
+		作用：当label对应的控件获取焦点时，屏幕阅读器会读出响应的 aira-label的值
+
+		属性：aria-labelledby
+			<label for="" aria-labbeldby="某元素ID">
+		作用：当label对应的控件获取焦点时，屏幕阅读器会读出 某元素对应的文本
+
+***************Bootstrap 组件****************
+1、什么是组件
+	由多个元素 以及 class 组成的复杂的结构
+2、组件
+	1、下拉菜单
+		1、外层元素
+			必须是 .dropdown / .dropup / position:relative
+		2、内层（子元素）
+			1、触发器元素
+				由 button 或 a 来组成
+				1、class="dropdown-toggle" : 点击触发器元素后，触发器元素的效果是什么样
+				2、增加 data-toggle 属性 ：切换菜单的显示和隐藏(动作)
+					data-toggle="dropdown"
+
+				ex：<a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">显示/隐藏 菜单</a>
+			2、菜单
+				由 <ul> 或 <div> 组成
+				class="dropdown-menu"
+
+				li.divider : 分割线
+				li.disabled : 禁用菜单项
+				li.dropdown-header : 菜单项标题
+	2、导航
+		1、所有的导航都依赖于 .nav
+		2、导航分类
+			1、标签页式导航
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a href="#">北京市</a>
+					</li>
+					<li>
+						<a href="#">海淀区 </a>
+					</li>
+				</ul>
+			2、胶囊式导航
+				<ul class="nav nav-pills">
+					<li class="active">
+						<a href="#">北京市</a>
+					</li>
+					<li>
+						<a href="#">海淀区 </a>
+					</li>
+				</ul>
+			3、实现点击切换效果
+				<li>
+					<a href="#" data-toggle="tab"></a>
+				</li>
+	3、图标字体
+		在页面中，显示为图标，但本质是文字，允许设置颜色，大小，粗体，斜体 ... ...
+		Web程序中常用的图标字体：
+			1、Glyphicons 收费
+			2、FontAwesome 675个 免费
+		由于客户端不具备 bootstrap 中提供的图标字体，所以在使用时，必须先声明图标字体(声明字体的名称，以及提供字体文件让用户去下载)，然后再使用
+		再使用自定义图标字体时，需要进行以下设置：
+		1、在 ***.css中 ，声明图标字体
+		/*声明字体*/
+		@font-face{
+			font-family:"自定义字体名称";
+			src:url('字体文件路径');
+		}
+		2、在元素中
+			选择器{
+				font-family:"自定义字体名称";
+			}
+		注意：以上两个步骤仅在 使用自定义 图标字体时使用，在bootstrap 中，以上两个步骤已经被实现。
+
+		Bootstrap中的图标字体使用方式：
+			1、创建一个元素，必须保证为空
+				<span></span>
+			2、class="glyphicon glyphicon-*"
+		练习：
+			在页面中创建多个按钮，在每个按钮上显示一个图标
+			首页，配置，刷新，定位，购物车，放大镜，发邮件，照相机，播放相关(暂停，播放，上一曲，下一曲，快进，快退)
+	4、按钮组
+		1、基本按钮组
+			<div class="btn-group">
+				<button>
+				<button>
+			</div>
+		2、允许将多个按钮组(btn-group) 合并进一个 .btn-toolbar(按钮工具栏)中
+
+
+
