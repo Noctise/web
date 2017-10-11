@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  var a=10;
+  var b=a;
+  b++;
+  console.log(a);//10
+
+  var card=10;//全局
+  function pay(card){//局部
+    card-=3;
+    console.log("余额:"+card);
+  }
+  //将全局card的值传递(复制)给局部card
+  pay(card);//7
+  console.log(card);//10
+</script>
+</body>
+</html>

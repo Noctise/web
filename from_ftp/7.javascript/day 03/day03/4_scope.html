@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  var ysj="矿泉水";//全局
+  function room1(){
+    //函数作用域
+    var ysj="可乐";//如果没有var?
+    ysj="王老吉";
+    console.log(ysj);
+  }//练习9分钟
+  ysj="醋";
+  room1();//"可乐"=>"王老吉"
+  console.log(ysj);//"矿泉水"=>"醋"
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  //hoist
+
+//  console.log(a);//?
+//  let a=10;
+//  console.log(a);//?
+
+  //hoist
+
+  let fun=function(){console.log(1)}
+  fun();//1
+  fun=function(){console.log(2)}
+  fun();//2
+
+//  var a=10;//全局
+//  function fun(){//函数作用域
+//    //hoist
+//
+//    console.log(a);//undefined
+//    let a=100;//如果没有var?
+//    console.log(a);//100
+//  }
+//  fun();//undefined   100
+//  console.log(a);//10
+</script>
+</body>
+</html>

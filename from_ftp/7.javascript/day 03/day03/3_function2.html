@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  //定义一个函数，获得三个数中最大的一个返回
+  function max(a,b,c){
+    //定义变量max，初始化为a
+    var max=a;
+    //如果b>max,将b赋值给max
+    b>max&&(max=b);
+    //如果c>max,将c赋值给max
+    c>max&&(max=c);
+    return max;
+  }
+  console.log(
+    max(2,5,3),//5
+    max(12,23,33)//33
+  );
+
+  //定义一个函数，将三个变量的值按从小到大的顺序重新输出
+  function sort(a,b,c){
+    //如果a>b，就交换a,b中的值
+    a>b&&(a^=b,b^=a,a^=b);
+    //如果b>c，就交换b,c中的值
+    b>c&&(b^=c,c^=b,b^=c);
+    //如果a>b，就交换a,b中的值
+    a>b&&(a^=b,b^=a,a^=b);
+    console.log(a,b,c);
+  }
+  sort(5,4,3);//3 4 5
+  sort(12,23,3);//3 12 23
+</script>
+</body>
+</html>

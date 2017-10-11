@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  var score=prompt("输入成绩");
+//  if(score>=90){//如果score>=90
+//    document.write("A");//就输出A
+//  }else if(score>=80){//否则 如果score>=80
+//    document.write("B");//就输出B
+//  }else if(score>=60){//否则 如果score>=60
+//    document.write("C");//就输出C
+//  }else{//否则
+//    document.write("D");//就输出D
+//  }
+  document.write(
+    //如果score>=90就输出A
+    score>=90?"A":
+    //否则 如果score>=80就输出B
+    score>=80?"B":
+    //否则 如果score>=60就输出C
+    score>=60?"C":
+              "D"//否则就输出D
+  );
+</script>
+</body>
+</html>

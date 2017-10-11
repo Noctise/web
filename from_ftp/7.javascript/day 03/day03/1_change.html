@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  /*不声明第三个变量也能交换两变量中的值*/
+  var a= 3,b=5;
+  //方法一: 需要声明第三个变量
+//  var t=a;//a给t
+//  a=b;//b给a
+//  b=t;//t给b
+  //下课休息10分钟，练习6分钟
+  //方法二: 通过加减法
+  //a+=b; b=a-b; a-=b;
+  //方法三: 通过位运算
+  a^=b; b^=a; a^=b;
+  //问题: 只能交换number类型的数据
+  //方法四: 万能?
+  console.log(a,b);//5,3
+</script>
+</body>
+</html>

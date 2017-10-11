@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  //请用户输入商品单价price
+  var price=prompt("输入单价"),
+  //请用户输入商品数量count
+      count=prompt("输入数量"),
+  //请用户输入收款金额money
+      money=prompt("输入收款金额");
+  //计算总价total:price*count
+  var total=price*count;
+  //如果总价>=500，就打八折
+  if(total>=500){total*=0.8}
+  //total>=500&&(total*=0.8);
+  //计算找零change: money-total
+  var change=money-total;
+//  if(change>=0){//如果change>=0
+//    //输出: 总价:total,找零:change
+//    console.log(
+//      "总价:"+total+",找零:"+change
+//    );
+//  }else{//否则
+//    //输出: 总价:total,还差:-change
+//    console.log(
+//      "总价:"+total+",还差:"+(-change)
+//    );
+//  }
+  console.log("总价:"+total+
+    (
+      change>=0?//change>=0吗?
+        ",找零:"+change
+        ://否则
+        ",还差:"+(-change)
+    )
+  );
+</script>
+</body>
+</html>
