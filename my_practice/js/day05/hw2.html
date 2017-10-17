@@ -8,6 +8,21 @@
     </style>
 </head>
 <body>
+<script>
+    var arr=[15,12,9,20,6,31,24];
+    console.log(arr);
+    console.log("start")
 
+    for(var i=1;i<arr.length;i++){
+        var k = arr[i];
+        var j=0;
+        for (j=i-1;j>=0 && k<arr[j];j--){
+            arr[j+1] = arr[j];
+            console.log("内循環"+arr.toString());
+        }
+        arr[j+1]=k;
+        console.log(arr.toString());
+    }
+</script>
 </body>
 </html>
