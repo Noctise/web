@@ -19,6 +19,7 @@
         for (j=i-1;j>=0 && k<arr[j];j--){
             arr[j+1] = arr[j];
             console.log("内循環"+arr.toString());
+            console.log("value of k="+k);
         }
         arr[j+1]=k;
         console.log(arr.toString());

@@ -22,8 +22,8 @@
       <file leaf-file-name="hw2.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../../../my_practice/js/day05/hw2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="20" column="46" lean-forward="false" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+            <state relative-caret-position="520">
+              <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -223,12 +223,12 @@
       <workItem from="1507690977006" duration="3818000" />
       <workItem from="1507772300222" duration="5369000" />
       <workItem from="1508117510146" duration="4964000" />
-      <workItem from="1508201446387" duration="14014000" />
+      <workItem from="1508201446387" duration="14349000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42188000" />
+    <option name="totallyTimeSpent" value="42523000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="615" y="1" width="1307" height="834" extended-state="0" />
@@ -573,8 +573,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../../my_practice/js/day05/hw2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="20" column="46" lean-forward="false" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+        <state relative-caret-position="520">
+          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
           <folding />
         </state>
       </provider>
