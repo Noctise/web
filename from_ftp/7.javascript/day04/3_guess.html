@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  //随机生成一个0~9之前的整数
+  var r=parseInt(Math.random()*10);
+  do{
+    //请用户输入一个数字n
+    var n=prompt("你猜:");
+    //如果n是exit，就提示放弃了
+    //if(n=="exit") alert("放弃了!")
+    //否则如果输入的n>r，就输出大了
+    //else if(n>r) alert("大了")
+    //否则如果输入的n<r，就输出小了
+    //else if(n<r) alert("小了")
+    //否则，就提示猜对了
+    //else alert("猜对了!")
+    alert(
+      n=="exit"?"放弃了!":
+            n>r?"大了":
+            n<r?"小了":
+              "猜对了!"
+    )
+  }while(n!=r&&n!="exit");
+  //只要n!=r且n!="exit"
+  console.log(n);
+</script>
+</body>
+</html>

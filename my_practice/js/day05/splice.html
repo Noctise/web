@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>splice</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<script>
+    var arr1 = [1,2,3,4,5];
+//    var arr2 = arr1.splice(2,1,21,22,23);
+    var arr2 = arr1.splice(2,2,[91,92,93]);
+
+    console.log(arr1);
+    console.log(arr2);
+
+
+    var imgs=["img1","img2","img3","img4","img5"];
+//    var deletes=imgs.splice(0,2);
+    imgs=imgs.concat(imgs.splice(0,2));
+    console.log(String(imgs));
+
+//    var deletes=imgs.splice(-3);
+    imgs=imgs.splice(-3).concat(imgs);
+    console.log(String(imgs));
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  var a=10;
+  var b=a;//将a中的值复制一个副本给b
+  b++;
+  console.log(a);//10
+  console.log(b);//11
+
+  var my=["包","包","包","包"];
+  var xu=my;//仅将my中保存的数组地址值复制给xu，原数组依然只有一份，共用。
+  xu.length--;
+  console.log(my.length);//3
+</script>
+</body>
+</html>

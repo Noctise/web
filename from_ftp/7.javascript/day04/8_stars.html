@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  function fan(ln){
+    var str="";
+    //外层循环控制行号r
+    for(var r=1;r<=ln;r++){
+      //内层循环用于打印每行共ln个空格和*
+      for(var i=1;i<=ln;i++){
+        //当i<=ln-r时，就先拼空格，剩余再拼*
+        str+=i<=ln-r?" ":"*";
+      }
+      str+="\n";//一行拼完，末尾追加空格
+    }
+    console.log(str);
+  }
+  fan(6);
+</script>
+</body>
+</html>

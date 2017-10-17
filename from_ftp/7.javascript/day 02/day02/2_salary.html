@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  //请用户输入当前薪资
+  //var input=prompt("输入当前薪资");
+  //输出input中值的数据类型名称
+  //console.log(typeof input);//string
+  //将input强制转为number
+  //input=Number(input);
+  var input=parseFloat(
+    prompt("输入当前薪资")
+  );
+  //输出input中值的数据类型名称
+  console.log(typeof input);//number
+  //当前薪资+2000
+  input=input+2000;
+  //输出涨薪后:
+  console.log("涨薪后:"+input);
+</script>
+</body>
+</html>

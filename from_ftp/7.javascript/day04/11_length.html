@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  var arr=
+  [
+    "日",//0
+    "一",//1
+    "二",//2
+    "三",//3
+    "四",//4
+    "五",//5
+    "六" //6
+  ];//length=7
+  //最后一个元素:
+  console.log(arr[arr.length-1]);
+  //末尾追加一个新元素
+  arr[arr.length]="七";
+  //console.dir(arr);//8个元素
+  console.log(String(arr));
+  //删除末尾的一个元素
+  arr.length--;
+  console.log(String(arr));
+  //console.dir(arr);//7个元素
+  //dir: 不会立刻输出结果
+    //只有手动点击三角时，才动态查找内存中对象的最终结构
+</script>
+</body>
+</html>

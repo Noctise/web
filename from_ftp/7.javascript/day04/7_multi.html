@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  function multi(){
+    //外层循环控制行号r,从1到<=9
+    for(var r= 1,str="";r<=9;r++){
+      //内层循环向str中拼接r个子式
+      for(var i=1;i<=r;i++) {
+        str+=i+"x"+r+"="+i*r+" ";
+      }
+      //拼接完r个子式后再追加一个\n
+      str+="\n";
+    }
+    console.log(str);
+  }
+  multi();
+</script>
+</body>
+</html>

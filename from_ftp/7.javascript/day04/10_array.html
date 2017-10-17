@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  var arr=[];
+  //查看内存中arr的结构和内容
+  console.dir(arr);
+  var rooms=
+    ["大旭","东哥","涛哥","黑胖子"];
+   //  0      1     2       3
+  console.dir(rooms);
+  //输出1号房间的内容
+  console.log(rooms[1]);
+  //让燕儿住进大旭的房间
+  rooms[0]="燕儿";
+  console.dir(rooms);
+  //尝试访问不存在的4号房间
+  console.log(rooms[4]);
+  //文华老师强烈要求住6号房间
+  rooms[6]="文华";
+  console.dir(rooms);
+  //["大旭","东哥","涛哥","黑胖子","文华"];
+  //  0      1     2       3       6
+</script>
+</body>
+</html>

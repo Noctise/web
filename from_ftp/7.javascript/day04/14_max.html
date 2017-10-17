@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  //定义函数max，查找一个数组中的最大值
+  function max(arr){
+    //声明变量max,暂时赋值为arr中0位置的元素
+    var max=arr[0];
+    //从1开始遍历arr中每个元素
+    for(var i=1;i<arr.length;i++){
+      //如果arr中当前元素>max
+      if(arr[i]>max)
+        //就设置max为arr中当前元素的值
+        max=arr[i];
+    }//(遍历结束)
+    return max;//返回max
+  }
+  console.log(
+    max([3,5,2]),//5
+    max([12,23,3,123,2])//123
+  );
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<!--<p>有九位小朋友Tom、Mary、John、Jerry、Kitty、Lucy、Lily、Leon、Petty，按姓名字母顺序由大到小依次排列，从1到3报号循环报号，所有报号为1的一组，为2的一组，为3的一组，请打印出最后的分组情况</p>-->
+<!--<button onclick="grouping()">查看分组结果</button>-->
+<script>
+   var names=["Tom","Mary",'John','Jerry','Kitty','Lucy','Lily','Leon','Petty'];
+   names.sort();
+   names.reverse();
+   console.log(names);
+
+   var group1=[],group2=[],group3=[];
+
+   for(var i=0;i<names.length;i++){
+       if((i+1)%3==1){group1[i]=names[i];}
+        else if((i+1)%3==2){group2[i]=names[i];}
+        else group3[i]=names[i];
+   }
+   console.log(group1.join(" "));
+   console.log(group2.join(" "));
+   console.log(group3.join(" "));
+
+//function grouping() {
+//    var names = ['Tom', 'Mary', 'John', 'Jerry', 'Kitty', 'Lucy', 'Lily', 'Leon', 'Petty'];
+//    //元素按字符大小(Unicode码)排序
+//    names.sort();
+//    //逆序排列
+//    names.reverse();
+//    //定义三个分组
+//    var group1 = [];
+//    var group2 = [];
+//    var group3 = [];
+//    //统计
+//    for (var i = 0; i < names.length; i++) {
+//        if ((i + 1) % 3 == 1) {
+//            group1[group1.length]=names[i];
+//        } else if ((i + 1) % 3 == 2) {
+//            group2[group2.length]=names[i];
+//        } else if ((i + 1) % 3 == 0) {
+//            group3[group3.length]=names[i];
+//        }
+//    }
+//    //输出显示
+//    console.log(group1.join('-'));
+//    console.log(group2.join('-'));
+//    console.log(group3.join('-'));
+//}
+</script>
+</body>
+</html>
