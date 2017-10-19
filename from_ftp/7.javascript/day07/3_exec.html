@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  var str="明明喜欢我,却不告诉我。别理我,我想静静。静静是谁?你告诉我明明是谁?";
+  var reg=/明明|静静/g;
+  do{
+    var arr=reg.exec(str);
+    if(arr!=null)
+      console.log("在位置"+arr["index"]+"发现敏感词"+arr[0]+",下次从"+reg.lastIndex+"开始找");
+    else break;
+  }while(true);
+
+</script>
+</body>
+</html>

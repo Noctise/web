@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  //定义函数round，可将一个数字num，按任意小数位数d四舍五入
+  function round(num,d){
+    //将num放大10的d次方倍
+    num*=Math.pow(10,d);
+    //将num四舍五入取整
+    num=Math.round(num);
+    //返回 num/ 10的次方
+    return num/Math.pow(10,d);
+  }
+  console.log(
+    round(345.678,2),//345.68
+    round(345.678,0),//346
+    round(345.678,-1)//350
+  );
+</script>
+</body>
+</html>

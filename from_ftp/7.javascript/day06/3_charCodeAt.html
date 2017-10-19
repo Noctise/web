@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  var msg="今晚308,w84u";
+  //定义函数encode，将msg的每个字编码为数字
+  function encode(msg){
+    //定义空字符串code
+    var code="";
+    //遍历msg中每个字
+    for(var i=0;i<msg.length;i++){
+      //将msg中i位置的字转为unicode号拼接到code字符串中
+      var u=msg.charCodeAt(i);
+      //if(u<100) u="000"+u;
+      //else if(u<1000) u="00"+u;
+      u=(u+100000+"").slice(1);
+      code+=u;
+    }
+    //返回拼接好的code字符串
+    return code;
+  }
+  var code=encode(msg);
+  console.log(code);
+  //定义函数decode将code解码回原文
+  function decode(code){
+    //先定义空字符串msg
+    var msg="";
+    //每隔5位遍历一次code
+    for(var i=0;i<code.length;i+=5){
+      //从i位置获得只有的5个字符
+      var u=//code.slice(i,i+5);
+            //code.substring(i,i+5);
+            code.substr(i,5);
+      //将u翻译回文字
+      var c=String.fromCharCode(u);
+      //将c拼接到msg中
+      msg+=c;
+    }
+
+    return msg;
+  }
+
+  var msg2=decode(code);
+  console.log(msg2);
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  //定义函数dec2bin，将一个十进制数转为二进制
+  function dec2bin(dec){
+    var bin=[];//定义空数组bin
+    //只要dec>0
+    while(dec>0){
+      //将dec/2的余数压入bin中保存
+      //bin.push(dec%2);
+      bin.unshift(dec%2);
+      //将dec/2，舍弃小数，再存回dec中作为下一轮的被除数
+      dec=parseInt(dec/2);
+    }//(循环结束)
+    //怎样就可不用reverse?
+    //bin.reverse();//颠倒bin
+    //返回bin无缝拼接的结果字符串
+    return bin.join("");
+  }
+  var n=90;
+  console.log(
+    dec2bin(n),  //1011010
+    n.toString(2)//1011010
+  );
+</script>
+</body>
+</html>

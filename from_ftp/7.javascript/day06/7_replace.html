@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  var str="we two Who and who";
+  var kwords=str.match(/who/ig);
+  str=str.replace(/who/ig,"***");
+  console.log(str);
+  console.log(
+    "共替换"+kwords.length+"处");
+
+  var str="那天,我去了她家。我说:我草，你家真大。她想和我去草地野餐。我草草的收拾了草地。她说:我去去就来。";
+  //我去  我草  我去草  我草草  我去去
+  str=str.replace(
+    /我[去草]{1,2}/g,
+    function(kw){
+      return kw.length==2?"**":"***";
+    }
+  );
+  console.log(str);
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  //将所有可用字符放入一个数组中备用
+  var chars=[];//62个: 0~61
+  //向chars中压入10个数字
+  for(var u=48;u<=57;u++){
+    chars.push(
+      String.fromCharCode(u));
+  }
+  //向chars中压入26个大写字母
+  for(var u=65;u<=90;u++){
+    chars.push(
+      String.fromCharCode(u));
+  }
+  //向chars中压入26个小写字母
+  for(var u=97;u<=122;u++){
+    chars.push(
+      String.fromCharCode(u));
+  }
+  //console.log(String(chars));
+  //定义函数随机生成4位验证码
+  function getCode(){
+    var code="";
+    //在chars中随机挑选4个位置的字符拼接到code上
+    while(code.length<4){//只要字符个数<4
+      //获得随机位置i
+      var i= parseInt(Math.random()*62);
+      code+=chars[i];//拼接i位置的字符到
+    }
+    return code;
+  }
+  console.log(getCode());
+  do{
+    var code=getCode();//获得随机验证码
+    //请用户反复输入验证码
+    var input=prompt("输入验证码:"+code);
+    //如果输入错误，就提示错误，并重新输入
+    if(input.toLowerCase()
+        !=code.toLowerCase())
+      alert("验证码错误，请重新输入!");
+    else break;//否则退出循环
+  }while(true);
+  document.write("验证通过!");
+</script>
+</body>
+</html>

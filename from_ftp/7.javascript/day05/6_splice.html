@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  var arr=[0,1,2,3,4,5];
+         //0 1 2 3 4 5
+  //删除开头的2个元素
+  //arr.splice(0,2);
+  //删除结尾的2个元素
+  //arr.splice(arr.length-2,2);
+  //arr.splice(-2,2);
+  var deletes=arr.splice(-2);
+  console.log(arr);
+  console.log(deletes);
+
+  var imgs=
+["img1","img2","img3","img4","img5"];
+  //删除开头的2个元素,再拼接到结尾
+//  var deletes=imgs.splice(0,2);
+//  imgs=imgs.concat(deletes);
+  imgs=imgs.concat(imgs.splice(0,2));
+  console.log(String(imgs));
+//"img3","img4","img5","img1","img2"
+  //删除结尾的3个元素，再拼回开头
+//  var deletes=imgs.splice(-3);
+//  imgs=deletes.concat(imgs);
+  imgs=imgs.splice(-3).concat(imgs);
+  console.log(String(imgs));
+//"img5","img1","img2","img3","img4"
+</script>
+</body>
+</html>

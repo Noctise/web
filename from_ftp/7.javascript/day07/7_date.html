@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  //获得当前系统时间:
+  var now=new Date();
+  console.log(now);
+  //保存生日:
+  var birth=new Date("1983/12/26");
+  console.log(birth);
+  //计算活了多少天:
+  var ms=now-birth;
+  console.log(ms);
+  var days=ms/1000/3600/24;
+  //console.log(days);
+  //计算机中可保存的最大数值:
+  var max=Number.MAX_VALUE;
+  console.log(max);
+  var years=max/1000/3600/24/365;
+  console.log(years);
+</script>
+</body>
+</html>

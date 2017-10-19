@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  function doubleball(){
+    var reds=[];//创建空数组reds
+    //只要reds中不够6个球，就反复生成
+    while(reds.length<6){
+      //在1~33之间随机生成一个整数r
+      var r=
+        parseInt(Math.random()*33+1);
+      //遍历reds中每个球
+      for(var i=0;i<reds.length;i++){
+        //如果r等于reds中当前球
+        if(r==reds[i])
+          break;//就退出循环
+      }//(遍历结束)
+      //如果i等于reds的length
+      if(i==reds.length)
+        reds.push(r);//将r压入reds中
+    }//(循环结束)
+    //将reds按数字升序排列
+    reds.sort(
+      function(a,b){return a-b;}
+    );
+    //在1~16之间生成一个随机整数blue
+    var blue=
+      parseInt(Math.random()*16+1);
+    return String(reds)+" | "+blue;
+  }
+  document.write(doubleball());
+</script>
+</body>
+</html>

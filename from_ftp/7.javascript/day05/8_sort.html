@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  var arr1=[5,2,1,4,3];
+  var arr2=
+    ["tom","jerry","scott","smith"];
+  arr1.sort();
+  arr2.sort();
+  console.log(String(arr1));
+  //1,2,3,4,5
+  console.log(String(arr2));
+  //"jerry","scott","smith","tom"
+
+  var arr3=[12,3,123,2,23,1];
+  //定义比较器函数:
+  //var cmp=function(a,b){return a-b};
+  //将比较器函数作为参数传入sort函数中
+  //arr3.sort(cmp);
+  arr3.sort(
+    function(a,b){return a-b});
+  console.log(String(arr3));
+  //1,2,3,12,23,123
+  arr3.sort(
+    function(a,b){return b-a});
+  console.log(String(arr3));
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  var pid="130102198312262151";
+         //012345678901234567 .length
+  var gender=
+    pid[pid.length-2]%2==1?"男":"女";
+  var birth=//pid.slice(6,-4);
+            //pid.slice(6,6+8);
+    //pid.substring(6,pid.length-4);
+              pid.substr(6,8);
+  console.log(
+    "张东 "+gender+" "+birth);
+</script>
+</body>
+</html>

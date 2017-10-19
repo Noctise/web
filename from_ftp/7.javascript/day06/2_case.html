@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  var code="E2cd";
+  do{
+    //请用户反复输入验证码:
+    var input=
+      prompt("输入验证码:"+code);
+    //如果输入正确，就退出循环
+    if(input.toLowerCase()
+        ==code.toLowerCase())
+      break;
+    else//否则提示
+      alert("验证码错误!请重新输入")
+  }while(true);
+  document.write("验证通过!");
+
+</script>
+</body>
+</html>

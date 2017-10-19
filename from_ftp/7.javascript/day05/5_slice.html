@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  var arr=[0,1,2,3,4,5];
+         //0 1 2 3 4 5
+  //选择2~4的三个元素组成新数组
+  var subArr=arr.slice(2,4+1);
+  console.dir(arr);
+  console.log(String(subArr));
+  //选择整数2到倒数2位置的元素
+  subArr=arr.slice(2,-2+1);
+    //arr.slice(2,arr.length-2+1);
+  console.log(String(subArr));
+  //选择从2到结尾的所有剩余元素
+  subArr=arr.slice(2);
+  console.log(String(subArr));
+  //复制arr数组
+  var arr_clone=arr.slice();
+  //var arr_clone=arr;//仅复制地址
+  console.log(String(arr_clone));
+  console.log(arr_clone==arr);//false
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  var count= 5,queue=[];
+  for(var i=1;i<=5;i++)
+    queue.push("顾客"+i);//排队
+  queue.push("你");
+  console.log(String(queue));
+  while(count>0){
+    var first=queue.shift();//出队列
+    console.log(first+"抢购成功!");
+    count--;
+  }
+  console.log(queue+"没抢上。。。");
+</script>
+</body>
+</html>

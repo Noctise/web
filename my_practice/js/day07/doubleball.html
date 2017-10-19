@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<script>
+    function doubleball() {
+        var reds=[];
+        while(reds.length<6){
+            var r = parseInt(Math.random()*33+1);
+            for(var i=0;i<reds.length;i++){
+                if(r==reds.length) reds.push(r);
+            }
+            reds.sort(function (a, b) {
+                return a-b;
+            });
+        }
+        var blue=parseInt(Math.random()*16+1);
+        return String(reds) + " | "+blue;
+    }
+    document.write(doubleball());
+</script>
+</body>
+</html>

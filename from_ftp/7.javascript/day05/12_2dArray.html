@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+//  var data=[];
+//  data[0]=[0,0,0,0];
+//  data[1]=[0,0,0,0];
+//  data[2]=[0,0,0,0];
+//  data[3]=[0,0,0,0];
+  var data=[
+    [0,0,0,0],//\n
+    [0,0,0,0],//\n
+    [0,0,0,0],//\n
+    [0,0,0,0] //\n
+  ];
+  console.dir(data);
+  var r=parseInt(Math.random()*4);
+  var c=parseInt(Math.random()*4);
+  data[r][c]=2;
+  console.log(data.join("\n"));
+
+  for(var r=0;r<data.length;r++){
+    for(var c=0;c<data[r].length;c++){
+      data[r][c]=8;
+    }
+  }
+  console.log(data.join("\n"));
+</script>
+</body>
+</html>

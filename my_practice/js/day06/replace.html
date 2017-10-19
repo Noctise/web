@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<script>
+    var str="we two who and who"
+    var kwords=str.match(/who/ig);
+    str=str.replace(/who/ig,"***");
+    console.log(str);
+    console.log("共替換"+kwords.length+"処");
+</script>
+</body>
+</html>

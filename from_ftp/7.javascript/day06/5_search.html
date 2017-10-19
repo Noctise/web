@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  do{
+    var msg=prompt("输入消息");
+    var i=msg.search(
+      /(微|w(ei)?)\s*(信|x(in)?)/i);
+    if(i!=-1)//找到了敏感词
+      document.write(
+        "包含敏感词，禁止发送!<br>");
+    else{
+      document.write(msg+"<br>");
+      break;
+    }
+  }while(true);
+</script>
+</body>
+</html>

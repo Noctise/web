@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<select id="selProvs">
+  <!-- innerHTML -->
+</select>
+<script>
+  var provs=
+   ["北京","河北","山东","河南","四川"];
+  //console.log(String(provs));
+  //将省份数组转换为页面select下的option
+  //将数组每个元素用</option><option>连接
+  var opts="<option>"+
+    provs.join("</option><option>")
+    +"</option>";
+  //设置id为selProvs的元素内容为opts
+  selProvs.innerHTML=opts;
+  console.log(opts);
+
+  var words=//将单词拼为句子
+    ["we","two","who","and","who"];
+  console.log(words.join(" "));
+  //将字母拼为单词
+  var chars=['H','e','l','l','o'];
+  console.log(chars.join(""));
+
+</script>
+</body>
+</html>

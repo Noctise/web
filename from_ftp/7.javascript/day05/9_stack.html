@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  var bus=[];
+  for(var i=1;i<=5;i++){
+    //数组末尾追加一个新元素
+    //bus.push("乘客"+i);
+    bus.unshift("乘客"+i);
+    console.log(String(bus));
+  }
+  while(bus.length>0){
+    //弹出数组末尾最后一个元素
+    //var c=bus.pop();
+    var c=bus.shift();
+    console.log(c+" 下车");
+    console.log(String(bus));
+  }
+</script>
+</body>
+</html>

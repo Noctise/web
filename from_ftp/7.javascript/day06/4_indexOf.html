@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  var str=
+    "No zuo no die No can no bibi";
+   //0      7     14     21
+  var i=-1;//保证第一次从0开始找
+  do{//从i位置后，查找下一个no的位置
+    i=str.indexOf("no",i+1);
+    if(i!=-1)//如果找到，就输出
+      console.log(
+        "在位置"+i+"发现敏感词");
+    else break;//找不到了，就退出循环
+  }while(true);
+
+  var filename=
+    "c:/windows/2017.05.07/1.jpg";
+                         //i
+  //获得文件的扩展名:取最后一个.后的剩余字符串
+  var i=filename.lastIndexOf(".");
+  console.log(filename.slice(i+1));
+</script>
+</body>
+</html>
