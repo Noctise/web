@@ -1,0 +1,52 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>读取并修改元素的属性</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/3_2.css" />
+<style>
+
+</style>
+
+</head>
+<body>
+	<h2>实现多标签页效果</h2>
+	<ul id="tab">
+		<li><a href="#content1">10元套餐</a>
+      <div id="content1">
+			  <a href="#">10元套餐详情</a>：<br />&nbsp;每月套餐内拨打100分钟，超出部分2毛/分钟
+		  </div>
+    </li>
+		<li><a href="#content2">30元套餐</a>
+      <div id="content2">
+        <a href="#">30元套餐详情</a>：<br />&nbsp;每月套餐内拨打300分钟，超出部分1.5毛/分钟
+		  </div>
+    </li>
+		<li><a href="#content3">50元包月</a>
+      <div id="content3">
+        <a href="#">50元包月详情</a>：<br />&nbsp;每月无限量随心打
+		  </div>
+    </li>
+	</ul>
+  <script>
+    //找到id为tab下的所有li,绑定鼠标进入和鼠标移出事件
+    var lis=
+      document.querySelectorAll(
+        "#tab>li"
+      );
+    for(var i=0;i<lis.length;i++){
+      lis[i].onmouseover=function(){
+        //this->li
+        //找到当前li的最后一个子元素,设置其显示
+        this.lastElementChild
+            .className="show";
+      };
+      lis[i].onmouseout=function(){
+        //找到当前li的最后一个子元素,设置其隐藏
+        this.lastElementChild
+            .className="";
+      }
+    }
+  </script>
+</body>
+</html>

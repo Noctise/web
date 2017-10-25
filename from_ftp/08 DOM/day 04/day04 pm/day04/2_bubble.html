@@ -1,0 +1,42 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>事件处理</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="css/2.css"/>
+		
+	</head>
+	<body>
+		<div id="d1">
+			<div id="d2">
+				<div id="d3">
+				</div>
+			</div>
+		</div>
+    <script>
+      function highLight(e){
+        //将当前元素的背景改为黄色
+        this.style.background=
+          "yellow";
+        //输出当前div的id
+        alert(this.id);
+        //清除当前元素的背景
+        this.style.background="";
+        //取消冒泡
+        e.stopPropagation();
+      }
+			document.getElementById("d1")
+				.addEventListener(
+          "click",highLight
+      );
+			document.getElementById("d2")
+				.addEventListener(
+          "click",highLight
+      );
+			document.getElementById("d3")
+				.addEventListener(
+          "click",highLight
+      );
+		</script>
+	</body>
+</html>

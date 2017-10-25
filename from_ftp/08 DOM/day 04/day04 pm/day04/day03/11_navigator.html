@@ -1,0 +1,31 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>navigator对象常用属性</title>
+<meta charset="utf-8" />
+
+</head>
+<body>
+	<script>
+	  if(navigator.cookieEnabled)
+      document.write("<h1>已启用cookie!请妥善保存个人信息</h1>");
+    else
+      document.write("<h1>未启用cookie!无法记住密码!</h1>");
+
+    document.write(
+      navigator.plugins[
+        "Shockwave Flash"
+      ]!==undefined?"已安装":"未安装"
+    );
+    document.write("<br>");
+    document.write(
+      navigator.plugins[
+        "腾讯视频"
+      ]!==undefined?"已安装":"未安装"
+    );
+    document.write("<br>");
+    document.write(
+      navigator.userAgent);
+  </script>
+</body>
+</html>

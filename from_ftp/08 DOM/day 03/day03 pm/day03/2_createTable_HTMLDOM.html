@@ -1,0 +1,91 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>动态创建表格</title>
+<meta charset="utf-8" />
+<style>
+	table{width:600px; border-collapse:collapse;
+		text-align:center;
+	}
+	td,th{border:1px solid #ccc}
+  thead td{font-weight:bold;}
+</style>
+
+</head>
+<body>
+	<div id="data"></div>
+  <script>
+	var json=[
+    {"ename":"Tom", "salary":11000, "age":25},
+    {"ename":"John", "salary":13000, "age":28},
+    {"ename":"Mary", "salary":12000, "age":25}
+  ];
+	//创建一个table
+    var table=
+      document.createElement(
+        "table"
+      );
+    //创建thead，追加到table下
+    var thead=table.createTHead();
+    //创建tr追加到thead下
+    var tr=thead.insertRow();
+    //遍历json数组中第一个对象的每个key
+    for(var key in json[0]){
+      //创建th添加到tr下
+      var th=tr.insertCell();
+      //设置th的内容为key
+      th.innerHTML=key;
+    }
+    //再额外多增加一个td
+    var td=tr.insertCell();
+    td.innerHTML="ops";
+    //创建tbody追加到table
+    var tbody=table.createTBody();
+    //遍历json中每个员工
+    for(var i=0;i<json.length;i++){
+      //创建tr追加到tbody中
+      var tr=tbody.insertRow();
+      //遍历当前员工的每个属性
+      for(var key in json[i]){
+        //创建td追加到tr中
+        var td=tr.insertCell();
+        //设置td的内容为key对应的属性值
+        td.innerHTML=json[i][key];
+      }
+      //再额外增加一个td
+      var td=tr.insertCell();
+      //向td中添加一个button
+      var btn=
+        document.createElement(
+          "button"
+        );
+      btn.innerHTML="delete";
+      //为btn绑定单击事件:
+      btn.onclick=function(){
+        //this->btn
+        //获得当前tr
+        var tr=
+          this.parentNode
+              .parentNode;
+        //获得员工姓名ename
+        var ename=
+          tr.cells[0].innerHTML;
+
+        //确认是否删除
+        if(confirm("go on deleting "+ename+" ?"))
+          //删除当前行
+          table.deleteRow(
+            tr.rowIndex);
+      }
+      td.appendChild(btn);
+    }
+
+    //将table追加到id为data的div下
+    var div=
+      document.getElementById(
+        "data"
+      );
+    div.appendChild(table);
+  </script>
+</body>
+</html>

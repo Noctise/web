@@ -1,0 +1,61 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>事件处理</title>
+<meta charset="utf-8" />
+
+</head>
+<body>
+  <a href="#top">back to top</a>
+ 	<form>
+		姓名:<input name="username"/><br>
+		密码:<input type="password" name="pwd"/><br>
+    爱好:<input type="checkbox" name="favs" value="running"/>跑步
+          <input type="checkbox" name="favs" value="swimming"/>游泳
+          <input type="checkbox" name="favs" value="basketball"/>篮球
+          <br>
+		<input type="submit"/>
+	</form>
+  <script>
+    //"?username=zhangdong&pwd=123456"
+    function search2Hash(){
+      //创建空的关联数组hash
+      var hash=[];
+      //获取location中的search,去掉开头的?保存在search中
+      var search=
+        location.search.slice(1);
+      //如果search!=""
+      if(search!=""){
+        //将search用&切割为多个子字符串
+        var arr=search.split("&");
+        //[
+        // "username=zhangdong",
+        // "pwd=123456"
+        //]
+
+        //遍历arr中每个子字符串
+        for(var i=0;i<arr.length;i++){
+          //用=切割当前子字符串
+          var arr2=arr[i].split("=");
+          //["username","zhangdong"]
+          //     0           1
+          //在hash中添加新元素，设置新元素的下标为数组的第0个元素,设置新元素的内容为第1个元素
+          hash[arr2[0]]=arr2[1];
+          //"username"  "zhangdong"
+        }
+      }
+      return hash;
+    }
+    //[
+    //  username:"zhangdong"
+    //       pwd:"123456"
+    // ]
+    var params=search2Hash();
+    console.dir(params);
+    console.log(
+      params["username"],
+      params["pwd"]
+    );
+  </script>
+</body>
+</html>

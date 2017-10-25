@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+ <head>
+	<meta charset="UTF-8">
+	<title>实现带样式的表单验证</title>
+	<link rel="Stylesheet" href="css/4.css" />
+  <style>
+    a{
+      padding:10px 12px; 
+      border:1px solid #555;
+      border-radius:6px;
+      text-decoration:none;
+      color:#555;
+      display:inline-block;
+    }
+  </style>
+ </head>
+ <body>
+  <a href="#top">回到顶部</a>
+	<form id="form1">
+		<h2>增加管理员</h2>
+		<table>
+			<tr>
+				<td>姓名：</td>
+        <td>
+					<input name="username"/>
+					<span>*</span>
+				</td>
+				<td>
+					<div class="vali_info">
+						10个字符以内的字母、数字或下划线的组合
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>密码：</td>
+				<td>
+					<input type="password" name="pwd"/>
+					<span>*</span>
+				</td>
+				<td>
+					<div class="vali_info">6位数字</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="2">
+          <input type="submit" value="保存"/>
+          <input type="reset" value="重填"/>
+				</td>
+			</tr>				
+	    </table>
+	</form>
+  <script>
+    //为body下的第一个子元素a绑定单击事件
+    document.body.firstElementChild
+      .onclick=function(e){
+      e.preventDefault();
+      alert("Hello");
+    }
+  </script>
+	<script src="js/4.js"></script>
+ </body>
+</html>

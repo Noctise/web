@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>...</title>
+ </head>
+  
+ <body>
+    <button id="btnShoot">shoot</button><br>
+    <button id="btnAward">获得跟踪导弹</button><br>
+    <button id="btnBreak">失去跟踪导弹</button><br>
+    <script>
+      function shoot1(){
+        console.log("发射普通子弹...");
+      }
+      function shoot2(){
+        console.log("发射跟踪导弹...");
+      }
+      //为id为btnShoot的按钮绑定单击事件，发射普通子弹
+      var btnShoot=
+        document.getElementById(
+          "btnShoot"
+        );
+      //btnShoot.onclick=shoot1;
+      btnShoot.addEventListener(
+        "click",shoot1
+      );
+      //为btnAward按钮绑定单击事件，为btnShoot添加跟踪导弹
+      document.getElementById(
+        "btnAward"
+      ).onclick=function(){
+        btnShoot.addEventListener(
+          "click",shoot2
+        );
+      }
+      //为btnBreak绑定单击事件，移出btnShoot上的shoot2
+      document.getElementById(
+        "btnBreak"
+      ).onclick=function(){
+        btnShoot.removeEventListener(
+          "click",shoot2
+        );
+      }
+    </script>
+ </body>
+</html>
