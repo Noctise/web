@@ -35,7 +35,57 @@
        {"name":'唐山市',"value":304},
        {"name":'秦皇岛市',"value":304}]
 	];
-	
+	//查找2个select
+    var selProvs=
+      document.getElementsByName(
+        "provs"
+      )[0];
+    var selCts=
+      document.getElementsByName(
+        "cities"
+      )[0];
+    //为selProvs绑定选中项改变事件
+    selProvs.onchange=function(){
+      if(this.selectedIndex!=0){
+        //将当前选中项的下标-1后得到对应子数组的下标
+        var i=this.selectedIndex-1;
+        //清空selCts的内容
+        selCts.innerHTML="";
+        //获得子数组
+        var cts=cities[i];
+        //创建文档片段
+        var frag=
+          document.createDocumentFragment();
+        //创建opt
+        var opt=
+          document.createElement(
+            "option"
+          );
+        //设置opt的内容为-请选择-
+        opt.innerHTML="-请选择-";
+        //将opt追加到frag中
+        frag.appendChild(opt);
+        //遍历cts中每个城市
+        for(var i=0;i<cts.length;i++){
+          //创建option
+          var opt=
+            document.createElement(
+              "option"
+            );
+          //为opt添加内容和value属性
+          opt.innerHTML=
+            cts[i]["name"];
+          opt.value=cts[i]["value"];
+          //将option追加到selCts中
+          frag.appendChild(opt);
+        }
+        selCts.appendChild(frag);
+        //清除selCts的class
+        selCts.className="";
+      }else
+        //隐藏selCts
+        selCts.className="hide";
+    }
 </script>
 </body>
 </html>

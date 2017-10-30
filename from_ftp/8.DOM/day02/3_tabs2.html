@@ -29,7 +29,24 @@
     </li>
 	</ul>
   <script>
-    
+    //找到id为tab下的所有li,绑定鼠标进入和鼠标移出事件
+    var lis=
+      document.querySelectorAll(
+        "#tab>li"
+      );
+    for(var i=0;i<lis.length;i++){
+      lis[i].onmouseover=function(){
+        //this->li
+        //找到当前li的最后一个子元素,设置其显示
+        this.lastElementChild
+            .className="show";
+      };
+      lis[i].onmouseout=function(){
+        //找到当前li的最后一个子元素,设置其隐藏
+        this.lastElementChild
+            .className="";
+      }
+    }
   </script>
 </body>
 </html>

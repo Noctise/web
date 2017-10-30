@@ -26,7 +26,36 @@
 		</div>
 	</div>
   <script>
-	
+		//找到id为container下的所有直接子元素div
+    var divs=
+      document.querySelectorAll(
+        "#container>div"
+      );
+		//设置第一个div的zIndex为10
+    divs[0].style.zIndex=10;
+    //查找id为tab下的所有a
+    var as=
+      document.querySelectorAll(
+        "#tab a"
+      );
+    //遍历as中每个a，绑定单击事件
+    for(var i=0;i<as.length;i++){
+      as[i].onclick=function(){
+        //清除所有div的zIndex
+        for(var j=0;j<divs.length;j++){
+          divs[j].style.zIndex="";
+        }
+        //找到当前a对应的div，设置其zIndex为10
+        //查找当前a的href中最后一个#的位置k
+        var k=
+          this.href.lastIndexOf("#");
+        //选取当前a的href中k之后的剩余内容作为id
+        var id=this.href.slice(k+1);
+        //查找对应id的div,设置其zIndex为10
+        document.getElementById(id)
+                .style.zIndex=10;
+      }
+    }
   </script>
 </body>
 </html>
