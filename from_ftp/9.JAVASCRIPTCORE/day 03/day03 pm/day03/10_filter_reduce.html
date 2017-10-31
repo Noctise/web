@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  var arr=[1,2,3,4,5];
+  var arr2=[2,4,6,8,10];
+  var odds=arr.filter(function(val){
+    return val%2==1;
+  });
+  console.log(String(arr));
+  console.log(String(odds));
+  //将arr中所有元素求和
+  var sum=
+    arr.reduce(function(prev,val){
+      return prev+val;
+    });
+  console.log(sum);//15
+  sum=arr2.reduce(function(prev,val){
+    return prev+val;
+  },sum);//45
+  console.log(sum);
+</script>
+</body>
+</html>

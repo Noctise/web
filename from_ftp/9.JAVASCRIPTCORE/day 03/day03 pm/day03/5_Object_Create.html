@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  var father={
+    bal:1000000000,
+    car:"infiniti",
+    phone:"nokia2100"
+  };
+  var hmm=Object.create(father,{
+    phone:{
+      value:"IPhone8p",
+      writable:true,
+      enumerable:true
+    },
+    bao:{
+      value:"LV",
+      writable:true,
+      enumerable:true
+    }
+  });
+  console.log(hmm.bal,hmm.car);
+  console.dir(hmm);
+
+</script>
+</body>
+</html>

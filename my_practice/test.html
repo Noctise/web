@@ -9,15 +9,65 @@
 </head>
 <body>
 <script>
-    var i,j;
-    console.log("\1\1\n");
-    for(i=1;i<11;i++)
-    {
-        for(j=1;j<=i;j++)
-            str+=(r+c)%
+    function S(p, k) {
+        function t(f, e) {
+            f && e && (f.x += e.x, f.y += e.y)
+        }
+
+        function x(f, e) {
+            var g = f.x - e.x,
+                b = f.y - e.y;
+            n = Math.sqrt(g * g + b * b)
+        }
+
+        function u(f, e, g, b, d, h) {
+            return {
+                x: f,
+                y: e,
+                r: g,
+                m: b,
+                s: d || g / 5,
+                c: h || "#08b"
+            }
+        }
+
+        function y(f) {
+            q = f.pageX;
+            r = f.pageY
+        }
+        var v = p.width,
+            w = p.height,
+            l = [u(v / 2, w / 2, 20, 0, 200, "#fc3"), u(v / 2, w / 2 + 200, 8, {
+                x: 1,
+                y: 0
+            })],
+            m, q, r, n;
+        p.onclick = function(f) {
+            y(f);
+            m ? (m.m = {
+                x: (q - m.x) / 99,
+                y: (r - m.y) / 99
+            }, l.push(m), m = 0) : m = u(q, r, 5 * Math.random() + 5)
+        };
+        p.onmousemove = y;
+        setInterval(function() {
+            var f = l.length,
+                e, g, b, d, h;
+            for (e = f; e--;)
+                for (b =
+                         l[e], g = f; g--;) d = l[g], b.r && d.r && e - g && (x(d, b), h = b.s * d.s / (n * n), t(b.m, {
+                    x: (d.x - b.x) / n * h,
+                    y: (d.y - b.y) / n * h
+                }));
+            for (e = f; e--;) t(l[e], l[e].m);
+            for (e = f; e--;)
+                for (b = l[e], g = f; g-- > e + 1;) d = l[g], x(d, b), b.r && d.r && n < b.r + d.r && (h = b.s < d.s ? b : d, d = h == b ? d : b, d.r += h.r / 2, d.s += h.s / 2, t(d.m, h.m), d.m && (d.m.x /= 2, d.m.y /= 2), h.r = 0);
+            k.fillStyle = "#222";
+            k.fillRect(0, 0, v, w);
+            for (e = f + 1; e--;)(b = l[e] || m) && b.r && (k.beginPath(), k.fillStyle = b.c, k.arc(b.x, b.y, b.r, 0, 7), k.fill(), b == m && (k.strokeStyle = b.c, k.moveTo(b.x, b.y), k.lineTo(q, r), k.stroke()))
+        }, 10)
     }
-
-
+    S(a, c);
 </script>
 </body>
 </html>

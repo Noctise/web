@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  var num=parseFloat(
+    prompt("输入数字")
+  );
+  var d=parseInt(
+    prompt("输入小数位数")
+  );
+  if(d>=0&&d<=20) {//try{
+    num = num.toFixed(d);//0<=d<=20
+    console.log(num);
+  }else{//}catch(err){
+    alert("小数位数必须介于0~20之间");
+    console.log("范围错误:toFixed函数的参数必须介于0~20之间!");
+  }
+  console.log("程序继续正常执行...");
+
+</script>
+</body>
+</html>

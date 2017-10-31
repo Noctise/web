@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  "use strict";
+  function Emp(id,ename,salary,age){
+    this.id=id;//只读，禁止删除
+    this.ename=ename;//禁止删除
+    this.salary=salary;//禁止遍历和删除
+    Object.defineProperties(this,{
+      id:{ writable:false },
+      salary:{ enumerable:false},
+      __age:{
+        writable:true,
+        //enumerable:false,
+        //configurable:false
+      },
+      age:{
+        get(){
+          return this.__age;
+        },
+        set(val){
+          if(val>=18&&val<=65)
+            this.__age=val;
+          else
+            throw new RangeError(
+              "年龄必须介于18~65之间"
+            )
+        },
+        enumerable:true
+      }
+    });
+    this.age=age;//18~65
+
+    //防篡改:
+    //Object.preventExtensions(this);
+    Object.seal(this);
+  }
+  var eric=
+    new Emp(1001,"Eric",10000,25);
+  //eric.id=1002;
+  //delete eric.ename;
+  for(var key in eric){
+    console.log(key+":"+eric[key]);
+  }
+  //eric.Age=-2;
+  console.dir(eric);
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  "use strict";
+  var eric={
+    id:1001,     //只读
+    ename:"Eric",//禁止删除
+    salary:10000 //禁止遍历
+  };
+//  console.log(
+//    Object.getOwnPropertyDescriptor(
+//      eric,"id"
+//    )
+//  );
+  Object.defineProperties(eric,{
+    id:{
+      writable:false,
+      configurable:false
+    },
+    ename:{configurable:false},
+    salary:{
+      enumerable:false,
+      configurable:false
+    },
+    age:{
+      value:25,
+      writable:true,
+      enumerable:true,
+      //configurable:false
+    }
+  });
+
+//  Object.defineProperty(eric,"id",{
+//    writable:true,
+//    configurable:true
+//  });
+//  eric.id++;
+  //delete eric.ename;
+  console.dir(eric);
+  for(var key in eric){
+    console.log(key+":"+eric[key]);
+  }
+  console.log(eric.salary);
+  eric.age++;
+</script>
+</body>
+</html>

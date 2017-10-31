@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<button>1</button>
+<button>2</button>
+<button>3</button>
+
+<script>
+  var arr=[12,3,123,2,1,23];
+  arr.sort((a,b)=>a-b);
+  console.log(String(arr));
+  var str="那天,我去了她家。我说:我草，你家真大。她想和我去草地野餐。我草草的收拾了草地。她说:我去去就来。";
+  str=str.replace(
+    /我[去草]{1,2}/g,
+    kw=>kw.length==2?"**":"***"
+  );
+  console.log(str);
+
+  var bob={
+    sname:"Bob",
+    friends:[
+      "Jack","Rose","Tom","Jerry"],
+    intr(){
+      //this->bob
+      this.friends.forEach(
+        val=>//this->bob
+          console.log(
+            this.sname+"认识"+val)
+        //.bind(this)
+      )
+    }
+  }
+  bob.intr();
+
+  var btns=
+    document.getElementsByTagName(
+      "button"
+    );
+  for(var i= 0,len=btns.length;
+      i<len;
+      i++){
+    //this->window
+    btns[i].addEventListener("click",
+      e=>//this->当前单击的按钮
+        //alert(this.innerHTML)
+        alert(e.target.innerHTML)
+    )
+  }
+</script>
+</body>
+</html>

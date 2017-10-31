@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  function calc(base,bonus1,bonus2){
+    console.log(this.ename+"的总工资是:"+(base+bonus1+bonus2));
+  }
+  var lilei={ename:"Li Lei"};
+  var hmm={ename:"Han Meimei"};
+  calc.call(lilei,10000,1000,2000);
+  calc.apply(hmm,[4000,5000,6000]);
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  var eric={
+    id:1001,     //只读
+    ename:"Eric",//禁止删除
+    salary:10000,//禁止遍历
+  };
+  //添加访问器属性保护年龄
+  Object.defineProperties(eric,{
+    __age:{//Step1:定义隐藏的数据属性
+      value:25,
+      writable:true,
+      //enumerable:false,
+      //configurable:false
+    },
+    age:{//Step2:添加访问器属性
+      get(){
+        console.log("自动调用get()");
+        return this.__age;
+      },
+      set(val){
+        console.log("自动调用set()");
+        if(val>=18&&val<=65)
+          this.__age=val;
+        else
+          throw new RangeError(
+            "年龄必须介于18~65之间"
+          )
+      },
+      enumerable:true
+    }
+  });
+  console.log(eric.age);//25
+  eric.age=16;
+  console.dir(eric);
+</script>
+</body>
+</html>

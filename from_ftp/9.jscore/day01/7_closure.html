@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  function outer(){
+    var i=1;//可重用，且不会被污染
+    return function(){
+      console.log(i++);
+    }
+  }
+  var getNum=outer();//i应该释放?
+  //getNum:function(){
+    //(i=1)
+    //console.log(i++);
+  //}
+  getNum();//1
+  getNum();//2
+  //i=3;
+  i=1;//怎么改不了受保护的i?
+  getNum();//3
+  getNum();//4
+</script>
+</body>
+</html>

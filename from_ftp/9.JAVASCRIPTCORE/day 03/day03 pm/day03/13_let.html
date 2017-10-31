@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  /*
+  for(let i=0;i<3;i++){
+    console.log(i);
+  }//0 1 2
+  console.log(i);//3
+  */
+  (function(){
+    var t=0;//计时
+    console.log(
+      "连接数据库,耗时0.3秒...");
+    t+=0.3;
+    (function(){
+      console.log(
+        "查询数据,耗时0.8秒...");
+      t+=0.8;
+      console.log("总耗时:"+t);//1.1
+
+      var err=false;
+      if(err){//块级作用域
+        let t=new Date();
+        console.log("出错啦,at:"+t);
+      }
+    })();
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  //定义学生类型，描述所有学生对象的统一属性结构和方法
+  function Student(sname,sage){
+    //this->new
+    this.sname=sname;
+    this.sage=sage;
+    this.intr=function(){
+      console.log(
+        "I'm "+this.sname
+        +",I'm "+this.sage);
+    }
+  }
+  var lilei=new Student("Li Lei",11);
+  console.dir(lilei);
+  var hmm=
+    new Student("Han Meimei",12);
+</script>
+</body>
+</html>

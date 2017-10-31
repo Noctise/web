@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  /*
+  function fun(){
+    var n=999;//受保护
+    nAdd=function(){n++;};
+    return function(){
+      console.log(n);
+    }
+  }
+  var get=fun();
+  //get:function(){console.log(n);}
+  get();//999
+  nAdd();
+  get();//1000
+  */
+  function fun(){
+    for(var i= 0,//受保护
+          arr=[];i<3;i++){
+      arr[i]=function(){
+        console.log(i);
+      }
+    }//i=3
+    return arr;
+  }
+  var funs=fun();
+  //funs:[
+  // function(){console.log(i);},
+  // function(){console.log(i);},
+  // function(){console.log(i);},
+  // ]
+  funs[0]();//3
+  funs[1]();//3
+  funs[2]();//3
+</script>
+</body>
+</html>
