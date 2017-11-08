@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--1、指定语言基础-->
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <!--2、指定视口信息-viewport-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+  <!--3、指定 跨IE 浏览器的兼容性-->
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <title></title>
+  <!--4、引入 bootstrap.css 主css文件-->
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <!--5、引入两个 兼容性 js文件-->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="container">
+    <h3>1、基本折叠效果</h3>
+    <a href="#d1" data-toggle="collapse" class="btn btn-primary">打开/折叠</a>
+    <div class="collapse" id="d1">
+      <div class="well">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cumque excepturi fuga ipsum quaerat. Autem eius eum explicabo hic ipsam minima perspiciatis ratione, tenetur. Cumque harum iure nihil quas veritatis!
+      </div>
+    </div>
+
+    <h3>2、折叠面板</h3>
+    <div class="panel panel-default">
+      <!--1、面板头部-->
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          <a href="#pnlXiyou" data-toggle="collapse">西游记</a>
+        </h3>
+      </div>
+      <!--2、panel-collapse 内部 包含 panel-body 以及 panel-footer -->
+      <div id="pnlXiyou" class="panel-collapse collapse">
+        <div class="panel-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolores esse exercitationem illum incidunt magni, minus neque nostrum quisquam ratione ullam ut veritatis? Ab dolorum, facere pariatur perferendis sed vel!
+        </div>
+        <div class="panel-footer">
+          <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#pnlXiyou">关闭</button>
+        </div>
+      </div>
+    </div>
+
+    <h3>3、手风琴效果(Accordion)</h3>
+    <div id="accordion" class="panel-group">
+      <!--1、面板1-->
+      <div class="panel panel-default">
+        <!--1、面板头部-->
+        <div class="panel-heading">
+          <a href="#c01" data-toggle="collapse" data-parent="#accordion">西游记</a>
+        </div>
+        <!--2、panel-collapse-->
+        <div class="panel-collapse collapse" id="c01">
+          <div class="panel-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, provident velit! Commodi consequuntur distinctio eligendi fuga nesciunt officia quis tempora? Atque debitis doloremque eaque harum maxime omnis reprehenderit unde veritatis.
+          </div>
+        </div>
+      </div>
+      <!--2、面板2-->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <a href="#c02" data-toggle="collapse" data-parent="#accordion">三国演义</a>
+        </div>
+        <div class="panel-collapse collapse" id="c02">
+          <div class="panel-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut doloremque exercitationem iste, labore praesentium sequi vitae voluptatibus! Blanditiis eveniet magnam mollitia nostrum nulla perspiciatis praesentium quasi voluptates. Eos, odio, voluptatibus!
+          </div>
+        </div>
+      </div>
+      <!--3、面板3-->
+    </div>
+  </div>
+
+
+
+
+
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!--6、引入 两个JS插件文件-->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--7、引入检查文件-->
+<script src="js/bootlint.js"></script>
+<script>
+  bootlint.showLintReportForCurrentDocument([]);
+</script>
+</body>
+</html>

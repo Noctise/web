@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+	<style>
+		.nav{position:relative}
+		.tabs{list-style:none; padding:0}
+		.tabs a{
+			text-decoration:none;
+			color:#000;
+			width:100px; height:40px; 
+			line-height:40px; text-align:center;
+			display:inline-block;
+		}
+		.tabs>li{
+		  float:left;
+			border-bottom:1px solid #000;
+		}
+		.box{
+			width:100px; height:39px;
+			border:1px solid #000;
+			border-bottom:1px solid #fff;
+			position:absolute; top:0; left:0;
+		}
+	</style>
+ </head>
+ <body>
+		<h1>使用属性选择器实现标签页头的切换</h1>
+		<div class="nav">
+			<ul class="tabs">
+				<li><a href="#">十元套餐</a></li>
+				<li><a href="#">二十元套餐</a></li>
+				<li><a href="#">三十元套餐</a></li>
+			</ul>
+			<div class="box"></div>
+		</div>
+ </body>
+</html>

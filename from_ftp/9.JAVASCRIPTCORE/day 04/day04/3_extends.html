@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  class Flyer{
+    constructor(fname,speed){
+      this.fname=fname;
+      this.speed=speed;
+    }
+    fly(){
+      console.log(
+        this.fname+"以时速"
+        +this.speed+"飞行"
+      );
+    }
+  }
+  class Plane extends Flyer{
+    constructor(fname,speed,score){
+      //Flyer.call(this,fname,speed);
+      super(fname,speed);
+      this.score=score;
+    }//下课休息12分钟
+    getScore(){
+      console.log(
+        "击落"+this.fname
+        +"得"+this.score+"分"
+      );
+    }
+  }
+  var f16=new Plane("F16",1000,20);
+  f16.fly();
+  f16.getScore();
+</script>
+</body>
+</html>

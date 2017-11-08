@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>...</title>
+  <style>
+		.dropdown{width:64px; height:20px;}
+    .dropdown a{
+			text-decoration:none; 
+			color:#000;
+			display:inline-block;
+		}
+		.dropdown>a{ 
+			border:1px solid #000; padding:6px 12px;
+		}
+		.dropdown-menu{
+			width:200px;
+			list-style:none; margin:0; padding:0;
+			border:1px solid #aaa;
+			box-shadow:5px 5px 6px #000;
+			/*display:none;*/
+      height:0; opacity:0;
+      overflow:hidden;
+      transition:all .5s linear;
+		}
+		.dropdown-menu a{padding:6px 20px; width:160px}
+		.dropdown-menu li:hover{background:#ddd}
+  </style>
+ </head>
+  
+ <body>
+  <h1>下拉菜单</h1>
+  <div class="dropdown">
+    <a data-trigger="dropdown" href="#">Dropdown</a>
+    <ul class="dropdown-menu">
+	    <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+	    <li><hr></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script>
+		//先实现单击按钮下拉
+/*   //查找data-trigger属性为dropdown的按钮
+    $("[data-trigger=dropdown]")
+//      .click(e=>{
+//      //阻止默认行为
+//      e.preventDefault();
+//      //查找按钮旁边的class为dropdown-menu的菜单项
+//      var $menu=
+//        $("[data-trigger=dropdown]+.dropdown-menu");
+//      //如果高为0，就改为140显示
+//      if(parseFloat($menu.css("height"))==0)
+//        $menu.css({
+//          height:140,opacity:1,
+//        });
+//      else//否则该高为0隐藏
+//        $menu.css({
+//          height:0, opacity:0,
+//        });
+//    })*/
+    //查找子元素中包含data-trigger=dropdown的class为dropdown的父元素
+    $(".dropdown:has([data-trigger=dropdown] )")
+      .mouseover(e=>{
+        $("[data-trigger=dropdown]+.dropdown-menu").css({
+          height:140,opacity:1,
+        })
+      })//return $div
+      .mouseout(e=>{
+        $("[data-trigger=dropdown]+.dropdown-menu").css({
+        height:0,opacity:0,
+        })
+      })//练习10分钟
+	</script>
+ </body>
+</html>

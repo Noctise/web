@@ -1,0 +1,28 @@
+#main {
+  width: 80%;
+  margin: 10px auto;
+  border: 1px solid #005aa0;
+  box-sizing: border-box;
+}
+#main .top {
+  width: 100%;
+  min-height: 50px;
+  background-color: #CD2A2C;
+}
+#main .top > .top-left {
+  float: left;
+  width: 30%;
+  background: #e4393c;
+}
+#main > .right {
+  width: 75%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#top-main {
+  color: #e4393c;
+  background-color: #f6c0c1;
+  border: 1px solid #1a0404;
+  width: 106 px;
+  height: 80 px;
+}

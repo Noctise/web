@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta charset="utf-8">
+	<style>
+		.container {
+			border: 1px solid #aaa;  overflow:hidden;
+		}
+		.block {
+			float: left; margin: 10px;
+			border: 1px solid #aaa;
+			background: #faa;
+			width: 150px; height: 150px;
+		}
+		.block:hover{ box-shadow:0 5px 6px #000; }
+		.close {
+			float:right; padding:5px;
+			font-weight:bold; opacity:.2; cursor: pointer;
+		}
+		.close:hover { opacity: .5; }
+	</style>
+ </head>
+ <body>
+  <h1>添加/删除节点</h1>
+	<button id="add-block">添加区块</button>
+	
+	<div class="container">
+ 		<!--<div class="block">-->
+    <!--<span class="close">×</span>-->
+  <!--</div>-->
+  </div>
+	
+	<script src="js/jquery-1.11.3.js"></script>
+	<script>
+		//为id为add-block的按钮绑定单击事件
+		$("#add-block").click(e=>{
+      //创建block
+      var $b=$(
+        '<div class="block"><span class="close">×</span></div>'
+      )
+      //为div随机生成背景色
+      $b.css("background",
+        "rgb("+
+        parseInt(Math.random()*256)
+        +","+
+        parseInt(Math.random()*256)
+        +","+
+        parseInt(Math.random()*256)
+        +")"
+      );
+      //为$b下的.close添加单击事件
+//      $b.children(".close")
+//        .click(e=>{
+//        $(e.target).parent().remove()
+//      })
+      //问题: 频繁为每个子元素添加事件监听，增加了监听的个数
+      //解决: 利用冒泡
+      //将$b追加到class为container的div下
+      $(".container").prepend($b);
+      //$b.prependTo(".container");
+    })
+    //问题: 页面加载完成时，还没有任何block，所以，一个事件也绑不上。
+//    $(".block>.close")
+//      .click(e=>{
+//      $(e.target).parent().remove();
+//    })
+    //利用冒泡
+    //为class为container的div绑定单击事件
+    $(".container").click(e=>{
+      var $target=$(e.target);
+      if($target.hasClass("close"))
+        $target.parent().remove();
+    })
+	</script>
+	
+ </body>
+</html>

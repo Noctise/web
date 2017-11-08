@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--1、指定语言基础-->
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <!--2、指定视口信息-viewport-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+  <!--3、指定 跨IE 浏览器的兼容性-->
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <title></title>
+  <!--4、引入 bootstrap.css 主css文件-->
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <!--5、引入两个 兼容性 js文件-->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="container">
+    <h3>1、基本媒体对象</h3>
+    <div class="media">
+      <!--1、左：媒体对象内容-->
+      <div class="media-left media-middle">
+        <a href="#" >
+          <img src="Images/1.jpg" class="media-object" style="width:50px;">
+        </a>
+      </div>
+      <!--2、中：文字描述内容-->
+      <div class="media-body">
+        <h3 class="media-heading">一朵大菊花</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolorum enim eos est eum, eveniet expedita fugiat, hic ipsa, modi mollitia natus repudiandae sit temporibus totam vel veniam! Adipisci, minima?</p>
+      </div>
+      <!--3、右：媒体对象内容-->
+      <div class="media-right">
+        <img src="Images/2.jpg" style="width:50px" class="media-object">
+      </div>
+    </div>
+    <h3>2、媒体列表</h3>
+    <ul class="media-list">
+      <li class="media">
+        <div class="media-left"></div>
+        <div class="media-body"></div>
+        <div class="media-right"></div>
+      </li>
+      <li class="media">
+        <div class="media-left"></div>
+        <div class="media-body"></div>
+        <div class="media-right"></div>
+      </li>
+      <li class="media">
+        <div class="media-left"></div>
+        <div class="media-body"></div>
+        <div class="media-right"></div>
+      </li>
+    </ul>
+  </div>
+
+
+
+
+
+
+
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!--6、引入 两个JS插件文件-->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--7、引入检查文件-->
+<script src="js/bootlint.js"></script>
+<script>
+  bootlint.showLintReportForCurrentDocument([]);
+</script>
+</body>
+</html>

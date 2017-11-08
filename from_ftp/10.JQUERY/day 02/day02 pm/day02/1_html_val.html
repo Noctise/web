@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta charset="utf-8">
+ </head>
+ <body>
+	<h1>操作元素的内容和值</h1>
+	<form action="">
+		用户名:<input name="uname">
+					<span id="uname-msg"></span><br>
+		密码:<input type="password" name="upwd">
+					<span id="upwd-msg"></span><br>
+		<input type="submit" value="提交注册信息">
+	</form>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script>
+    //正确时，使用图片:"<img src='img/ok.png'>"
+    //姓名错误时: "<img src='img/err.png'>用户名必须介于3~9位之间!"
+    //密码错误时: "<img src='img/err.png'>密码必须介于6~8位之间!"
+    //阻止默认行为: e.preventDefault();
+    //表单提交: $(form).submit();
+
+    //查找form中type为text的姓名文本框，绑定失去焦点事件
+    var $txtName=$("form :text");
+    $txtName.blur(e=>{
+      vali($(e.target),3,9,
+        "用户名必须介于3~9位之间!")
+    });
+    //查找form下type为password的密码框，绑定失去焦点事件
+    var $txtPwd=$("form :password");
+    $txtPwd.blur(e=>{
+      vali($(e.target),6,8,
+        "密码必须介于6~8位之间!")
+    });
+
+    function vali($txt,minlen,maxlen,msg){
+      //如果当前文本框的内容长度>=6且<=8
+      if($txt.val().length>=minlen
+        &&$txt.val().length<=maxlen){
+      //设置旁边的span的内容为
+        $txt.next().html(
+          "<img src='img/ok.png'>"
+        );
+        return true;
+      }else{//否则
+      //设置旁边的span的内容为
+        $txt.next().html(
+          "<img src='img/err.png'>"+msg
+        );
+        return false;
+      }
+    }
+    //为表单绑定提交事件:
+    $("form").submit(e=>{
+      var rName=vali($txtName,3,9,
+        "用户名必须介于3~9位之间!");
+      var rPwd=vali($txtPwd,6,8,
+        "密码必须介于6~8位之间!");
+      if(!(rName&&rPwd))
+        e.preventDefault();
+    });
+	</script>
+ </body>
+</html>

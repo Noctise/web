@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--1、指定语言基础-->
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <!--2、指定视口信息-viewport-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+  <!--3、指定 跨IE 浏览器的兼容性-->
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <title></title>
+  <!--4、引入 bootstrap.css 主css文件-->
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <!--5、引入两个 兼容性 js文件-->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="container">
+    <h3>警告框</h3>
+    <div class="alert alert-danger alert-dismissible fade in">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <h3>Title</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cupiditate deserunt dolore dolorum iure. Distinctio eum fugit impedit ipsam nobis numquam optio perferendis quas quisquam voluptatibus! Eius eveniet obcaecati voluptate.</p>
+    </div>
+    <h1>两种方式实现行为的调用</h1>
+    <h3>1、使用 data-*方式调用</h3>
+    <div class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">家用电器</a>
+      <ul class="dropdown-menu">
+        <li><a href="#">电冰箱</a></li>
+        <li><a href="#">电水壶</a></li>
+        <li><a href="#">电热毯</a></li>
+        <li><a href="#">手电筒</a></li>
+      </ul>
+    </div>
+
+    <h3>2、使用 JS 编程方式实现行为的调用</h3>
+    <div class="dropdown">
+      <a id="myBtn" href="#" class="dropdown-toggle">家用电器</a>
+      <ul class="dropdown-menu">
+        <li><a href="#">电冰箱</a></li>
+        <li><a href="#">电水壶</a></li>
+        <li><a href="#">电热毯</a></li>
+        <li><a href="#">手电筒</a></li>
+      </ul>
+    </div>
+  </div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!--6、引入 两个JS插件文件-->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--7、引入检查文件-->
+<script src="js/bootlint.js"></script>
+<script>
+  bootlint.showLintReportForCurrentDocument([]);
+</script>
+
+
+<script>
+//  $("#myBtn").dropdown();
+  $(function(){
+    $("#myBtn").dropdown();
+  });
+</script>
+</body>
+</html>

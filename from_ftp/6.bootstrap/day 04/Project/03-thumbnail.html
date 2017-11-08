@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--1、指定语言基础-->
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <!--2、指定视口信息-viewport-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+  <!--3、指定 跨IE 浏览器的兼容性-->
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <title></title>
+  <!--4、引入 bootstrap.css 主css文件-->
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <!--5、引入两个 兼容性 js文件-->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="container">
+    <h3>1、基本缩略图</h3>
+    <div class="row">
+      <div class="col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="Images/1.jpg" class="img-responsive">
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="Images/2.jpg" class="img-responsive">
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="Images/3.jpg" class="img-responsive">
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="Images/4.jpg" class="img-responsive">
+        </a>
+      </div>
+    </div>
+
+    <h3>2、复杂缩略图</h3>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <img src="Images/1.jpg" class="img-responsive">
+          <div class="caption">
+            <h3>一朵大菊花</h3>
+            <p>看着好看</p>
+            <p>闻着香</p>
+            <p>
+              <button type="button" class="btn btn-success">加入购物车</button>
+              <button type="button" class="btn btn-primary">加关注</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!--6、引入 两个JS插件文件-->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--7、引入检查文件-->
+<script src="js/bootlint.js"></script>
+<script>
+  bootlint.showLintReportForCurrentDocument([]);
+</script>
+</body>
+</html>

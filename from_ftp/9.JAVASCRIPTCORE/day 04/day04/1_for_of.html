@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  var arr=
+    ["旭旭","东东","涛涛","黑胖子"];
+//  for(var i=0;i<arr.length;i++){
+//    console.log(arr[i]);
+//  }
+  for(var val of arr){
+    console.log(val);
+  }
+
+  var arr2=[1,2,3,4,5];
+  //将每个元素*2
+  for(var i=0;i<arr2.length;i++){
+    arr2[i]*=2;
+  }
+//  for(var val of arr2){
+//    val*=2;//按值传递，无法修改原数组元素
+//  }
+  console.log(String(arr2));
+</script>
+</body>
+</html>

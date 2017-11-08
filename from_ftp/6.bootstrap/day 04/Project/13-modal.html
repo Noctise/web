@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--1、指定语言基础-->
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <!--2、指定视口信息-viewport-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+  <!--3、指定 跨IE 浏览器的兼容性-->
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <title></title>
+  <!--4、引入 bootstrap.css 主css文件-->
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <!--5、引入两个 兼容性 js文件-->
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+<div class="container">
+
+  <a href="#myModal" data-toggle="modal">打开模态框</a>
+
+  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">打开模态框</button>
+</div>
+
+
+
+
+
+<!--声明模态框元素-->
+<!--1、第一层：模态-->
+<div class="modal" id="myModal" data-backdrop="static">
+  <!--2、第二层：模态对话框-->
+  <div class="modal-dialog">
+    <!--3、第三层：模态对话框内容-->
+    <div class="modal-content">
+      <!-- 第四层：内容：头部，主体，底部 -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">用户登录</h4>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto, at consequatur natus nemo numquam quam quos ratione veritatis voluptatibus. Architecto deserunt eum possimus quam quibusdam, repudiandae suscipit ullam veniam.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!--6、引入 两个JS插件文件-->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--7、引入检查文件-->
+<script src="js/bootlint.js"></script>
+<script>
+  bootlint.showLintReportForCurrentDocument([]);
+</script>
+</body>
+</html>

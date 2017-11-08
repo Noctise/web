@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--1、指定语言基础-->
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <!--2、指定视口信息-viewport-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+  <!--3、指定 跨IE 浏览器的兼容性-->
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <title></title>
+  <!--4、引入 bootstrap.css 主css文件-->
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <!--5、引入两个 兼容性 js文件-->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+  <div class="container">
+    <h3>基本警告框</h3>
+    <div class="alert alert-danger">
+      <h4>您还未满18岁</h4>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores commodi earum illo, molestiae nostrum omnis quasi quibusdam quod ratione similique sint! Aliquid consequuntur earum mollitia odio quaerat, tempore temporibus?
+    </div>
+
+    <h3>带超链接警告框</h3>
+    <div class="alert alert-success">
+      <h4>您还未满18岁</h4>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores commodi earum illo, molestiae nostrum omnis quasi quibusdam quod ratione similique sint! Aliquid consequuntur earum mollitia odio quaerat, tempore temporibus？<a href="#" class="alert-link">返回</a>
+    </div>
+
+    <h3>允许关闭的警告框</h3>
+    <div class="alert alert-success alert-dismissible">
+      <!--关闭按钮-->
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <h4>您还未满18岁</h4>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores commodi earum illo, molestiae nostrum omnis quasi quibusdam quod
+      <a href="#" class="alert-link" data-dismiss="alert">Close</a> ratione similique sint! Aliquid consequuntur earum mollitia odio quaerat, tempore temporibus？<a href="#" class="alert-link">返回</a>
+    </div>
+  </div>
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!--6、引入 两个JS插件文件-->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--7、引入检查文件-->
+<script src="js/bootlint.js"></script>
+<script>
+  bootlint.showLintReportForCurrentDocument([]);
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    body{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<h1>替换节点</h1>
+
+<div id="chosen">
+  <img src="img/p0.png">
+</div>
+<hr/>
+<div id="list">
+  <img src="img/p3.png">
+  <img src="img/p4.png">
+  <img src="img/p5.png">
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+  //为id为list下的img绑定单击事件
+  $("#list>img").click(e=>{
+    //用当前img替换id为chosen下的img
+//    $(e.target)
+//      .replaceAll("#chosen>img");
+    $("#chosen>img")
+      .replaceWith(
+        $(e.target).clone(/*false*/)
+    );
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+/*定义 div 的默认样式*/
+div {
+  background: #e4393c;
+  border: 1px solid #e4393c;
+}
+#container {
+  width: 200px;
+  height: 200px;
+  background-color: #5f1516;
+  font-family: "microsoft yahei";
+  border: 2px solid #000000;
+}
+#top-left {
+  width: 100%;
+  height: 300px;
+  background-color: #5f1516;
+}
+#virtuals {
+  background-color: #5f1516;
+}
+.border {
+  border: 1px solid #005aa0;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 0 red;
+}
+#main {
+  width: 300px;
+  height: 100px;
+  border: 1px solid #005aa0;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 0 red;
+}
+#footer {
+  margin-top: 10px;
+  padding: 5px;
+  width: 100%;
+  min-height: 50px;
+  border: 1px solid #333333;
+  background-color: green;
+}
+#banner {
+  margin: 10px auto;
+  width: 100%;
+  min-height: 50px;
+  border: 2px solid #333333;
+  background-color: red;
+}

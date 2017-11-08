@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+  </style>
+</head>
+<body>
+<h1>与服务器进行通信的三步</h1>
+<button id="bt0">连接到服务器</button>
+<button id="bt1">给服务器发消息</button>
+<button id="bt2">断开与服务器的链接</button>
+
+<hr/>
+<button id="bt99">一次性触发“连接-发消息-断开”三个处理函数</button>
+
+
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+  $('#bt0').click(e=>
+    console.log('开始连接服务器....')
+  )
+  $('#bt1').click(e=>
+    console.log('开始向服务器发消息....')
+  )
+  $('#bt2').click(e=>
+    console.log('断开到服务器的连接....')
+  )
+
+  $('#bt99').click(e=>
+    //使用JS顺序触发前三个按钮的单击事件即可
+  )
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta charset="utf-8">
+	<style>
+		.accordion{width:80%; margin:0 auto;}
+		.accordion>.title{
+			background:#eee; border:1px soild #aaa;
+			padding:6px; font-size:1.5em; 
+			font-weight:bold; cursor:pointer;
+		}
+    .accordion>.content{
+      border-left:1px solid #eee;
+      border-right:1px solid #eee;
+    }
+    .accordion>:last-child{
+      border-bottom:1px solid #eee;
+    }
+    .fade{
+      height:0;
+      opacity:0;
+      overflow:hidden;
+      transition:all .5s linear;
+    }
+    .in{
+      height:84px;
+      opacity:1;
+    }
+	</style>
+ </head>
+ <body>
+	<h1>使用“高度动画”实现“手风琴”组件</h1>
+	<div class="accordion">
+		<div class="title">《西游记》简介</div>
+		<div class="content fade in">一个和尚和四个动物的故事: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique nulla voluptas velit minus esse voluptatem illum quis magni nihil sint facilis cupiditate nobis quia ab neque. Modi veniam omnis nisi?	</div>
+		<div class="title">《水浒传》简介</div>
+		<div class="content fade">105个男人和三个女人的故事: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis provident sapiente aperiam reprehenderit repellat rem magnam vel odio quia harum hic impedit dolorem similique ea est consequatur adipisci at nemo!</div>
+		<div class="title">《红楼梦》简介</div>
+		<div class="content fade">一个男人和一群女人的故事: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus minima quidem aspernatur eligendi optio cupiditate minus nam expedita? Aliquid veritatis doloribus maxime vel dicta illo unde iusto qui quasi doloremque.</div>
+	</div>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script>
+		$(".accordion").on("click",".title",e=>
+      $(e.target).next(".content").toggleClass("in")
+        .siblings(".content").removeClass("in")
+    );
+	</script>
+ </body>
+</html>

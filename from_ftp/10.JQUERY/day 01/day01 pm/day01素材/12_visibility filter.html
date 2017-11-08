@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <style>
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>可见性选择器</h1>
+
+  <div id="d1" style="display: none">lorem</div>
+  <div id="d2" style="visibility: hidden">lorem</div>
+  <div id="d3" style="opacity: 0">lorem</div>
+  <input id="d4" type="hidden" name="aa" value="bb"/>
+
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+  console.log( $(':hidden') )
+</script>
+</body>
+</html>

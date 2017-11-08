@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  function Student(sname,sage){
+    //this->new
+    this.sname=sname;
+    this.sage=sage;
+  }
+  Student.prototype.intr=function(){
+    console.log(
+      "I'm "+this.sname
+      +",I'm "+this.sage);
+  };
+  Student.prototype.className= "初一2班";
+
+  var lilei=new Student("Li Lei",11);
+  console.dir(lilei);
+  var hmm=
+    new Student("Han Meimei",12);
+  console.dir(hmm);
+  lilei.intr();
+  hmm.intr();
+  console.log(lilei.className);
+  console.log(hmm.className);
+  console.log(
+    lilei.__proto__==hmm.__proto__
+  );//true
+  Student.prototype.className=
+                        "初二2班";
+  console.log(lilei.className);
+  console.log(hmm.className);
+</script>
+</body>
+</html>

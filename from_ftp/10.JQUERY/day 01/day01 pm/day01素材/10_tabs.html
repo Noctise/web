@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <style>
+    .tabs{ list-style:none; padding:0 }
+    .tabs a{
+      text-decoration:none;
+			color:#000;
+			padding:6px 12px;
+			display:inline-block;
+    }
+    .tabs>li{
+      float:left;
+      border-bottom:1px solid #000;
+    }
+    .tabs>.active{
+      border:1px solid #000;
+      border-bottom:0;
+    }
+  </style>
+ </head>
+ <body>
+		<h1>使用属性选择器实现标签页头的切换</h1>
+		<ul class="tabs">
+			<li class="active"><a data-toggle="tab" href="#">十元套餐</a></li>
+			<li><a data-toggle="tab" href="#">二十元套餐</a></li>
+			<li><a data-toggle="tab" href="#">三十元套餐</a></li>
+		</ul>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+      //查找data-toggle=tab的元素
+      $("[data-toggle=tab]")
+        .click(e=>{
+        //获得当前a的父元素li
+        var $li=$(e.target).parent();
+        //如果当前li没有active类
+        if(!$li.hasClass("active")){
+          //查找class为tabs下的class为active的li，移除其class
+          $(".tabs>li.active")
+            .removeClass("active");
+          //为当前li添加active类
+          $li.addClass("active");
+        }
+      })
+    </script>
+ </body>
+</html>

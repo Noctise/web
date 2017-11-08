@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--1、指定语言基础-->
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <!--2、指定视口信息-viewport-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+  <!--3、指定 跨IE 浏览器的兼容性-->
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <title></title>
+  <!--4、引入 bootstrap.css 主css文件-->
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <!--5、引入两个 兼容性 js文件-->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+  <style>
+    body{
+      padding-top:100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button type="button" class="btn btn-default" data-toggle="tooltip" title="这是一个普通的按钮" data-placement="right">工具提示1-右侧提示</button>
+
+    <button type="button" class="btn btn-default" data-toggle="tooltip" title="这是一个普通的按钮" data-placement="bottom">工具提示1-底部提示</button>
+
+    <h3>弹出框</h3>
+    <button type="button" class="btn btn-danger" data-toggle="popover" data-placement="right" title="弹出框标题" data-content="这是弹出框中的内容">弹出框</button>
+  </div>
+
+
+
+
+
+
+
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!--6、引入 两个JS插件文件-->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--7、引入检查文件-->
+<script src="js/bootlint.js"></script>
+<script>
+  bootlint.showLintReportForCurrentDocument([]);
+</script>
+  <script>
+    $("[data-toggle=tooltip]").tooltip();
+    $("[data-toggle=popover]").popover();
+  </script>
+</body>
+</html>

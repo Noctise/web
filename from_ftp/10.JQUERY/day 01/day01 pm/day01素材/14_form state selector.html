@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>.....</title>
+  <meta charset="utf-8"/>
+  <style>
+  </style>
+ </head>
+ <body>
+	<form>
+		用户名:<input disabled></br>
+		密码:<input type="password" disabled></br>
+		<input type="checkbox">我同意本站的使用条款<br>
+		<input type="submit" value="提交注册信息" disabled/>
+	</form>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script>
+    //查找type为checkbox的按钮绑定单击事件
+    $(":checkbox").click(e=>{
+      //找其它表单元素:
+      $(":input:not(:checkbox)")
+        .prop(
+          "disabled",
+          !e.target.checked)
+    });
+  </script>
+ </body>
+</html>

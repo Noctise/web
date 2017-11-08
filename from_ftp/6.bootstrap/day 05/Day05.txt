@@ -1,0 +1,200 @@
+1、导航条
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="navbar-header">
+			<a class="navbar-brand"></a>
+		</div>
+		<ul class="nav navbar-nav"></ul>
+		<form class="navbar-form"></form>
+		<button class="navbar-btn navbar-left"></button>
+		<span class="navbar-text navbar-right"></span>
+	</nav>
+2、工具提示
+	data-toggle="tooltip"
+	data-placement="top/right/bottom/left"
+	title="提示文本"
+	配合
+	$("[data-toggle=tooltip]").tooltip();
+3、弹出框
+	data-toggle="popover"
+	data-placement="top/right/bottom/left"
+	title="标题"
+	data-content="内容"
+	配合
+	$("[data-toggle=popover]").popover();
+4、标签页
+	<ul class="nav nav-tabs">
+		<li>
+			<a href="#关联的内容模块ID"></a>
+		</li>
+	</ul>
+	<div class="tab-content">
+		<div class="tab-pane"></div>
+	</div>
+5、模态框
+	1、触发器
+		<a data-toggle="modal" href="#模态框ID"></a>
+		<button data-toggle="modal" data-target="#模态框ID"></button>
+	2、模态框元素
+		<div class="modal" id="" data-backdrop="static">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body"></div>
+					<div class="modal-footer"></div>
+				</div>
+			</div>
+		</div>
+
+
+***************************
+1、插件-折叠效果(Collapse)
+	1、基本的折叠效果
+		1、触发器
+			<a data-toggle="collapse" href="#ID"></a>
+			或
+			<button data-toggle="collapse" data-target="#ID"></button>
+		2、折叠元素
+			<div class="collapse"></div>
+	2、手风琴-Accordion
+	3、响应式导航条-Responsive navbar
+		当屏幕尺寸>=768时，可以正常显示所有的内容，当屏幕尺寸<=767px时，一部分内容被隐藏，通过折叠点击的方式进行显示
+
+		响应式导航条由两部分组成
+		1、.navbar-header
+			1、.navbar-brand
+				任何情况下，都会显示
+			2、折叠按钮
+				.navbar-toggle
+				屏幕尺寸>=768px,不显示
+				屏幕尺寸<=767px,显示
+		2、折叠内容(受响应式控制) 
+			.navbar-collapse .collapse
+			屏幕尺寸 >=768px,全部正常显示
+			屏幕尺寸 <=767px,则隐藏，需要通过 .navbar-toggle的点击 来完成显示 和 隐藏
+2、插件-图片轮播(carousel)
+	1、基本结构
+		<div class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="">
+				</div>
+			</div>
+		</div>
+	2、指定轮转的时间
+		增加属性：
+		<div class="carousel" data-interval="2000">
+	3、带文本的轮播图片
+		<div class="item">
+			<img src="">
+			<div class="carousel-caption">
+				<h3>标题</h3>
+				<p>文本</p>
+			</div>
+		</div>
+	4、带反向按钮的轮播
+		<div id="myCar" class="carousel">
+			<div class="carousel-inner"></div>
+
+			<!-- 左右方向按钮 -->
+			<a href="#myCar" class="carousel-control left/right" data-slide="prev/next">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+		</div>
+	5、带导航圆点的轮播
+		<div class="carousel">
+			
+			<ul class="carousel-indicators">
+				<li
+					data-target="#Carousel的ID"
+					data-slide-to="0"
+					class="active"
+				></li>
+			</ul>
+
+		</div>
+===========================================
+Bootstrap 定制 & Less
+1、样式语言的分类
+	1、静态样式语言 : CSS
+		可以直接被浏览器解析处理；
+		但CSS并不是合格的 "语言"，它缺少编程语言的最基本要素 ：变量，运算符，函数，....
+		静态语言的缺点：可维护性差
+	2、动态样式语言 ：
+		如：Less , Stylus , SCSS ...
+		不能被浏览器直接编译处理；必须经过编译(Compile)得到一个CSS文件，再交给浏览器去使用
+2、Less语言
+	官网：http://www.lesscss.org
+	中文：http://less.bootcss.com
+
+	Less是一个CSS预处理语言，它扩充了CSS，在静态的CSS基础上增加了动态的内容,Less中完全支持和兼容CSS
+
+	在 Web 中使用Less的两种方式
+	1、客户端浏览器中编译Less - 不推荐
+		1、编写 xxx.less
+		2、编写 xxx.html 
+			在网页中，可以引入 xxx.less,同时还需要引入编译文件 less.js
+		3、客户端访问 xxx.html 会自动下载 xxx.less 和 less.js ，然后进行编译，解析 ...
+	2、在服务器端编译Less - 推荐
+		1、编写 xxx.less
+		2、在服务器端 搭建 Less编译器 ，将 xxx.less 编译成 xxx.css
+		3、网页中，正常引入 css 文件即可
+3、搭建Less编译器(乱)
+	Less编译器是由JS进行编写的...
+	1、安装独立的JS解释器 - NodeJS
+		查看Node版本：在控制台中 输入 ：
+			node -v
+	2、安装Less编译器程序
+		确保 lessc.cmd 文件存在即可
+	3、将 Less 转换为 Css(重点)
+		1、在 控制台中 找到 lessc.cmd 并打开
+		2、编译 less文件
+			lessc.cmd E:\1.less > E:\1.css
+	4、在 WS 中，配置 FileWatchers(文件监视器)
+		通过 FileWatchers 自动检测Less文件的编写与更改，自动进行编译再得到CSS
+		WS --> File-->Settings-->Tools-->FileWatchers --> 添加 选择 Less  --> 指定 lessc.cmd 文件地址
+4、Less语法
+	1、Less 完全支持 CSS
+	2、Less支持单行注释 和 多行注释，但是，只有多行注释能够编译到CSS中
+		多行：/* */
+		单行：//
+	3、Less 支持 变量(Variable)
+		变量：在 Less 中，变量是一个可以变化的数据
+		语法：
+			@变量名:值;
+			变量名：英文，数字(不能开头)，_，-
+			ex:
+				@jd-color:#E4393C;
+				@border:1px solid #000;
+				@base-font:"microsoft yahei";
+	4、Less 中允许使用 运算符
+		+,-,*,/
+		@width:5px + 1;
+	5、在 Less 中，支持在一组样式中 混入(Mixin) 另一种样式
+		选择器1{ ... }
+		选择器2{ ... ; 选择器1 ;}
+
+		选择器2中 会包含 选择器中 定义好的样式
+
+		带参数的混合:
+			声明选择器的时候，允许使用"参数"来表示暂时不确定 或 可以灵活变化 的数据 ，在最终 "混合"的时候，将确定的数据传递进来
+		
+			选择器1(@参数名1,@参数名2){
+				background-color:@参数名1;
+				border:@参数名2 solid #005aa0;
+			}
+
+			带参数混合的调用
+			选择器2{
+				width:200px;
+				...
+				选择器1(值1,值2);
+			}
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta charset="utf-8">
+	<style>
+		.alert{
+			border:1px solid #a33;
+			color:#922;
+			background:#fee;
+			padding:10px;
+		}
+		.alert>.close{
+			float:right;
+			font-weight:bold;
+			opacity:.5;
+			cursor:pointer;
+		}
+		.alert>.close:hover{opacity:1}
+		.fade{ /*定义淡入淡出动画的初始状态,常驻元素*/
+      /*width:0;*/
+      height:0;
+      opacity:0;
+      overflow:hidden;
+      transition:all .5s linear;
+		}
+		.in{ /*定义淡入淡出动画的结束状态*/
+      /*width:500px;*/
+      height:72px;
+      opacity:1
+		}
+	</style>
+ </head>
+ <body>
+	<button id="btn">click me!</button>
+  <div class="alert fade">
+		<span class="close">×</span>
+		<p>您的浏览器版本太低!请下载最新版本的浏览器</p>
+	</div>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script>
+	  //为id为btn的按钮绑定单击事件:
+    $("#btn").click(e=>{
+      //为class为alert的div添加in class
+      $(".alert").addClass("in");
+    })
+    //为class为alert下的class为close的span添加单击事件
+    $(".alert>.close").click(e=>{
+      //为当前元素的父元素移除in class
+      $(e.target).parent()
+        .removeClass("in");
+    })
+	</script>
+ </body>
+</html>

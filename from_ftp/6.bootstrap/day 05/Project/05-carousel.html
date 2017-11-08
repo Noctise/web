@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--1、指定语言基础-->
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <!--2、指定视口信息-viewport-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+  <!--3、指定 跨IE 浏览器的兼容性-->
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <title></title>
+  <!--4、引入 bootstrap.css 主css文件-->
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <!--5、引入两个 兼容性 js文件-->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+  <style>
+    #myCar .carousel-inner .item img{
+      width:100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h3>1、普通的轮播广告</h3>
+    <div id="myCar" class="carousel slide" data-ride="carousel" data-interval="3000">
+      <!--轮播内容区域-->
+      <div class="carousel-inner">
+        <!--1、轮播图片1-->
+        <div class="item active">
+          <img src="Images/11.jpg">
+          <div class="carousel-caption">
+            <h3>一朵大菊花</h3>
+            <p>看着好看，闻着香的大菊花</p>
+          </div>
+        </div>
+        <!--2、轮播图片2-->
+        <div class="item">
+          <img src="Images/22.jpg">
+          <div class="carousel-caption">
+            <h3>大好河山</h3>
+            <p>大好河山，中国好风光</p>
+          </div>
+        </div>
+        <!--3、轮播图片3-->
+        <div class="item">
+          <img src="Images/33.jpg">
+        </div>
+        <!--4、轮播图片4-->
+        <div class="item">
+          <img src="Images/44.jpg">
+        </div>
+      </div>
+      <!-- 左 / 右 方向按钮 -->
+      <a href="#myCar" class="carousel-control left" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a href="#myCar" class="carousel-control right" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+      <!--导航小圆点-->
+      <ul class="carousel-indicators">
+        <li data-target="#myCar" data-slide-to="0" class="active"></li>
+        <li data-target="#myCar" data-slide-to="1"></li>
+        <li data-target="#myCar" data-slide-to="2"></li>
+        <li data-target="#myCar" data-slide-to="3"></li>
+      </ul>
+    </div>
+  </div>
+
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!--6、引入 两个JS插件文件-->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--7、引入检查文件-->
+<script src="js/bootlint.js"></script>
+<script>
+  bootlint.showLintReportForCurrentDocument([]);
+</script>
+</body>
+</html>

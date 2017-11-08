@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta charset="utf-8">
+	<style>
+  a { text-decoration: none;  color: #000;  line-height: 2em; }
+ul { list-style:none;  padding: 0 0 0 20px; }
+.affix { float: left;  border: 1px solid #aaa;  width: 150px; }
+.affix  .active  a{ color: #e4393c;  font-weight: bold; }
+.container { float: left;  width: 550px;  min-height: 400px;  border: 1px solid #aaa; }
+.container .box { display: none;  min-height: 300px;  }
+.container .box.active { display: block; }
+
+	</style>
+ </head>
+ <body>
+  <h1>练习：查找元素&操作元素</h1>
+	<h3>使用附加导航(affix)实现内容切换</h3>
+
+	<div class="affix">
+		<ul>
+			<li><a data-toggle="item" href="#my-order">我的订单</a></li>
+			<li class="active"><a data-toggle="item" href="#user-setting">用户设置</a></li>
+			<li><a data-toggle="item" href="#account-security">账户安全</a></li>
+		</ul>
+	</div>
+
+	<div class="container">
+		<div id="my-order" class="box" style="background:#fee">我的订单的详细内容</div>
+		<div id="user-setting" class="box active" style="background:#efe">用户设置的详细内容</div>
+		<div id="account-security" class="box" style="background:#eef">账户安全的详细内容</div>
+	</div>
+ </body>
+</html>

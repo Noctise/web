@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--1、指定语言基础-->
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <!--2、指定视口信息-viewport-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+  <!--3、指定 跨IE 浏览器的兼容性-->
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <title></title>
+  <!--4、引入 bootstrap.css 主css文件-->
+  <link rel="stylesheet" href="css/intel.css"/>
+  <!--5、引入两个 兼容性 js文件-->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!--1、导航条-->
+  <nav id="nav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!--1、navbar-header-->
+      <div class="navbar-header">
+        <!--1、navbar-brand-->
+        <a href="#" class="navbar-brand"></a>
+        <!--2、navbar-toggle-->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myCollapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!--2、navbar-collapse-->
+      <div id="myCollapse" class="navbar-collapse collapse">
+        <!--1、下拉菜单-->
+        <div class="dropdown navbar-left">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            菜单
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="#">Intel产品</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">Intel产品</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">Intel产品</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">Intel产品</a>
+            </li>
+          </ul>
+        </div>
+        <!--2、导航-->
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#">China(简体中文)</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">登录</a>
+            <!--下拉菜单-->
+            <div class="dropdown-menu">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <h3>登录</h3>
+                  <p>您是否在Intel工作</p>
+                  <form>
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="用户名"/>
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control" placeholder="密码"/>
+                    </div>
+                    <p>您登录表明同意我们的服务条款</p>
+                    <button type="button" class="btn btn-primary btn-xs">登录</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!--3、form表单-->
+        <form class="navbar-form navbar-right">
+          <p class="form-control-static">查找内容</p>
+          <p class="form-control-static">|</p>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="搜索..."/>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--2、主体-->
+  <div class="container" id="main">
+    <!--1、文本-->
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>欢迎来到Intel®</h2>
+      </div>
+    </div>
+    <!--2、图文-->
+    <div class="row">
+      <!--1、左侧大图：md以及以上 ：8列，md以下：12列-->
+      <div class="col-md-8 col-xs-12">
+        <img src="img/intel.web.864.486.1.jpg" class="img-responsive"/>
+        <!-- PC,PAD：绝对定位 ，PHONE：非绝对定位 -->
+        <div class="img-title">
+          <h2>五代酷睿芯，强劲创体验</h2>
+          <p>第五代智能英特尔®酷睿™处理器锋芒登场，革命性突破的领先技术，彻底颠覆传统PC使用体验，带您进入全新数字世界</p>
+          <a href="#" class="btn btn-info">
+            立即探索第五代智能英特尔
+          </a>
+        </div>
+      </div>
+      <!--2、右侧2幅小图 : md以及以上 ：4列 ，md以下 ：12列 , 嵌套一行 ，再嵌套2列 ：md以及以上：12列，sm:6列，xs：12列-->
+      <div class="col-md-4 col-xs-12">
+        <div class="row">
+          <div class="col-md-12 col-sm-6 col-xs-12">
+            <img class="img-responsive" src="img/intel.web.368.207.1.jpg">
+            <!--半透明，遮罩层-->
+            <div class="half-mask">
+              <h4>解密2合1电脑</h4>
+              <p>搭载英特尔处理器的2合1电脑，助你高效工作的同时带给你灵活可触控的平板体验。</p>
+              <p>
+                <a href="#">了解更多</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-12 col-sm-6 col-xs-12">
+            <div class="media">
+              <!--左：图像-->
+              <div class="media-left">
+                <img src="img/intel.web.81.108.png">
+              </div>
+              <!--右：文字列表-->
+              <div class="media-body">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#">2015年电脑展</a>
+                  </li>
+                  <li>
+                    <a href="#">2015年电脑展</a>
+                  </li>
+                  <li>
+                    <a href="#">2015年电脑展</a>
+                  </li>
+                  <li>
+                    <a href="#">2015年电脑展</a>
+                  </li>
+                  <li>
+                    <a href="#">2015年电脑展</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--3、图文-->
+    <!--4、图文-->
+  </div>
+  <!--3、底部-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--6、引入 两个JS插件文件-->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--7、引入检查文件-->
+<script src="js/bootlint.js"></script>
+<script>
+  bootlint.showLintReportForCurrentDocument([]);
+</script>
+</body>
+</html>

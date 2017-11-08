@@ -1,0 +1,102 @@
+@import "bootstrap.less";
+/*自定义样式*/
+body{
+  font-family:simhei,simsun,arial,sans-serif;
+  padding-top:60px;
+}
+/*navbar 的相关样式*/
+#nav{
+  // 修改 a.navbar-brand的样式
+  a.navbar-brand{
+    width:63px;
+    height:42px;
+    background:url(../img/hdr-spr.png) no-repeat 0px -512px;
+    padding:0px;
+    margin-top:3px;
+  }
+
+  //修改 a.dropdown-toggle 的样式
+  a.dropdown-toggle{
+    /*高度，左右padding，行高，加粗*/
+    display:block;
+    height:50px;
+    line-height:50px;
+    padding:0 60px 0 15px;
+    background-color:#0081D6;
+    color:#fff;
+    margin-left:15px;
+  }
+  //修改 panel的样式
+  div.panel{
+    width:400px;
+    color:#333;
+  }
+}
+
+#main{
+  div.img-title{
+    position:absolute;
+    bottom:15px;
+    left:30px;
+    width:90%;
+  }
+
+  //响应式：手机屏幕中
+  @media screen and (max-width:767px){
+    div.img-title{
+      position:static;
+      margin-bottom:10px;
+    }
+    div.img-title h2{
+      font-size:2rem;
+    }
+  }
+
+  //解密 2合1
+  div.half-mask{
+    /*宽度，高度，背景颜色(透明)，绝对定位及位置，过渡*/
+    width:90.6%;
+    height:100%;
+    background-color:rgba(0,0,0,0.7);
+    position:absolute;
+    top:80%;
+    left:15px;
+    transition:top 200ms;
+  }
+  div.half-mask:hover{
+    top:0px;
+  }
+
+  div.col-md-12.col-sm-6.col-xs-12{
+    overflow:hidden;
+  }
+
+  @media screen and (max-width:991px){
+    div.half-mask{
+      width:92%;
+    }
+  }
+
+  div.media{
+    background-color:#0071C5;
+    margin-top:15px;
+    padding:28px 50px;
+  }
+  //响应式
+  @media screen and (min-width:768px) and (max-width:991px){
+    div.media{
+      margin-top:0px;
+      padding:42px 50px;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+

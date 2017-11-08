@@ -1,0 +1,80 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>读取并修改元素的属性</title>
+<meta charset="utf-8" />
+<style>
+.tabs{ list-style:none; padding:0;}
+.tabs a{
+  text-decoration:none;
+	color:#000;
+	padding:6px 12px;
+	display:inline-block;
+  width:96px;
+  text-align:center;
+}
+.tabs>li{
+  float:left;
+  border-bottom:1px solid #000;
+}
+.tabs>.active{
+  border:1px solid #000;
+  border-bottom:0;
+}
+.container{
+	position: relative;
+}
+.container>div{
+	width: 300px;
+	height: 100px;
+	padding:30px;
+  background:#fff;
+  border:1px solid #000;
+  border-top:0;
+	position: absolute;
+	top: 34px;
+	left: 0;
+}
+.container>.active{
+  z-index:10;
+}
+
+</style>
+
+</head>
+<body>
+	<h2>实现多标签页效果</h2>
+  <div id="my-tabs">
+    <ul class="tabs">
+      <li class="active"><a data-toggle="tab" href="#content1">10元套餐</a></li>
+      <li><a data-toggle="tab" href="#content2">30元套餐</a></li>
+      <li><a data-toggle="tab" href="#content3">50元包月</a></li>
+    </ul>
+    <div class="container">
+      <div id="content1" class="active">
+        10元套餐详情：<br />&nbsp;每月套餐内拨打100分钟，超出部分2毛/分钟
+      </div>
+      <div id="content2">
+        30元套餐详情：<br />&nbsp;每月套餐内拨打300分钟，超出部分1.5毛/分钟
+      </div>
+      <div id="content3">
+        50元包月详情：<br />&nbsp;每月无限量随心打
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script>
+	  $(".tabs:has([data-toggle=tab])")
+      .on("click","[data-toggle=tab]",e=>{
+      var $tar=$(e.target);
+      if(!$tar.parent().is(".active")){
+        $tar.parent().addClass("active")
+          .siblings().removeClass("active");
+        var id=$tar.attr("href");
+        $(id).addClass("active")
+          .siblings().removeClass("active");
+      }
+    })
+  </script>
+</body>
+</html>

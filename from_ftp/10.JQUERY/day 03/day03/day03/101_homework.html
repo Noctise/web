@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+</head>
+<body>
+<div class="container">
+  <h1>我的购物车</h1>
+  <button class="btn btn-success" id="bt-add">添加新的商品</button>
+  <table class="table table-bordered table-striped table-hover">
+    <thead>
+    <tr>
+      <th>单价</th>
+      <th>数量</th>
+      <th>小计</th>
+      <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>5.50</td>
+      <td>2</td>
+      <td>11.00</td>
+      <td><span class="close">×</span></td>
+    </tr>
+    <tr>
+      <td>3.80</td>
+      <td>1</td>
+      <td>3.80</td>
+      <td><span class="close">×</span></td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+      <td colspan="4" class="text-right">总计：<span id="total">14.80</span></td>
+    </tr>
+    </tfoot>
+  </table>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+  //单击“添加新商品”，生成一行新的商品记录
+  $('#bt-add').click(function(){
+    var price = Math.random()*100;//生成随机的商品单价
+    price = price.toFixed(2);
+    var count = 1;  //商品的购买数量
+    var html = `
+      <tr>
+        <td>${price}</td>
+        <td>${count}</td>
+        <td>${price*count}</td>
+        <td><span class="close">×</span></td>
+      </tr>
+    `;
+    $('tbody').append(html);
+    //重新计算购物车总金额
+    calcTotal();
+  });
+
+  //单击每个×，删除当前行，并重新计算购物车总金额
+  $('tbody').on('click', '.close', function(){
+    //删除×所在的tr
+    $(this).parent().parent().remove();
+    calcTotal(); //重新计算总金额
+  })
+
+  //共用函数：计算当前商品的总金额
+  function calcTotal(){
+    var sum = 0; //总金额
+    //读取tbody中每行的第3个td中的内容，相加即可
+    $('tbody td:nth-child(3)').each(function(i,td){
+      sum += parseFloat(td.innerHTML);
+    })
+    $('#total').html(sum);
+  }
+</script>
+</body>
+</html>

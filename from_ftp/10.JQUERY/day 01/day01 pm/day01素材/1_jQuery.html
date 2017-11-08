@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <h1>jQuery/$工厂函数</h1>
+  <button id="btn1">click me(0)</button>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script>
+    //1. 输出jQuery工厂函数，jQuery类型的原型对象，并判断jQuery的原型对象是不是jQuery.fn
+//    console.log($/*jQuery*/);
+//    console.log(jQuery.prototype);
+//    console.log(
+//      jQuery.fn==jQuery.prototype)
+    //2. 使用$工厂函数查询id为btn1的一个按钮，封装在jQuery对象中，并查看jQuery对象结构: 
+    //DOM:
+//    var btn1=
+//    document.getElementById("btn1")
+    //jQuery:
+    var $btn1=$("#btn1");
+    console.dir($btn1);
+    //3. 使用简化版API为$btn绑定单击事件:修改按钮的点击次数
+    //DOM:
+    //btn1.onclick=function(){
+    // }
+    //jQuery:
+    $btn1.click(e=>{
+      //获得当前按钮,封装为jQuery对象
+      var $btn=$(e.target);
+      //获得btn内容中()中的数字
+      var n=
+        $btn.html().slice(9,-1);
+      n++;//将n+1
+      //将n写会内容中
+      $btn.html("click me("+n+")");
+    });
+
+
+
+      //4. 使用$工厂函数包装e.target, 使用简化版API完成功能
+  
+</script>
+</body>
+</html>

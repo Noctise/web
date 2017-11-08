@@ -1,0 +1,188 @@
+1、插件-折叠(Collapse)
+	1、触发器元素
+		<a data-toggle="collapse" href="#ID"></a>
+		<button data-toggle="collapse" data-target="#">
+	2、被折叠元素
+		<div class="collapse" id=""></div>
+	3、其它效果
+		1、面板的折叠
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<a data-toggle="collapse" href="#pnl"></a>
+				</div>
+				<div id="pnl" class="panel-collapse collapse">
+					<div class="panel-body"></div>
+					<div class="panel-footer"></div>
+				</div>
+			</div>
+		2、手风琴效果
+			<div class="panel-group" id="pg">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<a data-parent="#pg" data-toggle="collapse" href="#pnl"></a>
+					</div>
+					<div id="pnl" class="panel-collapse collapse">
+						<div class="panel-body"></div>
+						<div class="panel-footer"></div>
+					</div>
+				</div>
+
+				...
+			</div>
+		3、响应式导航条
+			<nav class="navbar navbar-default">
+				<div class="navbar-header">
+					<a class="navbar-brand"></a>
+					<button data-target="#d1" data-toggle="collapse" class="navbar-toggle">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div id="d1" class="navbar-collapse collapse">
+					... ...
+				</div>
+			</nav>
+2、附加导航 & 滚动监听
+	<body data-spy="scroll" data-target="#nav">
+		... ...
+		<div id="nav" data-spy="affix" data-offset-top="300">
+			<ul class="nav nav-pills">
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</body>
+3、插件-轮播(Carousel)
+	<div id="cc" data-interval="2000" class="carousel slide" data-ride="carousel">
+		
+		<!-- 轮播广告内容 -->
+		<div class="carousel-inner">
+			<div class="item active">
+				<img>
+				<div class="carousel-caption">
+					<h4></h4>
+					<p></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- 左右方向按钮 -->
+		<a href="#cc" class="carousel-control left" data-slide="prev"></a>
+		<a href="#cc" class="carousel-control right" data-slide="next"></a>
+		
+		<!-- 导航小圆点 -->
+		<ul class="carousel-indicators">
+			<li class="active" data-slide-to="0" data-target="#cc"></li>
+			<li data-slide-to="0" data-target="#cc"></li>
+		</ul>
+	</div>
+==========================================
+Less:
+	1、语法
+		1、Less 完全支持 CSS
+		2、Less中的注释
+			单行：// 不会被编译到CSS中
+			多行：/* 正常会被编译到CSS中 */
+		3、变量
+			@变量名:值;
+			使用变量：
+				background:@变量名;
+		4、运算符
+			+，-，*，/，... ...
+		5、混合(Mixin)
+			在一组样式中 混入 另一种样式
+			选择器1{}
+			选择器2{
+				... ...
+				选择器1;
+			}
+
+			带参数的混合:
+			选择器1(@参数1,@参数2){
+				width:@参数1;
+				background-color:@参数2;
+			}
+
+			选择器2{
+				... ...
+				选择器1(50px,#e4393c);
+			}
+=========================================
+1、Less
+	1、语法
+		1、嵌套
+			在less中，允许嵌套定义 选择器,以便方便的完成父子结构 或 后代结构
+			语法：
+				选择器1{
+					... ...
+
+					选择器2{
+						... ...
+						选择器3{
+							...
+						}
+					}
+
+					>选择器4{
+						... ...
+					}
+				}
+			编译完成后：
+				选择器1{ 只包含选择器1的内容 }
+				选择器1 选择器2{ 只包含选择器2的内容 }
+				选择器1 选择器2 选择器3{ 选择器3 }
+				选择器1>选择器4{ 选择器4的内容 }
+		2、函数
+			是Less中提供的一组预定义的功能
+			1、lighten()
+				颜色减淡函数
+				ex:
+					background:lighten(red,20%);
+					意思:将red颜色，减淡20%，作为背景色
+			2、darken()
+				颜色加深函数
+				ex:
+					background:darken(red,20%);
+			3、img-width('URL')
+				获取指定图片的原始宽度
+			4、img-height('URL')
+				获取指定图片的原始高度
+			5、ceil(number)
+				对 number 进行向上取整
+				ex:
+					ceil(35.1) : 36
+			6、floor(numer)
+				对 number 进行向下取整
+				ex:
+					floor(38.6) : 38
+		3、文件导入
+			在一个less文件中，可以引入另外一个less文件
+			1、在CSS中
+				在 all.css 文件中
+					@import "top.css";
+			2、在Less中
+				在 all.less 文件中
+					@import "new.less";
+2、Bootstrap 定制
+	1、Bootstrap Less 的结构
+		1、基础样式(保留)
+			variables.less ：用于声明变量
+			mixins.less ：用于混合
+			normalize.less ：实现最基本的样式重写
+			print.less ：设置打印的效果
+			glyphicons.less ：图标字体
+			scaffolding.less ：设置基础的全局样式
+		2、全局CSS样式文件-Core CSS (建议保留)
+			type.less ：全局CSS的基础样式
+			code.less ：与代码相关的样式
+			grid.less ：栅格布局系统样式
+			tables.less ：表格样式
+			forms.less ：表单相关样式
+			buttons.less ：按钮相关样式
+		3、组件-Components(按照需要保留或删除)
+
+
+

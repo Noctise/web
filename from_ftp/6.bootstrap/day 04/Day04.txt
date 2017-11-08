@@ -1,0 +1,287 @@
+1、栅格布局系统
+	1、嵌套
+		.container>.row>.col-*-*>.row
+	2、小屏幕class可以兼容大屏幕
+		col-lg-5 : 在 xs 中，占100%
+	3、在一个div中指定在不同屏幕下占比(重要)
+		<div class="col-lg-3 col-md-6 col-xs-12">
+	4、在某种屏幕下，不显示
+		.hidden-lg
+		.hidden-md
+		.hidden-sm
+		.hidden-xs
+2、表单
+	1、默认表单
+		<form>
+			<div class="form-group">
+				<label>xxx</label>
+				<input class="form-control">
+				<span class="help-block"></span>
+			</div>
+		</form>
+	2、行内(内联)表单
+		<form class="form-inline">
+			<label class="control-label">xxx</label>
+			<input class="form-control">
+		</form>
+	3、水平表单
+		水平表单：表单 + 栅格布局系统
+		容器：
+			div.container / container-fluid
+			form.form-horizontal
+		行：
+			div.row
+			div.form-group
+		列：
+			label.col-*-*
+			<div class="col-*-*">
+				<input>
+			</div>
+			span.col-*-*
+3、组件-下拉菜单
+	<div class="dropdown / dropup">
+		1、触发器元素
+		<a class="dropdown-toggle" data-toggle="dropdown"></a>
+		2、菜单
+		<ul class="dropdown-menu">
+			<li class="divider"></li>
+			<li class="disabled"></li>
+			<li class="dropdown-header"></li>
+		</ul>
+	</div>
+4、组件 - 导航
+	1、所有的导航都依赖于 .nav
+	2、导航分类
+		1、标签页式导航
+			<ul class="nav nav-tabs">
+				<li class="active">
+					<a data-toggle="tab"></a>
+				</li>
+			</ul>
+		2、胶囊式导航
+			<ul class="nav nav-pills"></ul>
+5、组件 - 图标字体
+	1、自定义图标字体
+		xx.css
+			@font-face{
+				font-family:"";
+				src:url();
+			}
+
+			选择器{
+				font-family:"";
+			}
+	2、Bootstrap中的图标字体使用
+		1、创建一个纯空元素
+		2、class="glyphicon glyphicon-*"
+6、组件 - 按钮组
+	<div class="btn-group">
+		<button>
+		<button>
+		<button>
+	</div>
+
+	<div class="btn-toolbar">
+		<div class="btn-group">
+			<button>
+			<button>
+			<button>
+		</div>
+	</div>
+7、组件 - 大杂烩
+	1、面包屑导航 - 路径导航
+		<ul class="breadcrumb">
+			<li>
+				<a href="#"></a>
+			</li>
+			<li class="active">
+				<a></a>
+			</li>
+		</ul>
+	2、分页
+		.pageination : 分页
+		.active : 被激活的
+	3、翻页
+		.pager
+	4、标签
+		所有的标签都依赖于 .label
+		.label-default 
+		.label-success
+		...
+		.label-primary
+	5、徽章
+		.badge
+	6、巨幕
+		.jumbotron
+	7、页头
+		.page-header
+	8、水井- Well
+		.well
+		.well-lg/sm/xs
+
+********************************************
+1、组件-进度条
+	外层：.progress
+	内层：
+		.progress-bar
+		.progress-bar-success
+		...
+		.progress-bar-primary
+2、组件 - 警告框(alert)
+	所有的警告框都依赖于 .alert
+	基础类：.alert
+	可选类：
+		.alert-success
+		.alert-danger
+		.alert-info
+		.alert-warining
+	1 、带超链接的警告框
+		<a class="alert-link"></a>
+	2、允许关闭的警告框
+		1、警告框元素 必须依赖于 .alert-dismissible
+		2、激发关闭的元素 - 触发器元素
+			data-dismiss="alert"
+3、组件 - 缩略图
+	1、基本缩略图
+		<a class="thumbnail">
+			<img>
+		</a>
+	2、复杂的缩略图
+		<div class="thumbnail">
+			<img>
+			<div class="caption">
+				<h3>Heading</h3>
+				<p>Some text ...</p>
+				<p>Some text ...</p>
+				<p>
+					<button>
+					<button>
+				</p>
+			</div>
+		</div>
+4、组件 - 媒体对象
+5、组件 - 列表组
+	ul : .list-group
+	li : .list-group-item
+6、组件 - 面板
+	允许呈现出 头部，主体，脚注的组件结构
+	所有的面板都依赖于 .panel
+	可选 .panel-default/success/info/... ...
+
+	<div class="panel panel-default">
+		<!-- 面板头部(可选) -->
+		<div class="panel-heading">
+			<h3 class="panel-title">标题</h3>
+		</div>
+
+		<!-- 面板主体(必须的) -->
+		<div class="panel-body"></div>
+
+		<!-- 面板脚注(可选) -->
+		<div class="panel-footer"></div>
+	</div>
+7、组件 - 导航条(navbar)
+	1、基本导航条
+		1、由nav来组成导航条
+			1、向nav元素增加 .navbar 以及 .navbar-default
+			2、nav 中 必须包含容器 (.container / .container-fluid)
+			3、容器中 允许添加 div.navbar-header,允许添加 a.navbar-brand 元素
+		2、导航条内 增加 导航
+			增加 .nav 以及 .navbar-nav
+		3、导航条中的表单
+			导航条中的表单不适用与bootstrtap表单默认类
+			需要为表单增加一个类 .navbar-form
+			可以通过 navbar-left / navbar-right 来实现浮动
+		4、导航条中的按钮
+			独立的按钮，脱离 <form>
+			通过 .navbar-btn 为不在表单中的按钮增加样式
+		5、导航条中的文本
+			通过 .navbar-text 为普通文本增加样式
+		6、导航条中内容的浮动
+			.navbar-left : 实现左浮动
+			.navbar-right : 实现右浮动
+		7、实现导航条的固定
+			固定在页面的顶端：.navbar-fixed-top
+			固定在页面的底端：.navbar-fixed-bottom
+			注意：最好为body设置 至少50px的内边距
+8、JS插件 - Plugins
+	Bootstrap提供了一组行为如：下拉菜单
+	Bootstrap提供的行为 全部都是 基于 jQuery(JS库),Bootstrap是在 jQuery的基础上 提供了十几个插件函数,每个插件函数是一个独立的JS文件,可以一次性全部引入JS插件函数 - bootstrap.js
+	想使用 JS 插件，则必须引入两个 js 文件
+	<script src="jquery.js"></script>
+	<script src="bootstrap.js"></script>
+	每个插件函数都提供了2种调用方式：
+	1、data-*
+		<a data-toggle="dropdown">
+		<button data-dismiss="alert">
+	2、JS编程方式
+		<script src="jquery.js"></script>
+		<script src="bootstrap.js"></script>
+		<script>
+			//通过 选择器 获取页面元素
+			$("选择器");在JS中获取指定选择器所对应的元素
+				$("#top") : 在JS中获取 页面上 ID为top的元素
+				$(".container") : 在JS中获取 页面上 class为 container 的元素
+				$("#top>div") : ......
+		</script>
+9、JS插件 - 工具提示
+	为元素添加
+		data-toggle="tooltip"/*鼠标移入行为*/
+		title="提示的文本"
+		data-placement="top/right/bottom/left"
+	必须配合 JS 代码 一起使用
+		$("选择器").tooltip();
+10、JS插件 - 弹出框
+	为元素添加
+		data-toggle="popover";
+		data-placement="top/right/bottom/left"
+		title="弹出框的标题"
+		data-content="弹出框内容"
+	必须配合 JS 代码
+		$("选择器").popover();
+11、JS插件 - 标签页
+	标签页由两部分组成：
+	1、标签页式导航(nav nav-tabs)
+		<ul class="nav nav-tabs">
+		li 中的 a 标记：
+			1、data-toggle="tab"
+			2、href="#对应显示内容的模块ID"
+	2、内容部分(tab-content)
+		<div class="tab-content">
+			<div id="">内容模块1</div>
+			<div id="">内容模块2</div>
+		</div>
+		内容模块：
+			1、class = "tab-pane"
+			2、必须设置id，提供给对应的标签导航的a元素 
+12、JS插件 - 模态框(modal)
+	模态框：一旦被打开后，必须要处理掉之后才可以操作页面的其它元素
+	模态框由两部分组成：
+	1、触发器元素
+		通常由 a / button 充当 触发器元素
+		<a data-toggle="modal" href="#ID"></a>
+		<button
+			data-toggle="modal"
+			data-target="#ID"
+			></button>
+	2、模态框元素(必须提供 ID)
+		由四部分(层级)组成
+		//class="modal" : 提供半透明遮罩层
+		//data-backdrop="static" 保证模态框不能通过其他方式关闭
+		<div id="" class="modal" data-backdrop="static">
+			//modal-dialog:提供内容区域宽，高，定位
+			<div class="modal-dialog">
+				//modal-content:提供，背景，边框，倒角
+				<div class="modal-content">
+					<div class="modal-header"></div>
+					<div class="modal-body"></div>
+					<div class="modal-footer"></div>
+				</div>
+			</div>
+		</div>
+
+		关闭模态框：
+			<a data-dismiss="modal"></a>
+
+
+

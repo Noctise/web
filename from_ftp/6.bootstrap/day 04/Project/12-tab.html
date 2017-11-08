@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--1、指定语言基础-->
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <!--2、指定视口信息-viewport-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+  <!--3、指定 跨IE 浏览器的兼容性-->
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <title></title>
+  <!--4、引入 bootstrap.css 主css文件-->
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <!--5、引入两个 兼容性 js文件-->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+  <div class="container">
+    <h3>标签页式导航</h3>
+    <div>
+      <!--1、标签页导航-->
+      <ul class="nav nav-tabs">
+        <li class="active">
+          <a href="#t1" data-toggle="tab">西游记</a>
+        </li>
+        <li>
+          <a href="#t2" data-toggle="tab">三国</a>
+        </li>
+        <li>
+          <a href="#t3" data-toggle="tab">红楼梦</a>
+        </li>
+        <li>
+          <a href="#t4" data-toggle="tab">水浒传</a>
+        </li>
+      </ul>
+      <!--2、内容部分-->
+      <div class="tab-content">
+        <!--1、内容模块1-->
+        <div class="tab-pane active" id="t1">
+          <h3>西游记</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda culpa facilis, in ipsa ipsum itaque officia placeat praesentium recusandae sunt, veritatis voluptatem. Autem blanditiis consectetur nisi optio placeat repellendus.</p>
+        </div>
+        <!--2、内容模块2-->
+        <div class="tab-pane" id="t2">
+          <h3>三国</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci commodi cum eveniet explicabo, ipsa nam nulla obcaecati provident quae quis reiciendis sequi ullam ut. Adipisci atque autem pariatur placeat porro.</p>
+        </div>
+        <!--3、内容模块3-->
+        <div class="tab-pane" id="t3">
+          <h3>红楼梦</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci commodi cum eveniet explicabo, ipsa nam nulla obcaecati provident quae quis reiciendis sequi ullam ut. Adipisci atque autem pariatur placeat porro.</p>
+        </div>
+        <!--4、内容模块4-->
+        <div class="tab-pane" id="t4">
+          <h3>水浒传</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci commodi cum eveniet explicabo, ipsa nam nulla obcaecati provident quae quis reiciendis sequi ullam ut. Adipisci atque autem pariatur placeat porro.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!--6、引入 两个JS插件文件-->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--7、引入检查文件-->
+<script src="js/bootlint.js"></script>
+<script>
+  bootlint.showLintReportForCurrentDocument([]);
+</script>
+</body>
+</html>

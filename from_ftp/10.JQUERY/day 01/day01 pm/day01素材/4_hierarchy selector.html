@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8" />
+ <title></title>
+ <link rel="stylesheet" href="css/style.css" />  
+</head>
+<body>
+  <h3>层次选择器</h3>
+  <!-- 测试的元素 -->
+  <div class="one" id="one">id为one,class为one的div
+    <div class="mini">class为mini</div>
+  </div>
+
+  <div class="one"  id="two" title="test">id为two,class为one,title为test的div.
+    <div class="mini"  title="other">class为mini,title为other</div>
+    <div class="mini"  title="test">class为mini,title为test</div>
+  </div>
+
+  <div class="one">
+    <div class="mini">class为mini</div>
+    <div class="mini">class为mini</div>
+	  <div class="mini">class为mini</div>
+	  <div class="mini"></div>
+  </div>
+
+  <div class="one">
+    <div class="mini">class为mini</div>
+    <div class="mini">class为mini</div>
+	  <div class="mini">class为mini</div>
+	  <div class="mini" title="tesst">class为mini,title为tesst</div>
+  </div>
+
+
+  <div style="display:none;" class="none">style的display为"none"的div</div>
+  
+  <div class="hide">class为"hide"的div</div>
+ 
+  <div>包含input的type为"hidden"的div<input type="hidden" size="8"/>
+  </div>
+  
+  <span id="mover">正在执行动画的span元素.</span>
+
+  <h1 style="clear:both">
+    <input type="button" value="选择 body内的所有div元素." id="btn1"/>
+    <input type="button" value="在body内,选择直接div子元素。" id="btn2"/>
+    <input type="button" value="选择 class为one 的下一个兄弟div元素." id="btn3"/>
+    <input type="button" value="选择 id为two的元素后面的所有兄弟div元素." id="btn4"/>
+  </h1>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script>
+    $("#btn1").click(e=>{
+      $("body div").css(
+        "border","1px solid red"
+      )
+    });
+  </script>
+</body>
+</html>

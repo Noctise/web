@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--1、指定语言基础-->
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <!--2、指定视口信息-viewport-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+  <!--3、指定 跨IE 浏览器的兼容性-->
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <title></title>
+  <!--4、引入 bootstrap.css 主css文件-->
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <!--5、引入两个 兼容性 js文件-->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body style="height:5000px;padding-top:50px;">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <!--必须要有容器-->
+    <div class="container">
+      <!--1、navbar-header-->
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand">Bootstrap</a>
+      </div>
+      <!--2、增加导航列表-->
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="#">StartUp</a>
+        </li>
+        <li>
+          <a href="#">Global CSS</a>
+        </li>
+        <li>
+          <a href="#">Component</a>
+        </li>
+      </ul>
+      <!--3、表单 - 搜索 : 右浮动-->
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" class="form-control"/>
+          <button type="button" class="btn  btn-success">搜索</button>
+        </div>
+      </form>
+      <!--4、普通按钮-->
+      <button class="btn btn-danger navbar-btn" type="button">普通按钮</button>
+      <!--5、普通文本-->
+      <span class="navbar-text">普通文本</span>
+    </div>
+  </nav>
+  <h1>导航条测试</h1>
+
+
+
+
+
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!--6、引入 两个JS插件文件-->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--7、引入检查文件-->
+<script src="js/bootlint.js"></script>
+<script>
+  bootlint.showLintReportForCurrentDocument([]);
+</script>
+</body>
+</html>

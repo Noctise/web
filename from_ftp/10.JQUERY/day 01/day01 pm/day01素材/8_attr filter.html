@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8" />
+ <link rel="stylesheet" href="css/style.css" /> 
+</head>
+<body>
+  <h3>属性过滤选择器.</h3>
+  <!-- 测试的元素 -->
+  <div class="one" id="one" >id为one,class为one的div
+    <div class="mini">class为mini</div>
+  </div>
+
+  <div class="one"  id="two" title="test" >id为two,class为one,title为test的div.
+    <div class="mini"  title="other">class为mini,title为other</div>
+    <div class="mini"  title="test">class为mini,title为test</div>
+  </div>
+
+  <div class="one">
+    <div class="mini">class为mini</div>
+    <div class="mini">class为mini</div>
+	  <div class="mini">class为mini</div>
+	  <div class="mini"></div>
+  </div>
+
+  <div class="one">
+    <div class="mini">class为mini</div>
+    <div class="mini">class为mini</div>
+	  <div class="mini">class为mini</div>
+	  <div class="mini"  title="tesst">class为mini,title为tesst</div>
+  </div>
+
+  <div style="display:none;"  class="none">style的display为"none"的div</div>
+  
+  <div class="hide">class为"hide"的div</div>
+ 
+  <div>包含input的type为"hidden"的div<input type="hidden" size="8"/>
+  </div>
+  
+  <span id="mover">正在执行动画的span元素.</span>
+
+  <br /><br />
+  <h1 style="clear:both">
+  <input type="button" value="选取title属性以te开头的div" id="btn1"/>
+  <input type="button" value="选取title属性以est结尾的div" id="btn2"/>
+  <input type="button" value="选取包含title属性的div" id="btn3"/>
+  <input type="button" value="选取title属性等于test的div" id="btn4"/>
+	<input type="button" value="选取title属性不等于test的div" id="btn5"/>
+	<input type="button" value="选取title属性包含es的div" id="btn6"/>
+	<input type="button" value="选取包含id属性且title属性值包含es的div" id="btn7"/>
+  </h1>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script>
+    $("#btn1").click(e=>{
+      $("[title^=te]")
+        .css(
+          "border","1px solid red")
+    })
+    $("#btn2").click(e=>{
+      $("[title$=est]")
+        .css(
+        "border","1px solid red")
+    })//下课休息10分钟，练习10分钟
+  </script>
+</body>
+</html>

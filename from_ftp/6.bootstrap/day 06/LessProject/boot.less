@@ -1,0 +1,47 @@
+#main{
+  width:80%;
+  margin:10px auto;
+  border:1px solid #005aa0;
+  box-sizing:border-box;
+
+  //嵌套 .top 选择器
+  .top{
+    width:100%;
+    min-height:50px;
+    background-color:#CD2A2C;
+
+    //嵌套子代选择器 .top-left 选择器
+    >.top-left{
+      float:left;
+      width:30%;
+      background:#e4393c;
+    }
+  }
+  //嵌套 子代选择器 .right
+  >.right{
+    width:75%;
+    height:100%;
+    background-color:rgba(0,0,0,0.3);
+  }
+}
+
+@bgColor:#e4393c;
+#top-main{
+  color:@bgColor;
+  background-color:lighten(@bgColor,30%);
+  border:1px solid darken(@bgColor,50%);
+  width:ceil(105.859785)px;
+  height:floor(80.9586)px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

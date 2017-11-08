@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--1、指定语言基础-->
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <!--2、指定视口信息-viewport-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+  <!--3、指定 跨IE 浏览器的兼容性-->
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <title></title>
+  <!--4、引入 bootstrap.css 主css文件-->
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <!--5、引入两个 兼容性 js文件-->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+  <style>
+    body{
+      padding-top:50px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!--1、navbar-header-->
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand">
+          Bootstrap
+        </a>
+      </div>
+      <!--2、navbar-form-->
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="请输入关键字"/>
+          <button type="button" class="btn btn-success">关键字查询</button>
+        </div>
+      </form>
+      <!--3、navbar-nav-->
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="#">
+            <span class="glyphicon glyphicon-user"></span>
+            注册
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="glyphicon glyphicon-log-in"></span>
+            登录
+          </a>
+        </li>
+        <li class="dropdown">
+          <!--触发器-->
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            分享
+            <span class="glyphicon glyphicon-plus"></span>
+          </a>
+          <!--弹出菜单-->
+          <ul class="dropdown-menu">
+            <li><a href="#">新浪微博</a></li>
+            <li><a href="#">腾讯微博</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!--6、引入 两个JS插件文件-->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--7、引入检查文件-->
+<script src="js/bootlint.js"></script>
+<script>
+  bootlint.showLintReportForCurrentDocument([]);
+</script>
+</body>
+</html>

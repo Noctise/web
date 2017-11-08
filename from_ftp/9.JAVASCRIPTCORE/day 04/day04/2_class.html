@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  class Student{
+    //function Student(sname,sage){
+    constructor(sname,sage){
+      this.sname=sname;
+      this.sage=sage;
+      Object.defineProperties(this,{
+        __sage:{writable:true},
+      });
+      this.sage=sage;
+      Object.seal(this);
+    }
+    //练习6分钟
+    get sage(){
+      return this.__sage;
+    }
+    set sage(val){
+      if(val>=18&&val<=65)
+        this.__sage=val;
+      else
+        throw new RangeError(
+          "年龄必须介于18~65之间"
+        );
+    }
+
+//Student.prototype.intr=funciton(){
+    intr(){
+      console.log(
+        "I'm "+this.sname
+        +",I'm "+this.sage);
+    }
+  }
+  var lilei=new Student("Li Lei",25);
+  lilei.intr();
+  console.dir(lilei);
+</script>
+</body>
+</html>

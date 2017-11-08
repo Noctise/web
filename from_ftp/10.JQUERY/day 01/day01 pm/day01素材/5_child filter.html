@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8" />
+ <title></title>
+</head>
+<body>
+  <h3>子元素过滤选择器.</h3>
+  <ul>
+    <li>child1-basic0</li>
+    <li>child2-basic1</li>
+    <li>child3-basic2</li>
+  </ul>
+  <ul>
+    <li>child1-basic3</li>
+    <li>child2-basic4</li>
+    <li>child3-basic5</li>
+  </ul>
+  <ul>
+    <li>child1-basic6</li>
+  </ul>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script>
+    //查找每个ul中第一个li
+    console.log(
+      $("ul>li:first-child")
+    );
+    //查找每个ul中最后一个li
+    console.log(
+      $("ul>li:last-child")
+    );
+    //查找每个ul中处于偶数位置的
+    console.log(
+      $("ul>li:nth-child(/*2n*/even)")
+    );
+    //查找每个ul中第2个li
+    console.log(
+      $("ul>li:nth-child(2)")
+    );
+    //查找作为ul下唯一子元素的li
+    console.log(
+      $("ul>li:only-child")
+    );
+  </script>
+</body>
+</html>

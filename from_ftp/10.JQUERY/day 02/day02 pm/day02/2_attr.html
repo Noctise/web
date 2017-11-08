@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta charset="utf-8">
+ </head>
+ <body>
+	<h1>操作元素的属性</h1>
+	<img src="img/1.jpg" alt="1">
+	<script src="js/jquery-1.11.3.js"></script>
+	<script>
+		//单击图片，切换下一张
+    //查找img元素绑定单击事件
+    $("img").click(e=>{
+      var $img=$(e.target);
+      //获得当前元素的alt属性转为整数i
+      var i=parseInt($img.attr("alt"));
+      i++;//将i+1
+      if(i>4)//如果i>4
+        i=1;//就i=1
+      //设置当前元素的src为img/i.jpg
+      $img.attr({
+        src:"img/"+i+".jpg",
+        alt:i
+      });
+      //设置当前元素的alt为i
+
+    });
+	</script>
+ </body>
+</html>
