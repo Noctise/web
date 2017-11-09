@@ -5,154 +5,71 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e04fa4d-efca-400d-b26b-c9e1bc4cdf46" name="Default" comment="DOM">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/day03.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/getter_setter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/10_filter_reduce.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/11_use_strict.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/12_template_string.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/13_let.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/14_arrow.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/1_property.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/2_getter_setter.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/3_constructor.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/4_freeze.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/5_Object_Create.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/6_call_apply.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/7_bind.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/8_every_some.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/9_forEach_map.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my_practice/JQuery/day01/dropdown.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my_practice/jscore/day02/object.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my_practice/jscore/day02/prototype.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/6.bootstrap/day 02/Day02-ALL.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 01/day01 am.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 01/day01 pm.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/day02 am.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/day02 pm.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/day03 am.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/day03 pm.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/day03 pm/day03/10_filter_reduce.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/day03 pm/day03/11_use_strict.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/day03 pm/day03/12_template_string.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/day03 pm/day03/13_let.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/day03 pm/day03/14_arrow.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/day03 pm/day03/1_property.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/day03 pm/day03/2_getter_setter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/day03 pm/day03/3_constructor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/day03 pm/day03/4_freeze.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/day03 pm/day03/5_Object_Create.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/day03 pm/day03/6_call_apply.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/day03 pm/day03/7_bind.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/day03 pm/day03/8_every_some.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/day03 pm/day03/9_forEach_map.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/day03 pm/day03/day03.docx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 03/day03 pm/day03/getter_setter.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 04/day04 am.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 04/tetris am.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 04/tetris pm.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 04/tetris 素材.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 05/tetris.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/.idea/day01.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/1_try_catch.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/2_throw.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/3_overload.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/4_add.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/5_anonyFun.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/6_scope.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/7_closure.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/8_closure_bs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/closure/1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/closure/2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/closure/3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/closure/4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/closure/5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/closure/6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/closure/7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/closure/8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/closure/9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/closure_bs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/day01.docx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/scope - 副本/1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/scope - 副本/2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/scope - 副本/3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/scope - 副本/4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/scope - 副本/5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/scope - 副本/6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/scope/1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/scope/2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/scope/3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/scope/4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/scope/5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/scope/6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/.idea/day01.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/1_try_catch.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/2_throw.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/3_overload.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/4_add.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/5_anonyFun.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/6_scope.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/7_closure.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/8_closure_bs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/closure/1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/closure/2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/closure/3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/closure/4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/closure/5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/closure/6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/closure/7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/closure/8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/closure/9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/closure_bs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/day01.docx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/scope - 副本/1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/scope - 副本/2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/scope - 副本/3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/scope - 副本/4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/scope - 副本/5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/scope - 副本/6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/scope/1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/scope/2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/scope/3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/scope/4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/scope/5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/9.jscore/day01/scope/6.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/葵花宝典.pdf" afterPath="$PROJECT_DIR$/doc/葵花宝典.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my_practice/JQuery/day02/1-html-val.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 01/day01 am.rar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 01/day01 pm.rar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 01/day01 pm/day01素材/10_tabs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 01/day01 pm/day01素材/11_tabs_transition.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 01/day01 pm/day01素材/12_visibility filter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 01/day01 pm/day01素材/13_content filter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 01/day01 pm/day01素材/14_form state selector.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 01/day01 pm/day01素材/1_jQuery.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 01/day01 pm/day01素材/2_jQueryAPI.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 01/day01 pm/day01素材/3_basic selector.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 01/day01 pm/day01素材/4_hierarchy selector.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 01/day01 pm/day01素材/5_child filter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 01/day01 pm/day01素材/6_basic filter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 01/day01 pm/day01素材/7_basic filter2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 01/day01 pm/day01素材/8_attr filter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 01/day01 pm/day01素材/9_dropdown.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 01/day01 pm/day01素材/CDN.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 01/day01 pm/day01素材/JResig_(1).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 01/day01 pm/day01素材/child vs basic filter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 01/day01 pm/day01素材/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 01/day01 pm/day01素材/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 01/day01 pm/day01素材/day01.docx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 01/day01 pm/day01素材/dom tree.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 01/day01 pm/day01素材/jQuery.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 01/day01 pm/day01素材/js/jquery-1.11.3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 am.rar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm.rar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/10_replace_clone.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/11_replace_clone2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/12_bind_unbind - 副本.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/12_bind_unbind.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/13_delegate - 副本.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/13_delegate.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/14_homework.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/1_html_val.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/2_attr.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/3_attr2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/4_class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/5_class2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/6_traverse.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/7_tabs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/8_tabs_transition.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/9_append.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/day02.docx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/img/1-l.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/img/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/img/2-l.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/img/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/img/3-l.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/img/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/img/4-l.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/img/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/img/err.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/img/ok.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/img/p0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/img/p3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/img/p4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/img/p5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/js/jquery-1.11.3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02.rar" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/web.iml" afterPath="$PROJECT_DIR$/.idea/web.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/day02 pm/day02/1_object.html" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/1_object.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/day02 pm/day02/2_constructor.html" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/2_constructor.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/day02 pm/day02/3_prototype.html" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/3_prototype.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/day02 pm/day02/4_indexOf.html" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/4_indexOf.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/day02 pm/day02/5_override.html" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/5_override.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/day02 pm/day02/6_setPrototypeOf.html" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/6_setPrototypeOf.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/day02 pm/day02/7_inherits_extends.html" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/7_inherits_extends.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/day02 pm/day02/constructor/1.png" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/constructor/1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/day02 pm/day02/constructor/2.png" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/constructor/2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/day02 pm/day02/constructor/3.png" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/constructor/3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/day02 pm/day02/constructor/4.png" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/constructor/4.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/day02 pm/day02/constructor/5.png" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/constructor/5.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/day02 pm/day02/day02.docx" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/day02.docx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/day02 pm/day02/inherit_extends.png" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/inherit_extends.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/day02 pm/day02/override.png" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/override.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/day02 pm/day02/prototype chain.png" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/prototype chain.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/day02 pm/day02/prototype.png" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/prototype.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/day02 pm/day02/this.png" afterPath="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day 02/this.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/my_practice/jscore/add.html" afterPath="$PROJECT_DIR$/my_practice/jscore/day01/add.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/my_practice/jscore/anonyFunction.html" afterPath="$PROJECT_DIR$/my_practice/jscore/day01/anonyFunction.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/my_practice/jscore/scope.html" afterPath="$PROJECT_DIR$/my_practice/jscore/day01/scope.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/my_practice/jscore/throw.html" afterPath="$PROJECT_DIR$/my_practice/jscore/day01/throw.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -162,56 +79,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="9_dropdown.html" pinned="false" current-in-tab="true">
-            <entry file="file://$USER_HOME$/Desktop/day01/9_dropdown.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-530">
-                  <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="10_tabs.html" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/Desktop/day01/10_tabs.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="546">
-                  <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="dropdown.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/my_practice/JQuery/day01/dropdown.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="312">
-                  <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="14_form state selector.html" pinned="false" current-in-tab="true">
-            <entry file="file://$USER_HOME$/Desktop/day01/14_form state selector.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="468">
-                  <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="1-html-val.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/my_practice/JQuery/day02/1-html-val.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="22" column="7" lean-forward="false" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -252,6 +131,7 @@
         <option value="$PROJECT_DIR$/from_ftp/9.JAVASCRIPTCORE/day01/5_anonyFun.html" />
         <option value="E:/wulijingsai/intel.html" />
         <option value="$PROJECT_DIR$/my_practice/JQuery/day01/dropdown.html" />
+        <option value="$PROJECT_DIR$/my_practice/JQuery/day02/1-html-val.html" />
       </list>
     </option>
   </component>
@@ -269,7 +149,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="120" />
     <option name="y" value="100" />
     <option name="width" value="1195" />
@@ -293,7 +173,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -304,6 +183,24 @@
             <path>
               <item name="web" type="b2602c69:ProjectViewProjectNode" />
               <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="from_ftp" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="from_ftp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="10.JQUERY" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="from_ftp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="10.JQUERY" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="day 02" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="my_practice" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -317,16 +214,13 @@
               <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="my_practice" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="JQuery" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="day01" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="day01" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="day02" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -335,8 +229,8 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/day01" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="JavaScriptPreferStrict" value="false" />
-    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="JavaScriptPreferStrict" value="true" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -385,6 +279,7 @@
       <workItem from="1509866839167" duration="7855000" />
       <workItem from="1510109367164" duration="3529000" />
       <workItem from="1510127471512" duration="3955000" />
+      <workItem from="1510191958577" duration="2578000" />
     </task>
     <task id="LOCAL-00001" summary="DOM">
       <created>1508896675455</created>
@@ -411,21 +306,22 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69212000" />
+    <option name="totallyTimeSpent" value="71790000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="120" y="100" width="1195" height="819" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2714412" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16720085" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286638" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2650862" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -439,12 +335,12 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286638" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2650862" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15918803" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16720085" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -495,8 +391,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/from_ftp/08 DOM/day 01/day01 pm/1_domTree.html" />
-    <entry file="file://$PROJECT_DIR$/from_ftp/08 DOM/day 03/day03 pm/day03/2_createTable_HTMLDOM.html" />
     <entry file="file://$PROJECT_DIR$/from_ftp/08 DOM/day 04/day04 pm/day04/1_addEventListener.html" />
     <entry file="file://$PROJECT_DIR$/from_ftp/08 DOM/day 04/day04 pm/day04/3_calc.html" />
     <entry file="file://$PROJECT_DIR$/from_ftp/08 DOM/day 04/day04 pm/day04/4_valiWithCSS_onsubmit.html" />
@@ -712,26 +606,18 @@
     </entry>
     <entry file="file://E:/wulijingsai/intel.html" />
     <entry file="file://$PROJECT_DIR$/from_ftp/10.JQUERY/day01/5_child filter.html" />
-    <entry file="file://$USER_HOME$/Desktop/day01/10_tabs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/day01/9_dropdown.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-530">
-          <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        <state relative-caret-position="26">
+          <caret line="30" column="7" lean-forward="false" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_practice/JQuery/day01/dropdown.html">
+    <entry file="file://$USER_HOME$/Desktop/day01/10_tabs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="26">
+          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -739,7 +625,31 @@
     <entry file="file://$USER_HOME$/Desktop/day01/14_form state selector.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
-          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_practice/JQuery/day01/dropdown.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/day02 pm/day02/1_html_val.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_practice/JQuery/day02/1-html-val.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="22" column="7" lean-forward="false" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
           <folding />
         </state>
       </provider>
