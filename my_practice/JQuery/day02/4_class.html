@@ -21,33 +21,13 @@
   </style>
 </head>
 <body>
+
   <button class="btn up">双态按钮</button>
+
 
 <script src="js/jquery-1.11.3.js"></script>
 <script>
   //双态按钮: 让按钮的class在up和down之间切换
-  //为button绑定单击事件
-  $("button").click(e=>{
-
-
-
-    $(e.target).toggleClass("up")
-               .toggleClass("down");
-
-
-
-//    var $btn=$(e.target);
-//    //如果当前按钮有up
-//    if($btn.hasClass("up"))
-//      //先移除up,再添加down
-//     $btn.removeClass("up")
-//         //return $btn
-//         .addClass("down");
-//    else//否则
-//      //先移除down,再添加up
-//     $btn.removeClass("down")
-//       .addClass("up");
-  })
 </script>
 </body>
 </html>

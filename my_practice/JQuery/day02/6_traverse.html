@@ -25,30 +25,18 @@
    		</ul>
    	</li>
    </ul>
-
-
 	 <script src="js/jquery-1.11.3.js"></script>
 	 <script>
-     //修改class为top的ul的所有直接子元素
-//		$(".top").children()
-//      .css(
-//        "border","1px solid red");
-     //修改class为top的所有后代li
-//      $(".top").find("li")
-//        .css(
-//          "border","1px solid red");
+		//为class为top的ul绑定单击事件
+//        $(".top").children().css("border","1px solid red");
+      //修改元素的所有直接子元素
+//        $(".top").find("li").css("border","1px solid red");
+      //修改当前元素的所有后代li
+
     //为class为child的li绑定单击事件
-    $(".child").click(e=>{
+
 			//选择当前元素的下一个元素/前一个元素/之前所有/之后所有/除自己之外所有
-       $(e.target)
-         //.next()
-         //.prev()
-         //.prevAll()
-         //.nextAll()
-         .siblings()
-         .css(
-         "border","1px solid red");
-     })
+			
 	 </script>		
  </body>
 </html>
