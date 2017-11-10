@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+</head>
+<body>
+<div class="container">
+  <h1>我的购物车</h1>
+  <button class="btn btn-success" id="bt-add">添加新的商品</button>
+  <table class="table table-bordered table-striped table-hover">
+    <thead>
+    <tr>
+      <th>单价</th>
+      <th>数量</th>
+      <th>小计</th>
+      <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>5.50</td>
+      <td>2</td>
+      <td>11.00</td>
+      <td><span class="close">×</span></td>
+    </tr>
+    <tr>
+      <td>3.80</td>
+      <td>1</td>
+      <td>3.80</td>
+      <td><span class="close">×</span></td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+      <td colspan="4" class="text-right">总计：<span id="total">14.80</span></td>
+    </tr>
+    </tfoot>
+  </table>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/myLib.js"></script>
+<script>
+  //为id为bt-add的按钮添加单击事件
+    //随机生成单价
+    //随机生成数量
+    //计算小计
+    //将数量，单价和小计拼接为一行，追加到tbody下
+    //查找tbody中每行的小计，汇总成总计保存到tfoot中(利用myLib.js中的sum)
+
+  //为tbody添加单击事件委托，值允许class为close的元素响应事件
+    //删除当前元素所在行
+</script>
+</body>
+</html>

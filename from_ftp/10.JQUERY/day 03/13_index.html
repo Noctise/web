@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    .score {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .score li {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border: 1px solid #f00;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h3>请打分</h3>
+<ul class="score">
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+  //获得当前单击的li在所有li中的位置i,i及其执行的都变为红色，i之后的都变为白色
+  //为class为score的父元素添加单击事件委托，只允许li触发事件
+  $(".score").on("click","li",e=>{
+    //获得当前点击的li在所有li中的位置
+    var i=
+      $(".score>li").index(e.target);
+    //i及其之前的li都变为实心
+    $(`.score>li:lt(${i+1})`)
+      .css("background","red");
+    //清除当前li之后剩余li的背景
+    $(e.target).nextAll()
+      .css("background","")
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    img { position: relative; }
+  </style>
+</head>
+<body>
+<img id="s1" src="img/star.png"><br/>
+<img id="s2" src="img/star.png"><br/>
+<img id="s3" src="img/star.png"><br/>
+<img id="s4" src="img/star.png"><br/>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+  /*
+  s1从左移动到屏幕右边
+  s2从左移动到屏幕右边，再移动到下边——走直角
+  s3从左上角移动到屏幕右下边，走斜线
+  s4变大、变淡....  直至消失
+*/
+  $("#s1").click(e=>
+    $(e.target).animate({
+      left:200
+    },1000)
+  );
+  $("#s2").click(e=>
+    $(e.target).animate({
+      left:200
+    },1000).delay(1000).animate({
+      top:100
+    },1000)
+  );
+  $("#s3").click(e=>
+    $(e.target).animate({
+      left:200,top:100
+    },1000)
+  );
+  $("#s4").click(e=>{
+    $(e.target).animate({
+      width:400,height:400,opacity:0
+    },1000,function(){//不能用=>
+      //在动画结束后，彻底隐藏该元素
+      $(this).hide();
+    })
+    alert("单击s4");
+  });
+</script>
+</body>
+</html>

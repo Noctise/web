@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <ul>
+    <li>85</li>
+    <li>91</li>
+    <li>73</li>
+    <li>59</li>
+  </ul>
+  <!--引入原始的jQuery库-->
+  <script src="js/jquery-1.11.3.js"></script>
+  <!--引入自定义函数的库-->
+  <script src="js/myLib.js"></script>
+  <!--在自定义脚本中使用自己的函数库-->
+  <script>
+    var sum=$("ul>li").sum();
+    console.log(sum);
+  </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>事件处理</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="css/2.css"/>
+		
+	</head>
+	<body>
+		<div id="d1">
+			<div id="d2">
+				<div id="d3">
+				</div>
+			</div>
+		</div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+			//分别使用mouseover和mouseenter为d1绑定鼠标进入事件
+      //$("#d1").mouseover(e=>{
+      $("#d1").mouseenter(function(){
+        console.log(
+          "进入"+this.id);
+      })
+      //证明hover使用的是mouseover还是mouseenter
+//      $("#d1").hover(
+//        e=>console.log(
+//          "进入"+e.target.id)
+//        ,
+//        e=>console.log(
+//          "移出"+e.target.id)
+//      );
+		</script>
+	</body>
+</html>
