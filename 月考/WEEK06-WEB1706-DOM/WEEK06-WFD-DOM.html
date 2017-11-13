@@ -1,0 +1,462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0097)http://qsserver.tmooc.cn/qsserver/source/web/result/web/exam/2017/7/17/5468526_1500258427236.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>WEEK06-WFD-DOM</title>
+<link rel="stylesheet" type="text/css" href="./WEEK06-WFD-DOM_files/base.css">
+<script type="text/javascript" src="./WEEK06-WFD-DOM_files/jquery-1.10.2.min.js.下载"></script>
+<script type="text/ecmascript" src="./WEEK06-WFD-DOM_files/dz.js.下载"></script>
+<script type="text/javascript" src="./WEEK06-WFD-DOM_files/head.js.下载"></script>
+<script type="text/javascript" src="./WEEK06-WFD-DOM_files/shCore.js.下载"></script>
+<script type="text/javascript" src="./WEEK06-WFD-DOM_files/shBrushBash.js.下载"></script>
+<script type="text/javascript" src="./WEEK06-WFD-DOM_files/shBrushCpp.js.下载"></script>
+<script type="text/javascript" src="./WEEK06-WFD-DOM_files/shBrushCSharp.js.下载"></script>
+<script type="text/javascript" src="./WEEK06-WFD-DOM_files/shBrushCss.js.下载"></script>
+<script type="text/javascript" src="./WEEK06-WFD-DOM_files/shBrushDelphi.js.下载"></script>
+<script type="text/javascript" src="./WEEK06-WFD-DOM_files/shBrushDiff.js.下载"></script>
+<script type="text/javascript" src="./WEEK06-WFD-DOM_files/shBrushGroovy.js.下载"></script>
+<script type="text/javascript" src="./WEEK06-WFD-DOM_files/shBrushJava.js.下载"></script>
+<script type="text/javascript" src="./WEEK06-WFD-DOM_files/shBrushJScript.js.下载"></script>
+<script type="text/javascript" src="./WEEK06-WFD-DOM_files/shBrushPhp.js.下载"></script>
+<script type="text/javascript" src="./WEEK06-WFD-DOM_files/shBrushPlain.js.下载"></script>
+<script type="text/javascript" src="./WEEK06-WFD-DOM_files/shBrushPython.js.下载"></script>
+<script type="text/javascript" src="./WEEK06-WFD-DOM_files/shBrushRuby.js.下载"></script>
+<script type="text/javascript" src="./WEEK06-WFD-DOM_files/shBrushScala.js.下载"></script>
+<script type="text/javascript" src="./WEEK06-WFD-DOM_files/shBrushSql.js.下载"></script>
+<script type="text/javascript" src="./WEEK06-WFD-DOM_files/shBrushVb.js.下载"></script>
+<script type="text/javascript" src="./WEEK06-WFD-DOM_files/shBrushXml.js.下载"></script>
+<link type="text/css" rel="stylesheet" href="./WEEK06-WFD-DOM_files/shCore.css">
+<link type="text/css" rel="stylesheet" href="./WEEK06-WFD-DOM_files/shThemeDefault.css">
+<script type="text/javascript">
+	SyntaxHighlighter.all();
+</script>
+<script type="text/javascript"> 
+$(document).ready(function(){
+	updateXmp();
+	examnow();
+});
+</script>
+
+ </head> 
+<body style="">
+  <div id="header">
+    <div id="head">
+      <div id="logo"></div>
+      <div id="exam_title">在线考试 本次考试得分：0.0</div>
+      <div class="exam_btn fl_right"></div>
+      <div class="exam_time" id="time-task"></div>
+    </div>
+  </div>
+<div id="exam_wrap">
+<div class="exam_content">
+<div class="exam_test">
+<ul>
+  <li>
+    <div class="t_num">1.</div>
+    <div class="question">
+<xmp>(单选题)关于 DOM 节点信息，下列描述中，错误的是（）。</xmp>    </div> 
+    <div class="t_select">
+      <ul>
+        <li class="clearfloat"><span><input id="1_A" name="name_1" type="radio" value="A" onclick="addAnswerToCookie();"> A.</span><span class="ans"><xmp>nodeName 表示节点的名称，为节点的只读属性</xmp></span></li>
+        <li class="clearfloat"><span><input id="1_B" name="name_1" type="radio" value="B" onclick="addAnswerToCookie();"> B.</span><span class="ans"><xmp>nodeType 表示节点类型，返回 Number 类型数据</xmp></span></li>
+        <li class="clearfloat"><span><input id="1_C" name="name_1" type="radio" value="C" onclick="addAnswerToCookie();"> C.</span><span class="ans"><xmp>nodeValue 表示节点的值，返回 String 类型数据</xmp></span></li>
+        <li class="clearfloat"><span><input id="1_D" name="name_1" type="radio" value="D" onclick="addAnswerToCookie();"> D.</span><span class="ans"><xmp>可以使用 nodeValue 属性获取元素节点的值</xmp></span></li>
+      </ul>
+    </div>
+    <div id="1_answer" class="exam_result" style="">
+    <div class="judgeimg judgeerror"></div><p>正确答案：D</p>解析：<p></p></div>
+  </li>
+  <li>
+    <div class="t_num">2.</div>
+    <div class="question">
+<xmp>(单选题)有 html 代码如下：
+    <p id="msg"><span>消息</span></p>
+  还有 JavaScript 代码如下：
+var p = document.getElementById('msg');
+console.log( p.innerHTML );
+console.log( p.textContent ); 
+上述代码的输出结果是（）。</xmp>    </div> 
+    <div class="t_select">
+      <ul>
+        <li class="clearfloat"><span><input id="2_A" name="name_2" type="radio" value="A" onclick="addAnswerToCookie();"> A.</span><span class="ans"><xmp>先输出“<span>消息</span>”，再输出“消息”</xmp></span></li>
+        <li class="clearfloat"><span><input id="2_B" name="name_2" type="radio" value="B" onclick="addAnswerToCookie();"> B.</span><span class="ans"><xmp>输出两次“<span>消息</span>”</xmp></span></li>
+        <li class="clearfloat"><span><input id="2_C" name="name_2" type="radio" value="C" onclick="addAnswerToCookie();"> C.</span><span class="ans"><xmp>先输出“消息”，再输出“<span>消息</span>”</xmp></span></li>
+        <li class="clearfloat"><span><input id="2_D" name="name_2" type="radio" value="D" onclick="addAnswerToCookie();"> D.</span><span class="ans"><xmp>输出两次“消息”</xmp></span></li>
+      </ul>
+    </div>
+    <div id="2_answer" class="exam_result" style="">
+    <div class="judgeimg judgeerror"></div><p>正确答案：A</p>解析：<p></p></div>
+  </li>
+  <li>
+    <div class="t_num">3.</div>
+    <div class="question">
+<xmp>(单选题)有 html 代码如下：
+    <p id="msg"><span>消息</span><span>通知</span></p>
+  还有 JavaScript 代码如下：
+var p = document.getElementById('msg');
+console.log( p.nodeValue );
+console.log( p.textContent ); 
+上述代码的输出结果是（）。</xmp>    </div> 
+    <div class="t_select">
+      <ul>
+        <li class="clearfloat"><span><input id="3_A" name="name_3" type="radio" value="A" onclick="addAnswerToCookie();"> A.</span><span class="ans"><xmp>先输出“消息通知”，再输出“null”</xmp></span></li>
+        <li class="clearfloat"><span><input id="3_B" name="name_3" type="radio" value="B" onclick="addAnswerToCookie();"> B.</span><span class="ans"><xmp>输出两次“消息通知”</xmp></span></li>
+        <li class="clearfloat"><span><input id="3_C" name="name_3" type="radio" value="C" onclick="addAnswerToCookie();"> C.</span><span class="ans"><xmp>先输出“null”，再输出“消息通知”</xmp></span></li>
+        <li class="clearfloat"><span><input id="3_D" name="name_3" type="radio" value="D" onclick="addAnswerToCookie();"> D.</span><span class="ans"><xmp>以上都不对</xmp></span></li>
+      </ul>
+    </div>
+    <div id="3_answer" class="exam_result" style="">
+    <div class="judgeimg judgeerror"></div><p>正确答案：C</p>解析：<p></p></div>
+  </li>
+  <li>
+    <div class="t_num">4.</div>
+    <div class="question">
+<xmp>(单选题)有 html 代码如下：
+    <div id="news">
+       <p>新闻标题1</p>
+       <p class="current">新闻标题2</p>
+       <p>新闻标题3</p>
+    </div>
+  还有 JavaScript 代码如下：
+   var div = document.getElementById('news');
+   var ps = div.getElementsByClassName('current');
+   console.log( ps[0].innerHTML );
+上述代码的输出结果是（）。</xmp>    </div> 
+    <div class="t_select">
+      <ul>
+        <li class="clearfloat"><span><input id="4_A" name="name_4" type="radio" value="A" onclick="addAnswerToCookie();"> A.</span><span class="ans"><xmp>新闻标题1</xmp></span></li>
+        <li class="clearfloat"><span><input id="4_B" name="name_4" type="radio" value="B" onclick="addAnswerToCookie();"> B.</span><span class="ans"><xmp>新闻标题2</xmp></span></li>
+        <li class="clearfloat"><span><input id="4_C" name="name_4" type="radio" value="C" onclick="addAnswerToCookie();"> C.</span><span class="ans"><xmp>null</xmp></span></li>
+        <li class="clearfloat"><span><input id="4_D" name="name_4" type="radio" value="D" onclick="addAnswerToCookie();"> D.</span><span class="ans"><xmp>程序错误</xmp></span></li>
+      </ul>
+    </div>
+    <div id="4_answer" class="exam_result" style="">
+    <div class="judgeimg judgeerror"></div><p>正确答案：B</p>解析：<p></p></div>
+  </li>
+  <li>
+    <div class="t_num">5.</div>
+    <div class="question">
+<xmp>(单选题)有 html 代码如下：
+    <div id="news">
+       <p>新闻标题1</p>
+       <p>新闻标题2</p>
+       <p>新闻标题3</p>
+    </div>
+  还有 JavaScript 代码如下：
+    var div = document.getElementById('news');
+    console.log(div.firstChild.innerHTML);
+    console.log(div.firstElementChild.innerHTML);
+上述代码的输出结果是（）。</xmp>    </div> 
+    <div class="t_select">
+      <ul>
+        <li class="clearfloat"><span><input id="5_A" name="name_5" type="radio" value="A" onclick="addAnswerToCookie();"> A.</span><span class="ans"><xmp>先输出“undefined”，再输出“新闻标题1”</xmp></span></li>
+        <li class="clearfloat"><span><input id="5_B" name="name_5" type="radio" value="B" onclick="addAnswerToCookie();"> B.</span><span class="ans"><xmp>输出两次“undefined”</xmp></span></li>
+        <li class="clearfloat"><span><input id="5_C" name="name_5" type="radio" value="C" onclick="addAnswerToCookie();"> C.</span><span class="ans"><xmp>输出两次“新闻标题1”</xmp></span></li>
+        <li class="clearfloat"><span><input id="5_D" name="name_5" type="radio" value="D" onclick="addAnswerToCookie();"> D.</span><span class="ans"><xmp>先输出“新闻标题1”，再输出“undefined”</xmp></span></li>
+      </ul>
+    </div>
+    <div id="5_answer" class="exam_result" style="">
+    <div class="judgeimg judgeerror"></div><p>正确答案：A</p>解析：<p></p></div>
+  </li>
+  <li>
+    <div class="t_num">6.</div>
+    <div class="question">
+<xmp>(单选题)查看如下代码：
+    var div = document.createElement('div');
+    var p = document.createElement("p");
+    p.innerHTML = "联系我们";
+    var txt = document.createTextNode('版权声明');
+    div.appendChild(p);
+    div.appendChild(txt);
+    console.log(div.innerHTML);
+上述代码的输出结果是（）。</xmp>    </div> 
+    <div class="t_select">
+      <ul>
+        <li class="clearfloat"><span><input id="6_A" name="name_6" type="radio" value="A" onclick="addAnswerToCookie();"> A.</span><span class="ans"><xmp><p>联系我们</p>版权声明</xmp></span></li>
+        <li class="clearfloat"><span><input id="6_B" name="name_6" type="radio" value="B" onclick="addAnswerToCookie();"> B.</span><span class="ans"><xmp><p>联系我们版权声明</p></xmp></span></li>
+        <li class="clearfloat"><span><input id="6_C" name="name_6" type="radio" value="C" onclick="addAnswerToCookie();"> C.</span><span class="ans"><xmp>版权声明<p>联系我们</p></xmp></span></li>
+        <li class="clearfloat"><span><input id="6_D" name="name_6" type="radio" value="D" onclick="addAnswerToCookie();"> D.</span><span class="ans"><xmp>程序错误</xmp></span></li>
+      </ul>
+    </div>
+    <div id="6_answer" class="exam_result" style="">
+    <div class="judgeimg judgeerror"></div><p>正确答案：A</p>解析：<p></p></div>
+  </li>
+  <li>
+    <div class="t_num">7.</div>
+    <div class="question">
+<xmp>(单选题)有 html 代码如下：
+    <ul id="menu"><li>首页</li><li>联系我们</li></ul>
+  还有 JavaScript 代码如下：
+    var ul = document.getElementById('menu');
+    var newLi = document.createElement('li');
+    newLi.appendChild(document.createTextNode('新闻'));
+    ul.insertBefore(newLi, ul.lastChild);
+    console.log(ul.innerHTML);
+上述代码的输出结果是（）。</xmp>    </div> 
+    <div class="t_select">
+      <ul>
+        <li class="clearfloat"><span><input id="7_A" name="name_7" type="radio" value="A" onclick="addAnswerToCookie();"> A.</span><span class="ans"><xmp><li>新闻</li><li>首页</li><li>联系我们</li></xmp></span></li>
+        <li class="clearfloat"><span><input id="7_B" name="name_7" type="radio" value="B" onclick="addAnswerToCookie();"> B.</span><span class="ans"><xmp><li>首页</li><li>联系我们</li><li>新闻</li></xmp></span></li>
+        <li class="clearfloat"><span><input id="7_C" name="name_7" type="radio" value="C" onclick="addAnswerToCookie();"> C.</span><span class="ans"><xmp><li>首页</li><li>新闻</li><li>联系我们</li></xmp></span></li>
+        <li class="clearfloat"><span><input id="7_D" name="name_7" type="radio" value="D" onclick="addAnswerToCookie();"> D.</span><span class="ans"><xmp>程序错误</xmp></span></li>
+      </ul>
+    </div>
+    <div id="7_answer" class="exam_result" style="">
+    <div class="judgeimg judgeerror"></div><p>正确答案：C</p>解析：<p></p></div>
+  </li>
+  <li>
+    <div class="t_num">8.</div>
+    <div class="question">
+<xmp>(单选题)有 html 代码如下：
+    <ul id="menu"><li>首页</li><li>联系我们</li></ul>
+  还有 JavaScript 代码如下：
+    var ul = document.getElementById('menu');
+    var newLi = document.createElement('li');
+    newLi.innerHTML = "招聘";
+    newLi.replaceChild( newLi, ul.lastChild );
+    console.log(ul.innerHTML);
+上述代码的输出结果是（）。</xmp>    </div> 
+    <div class="t_select">
+      <ul>
+        <li class="clearfloat"><span><input id="8_A" name="name_8" type="radio" value="A" onclick="addAnswerToCookie();"> A.</span><span class="ans"><xmp><li>首页</li><li>招聘</li></xmp></span></li>
+        <li class="clearfloat"><span><input id="8_B" name="name_8" type="radio" value="B" onclick="addAnswerToCookie();"> B.</span><span class="ans"><xmp><li>首页</li><li>联系我们</li><li>招聘</li></xmp></span></li>
+        <li class="clearfloat"><span><input id="8_C" name="name_8" type="radio" value="C" onclick="addAnswerToCookie();"> C.</span><span class="ans"><xmp><li>招聘</li><li>联系我们</li></xmp></span></li>
+        <li class="clearfloat"><span><input id="8_D" name="name_8" type="radio" value="D" onclick="addAnswerToCookie();"> D.</span><span class="ans"><xmp>程序错误</xmp></span></li>
+      </ul>
+    </div>
+    <div id="8_answer" class="exam_result" style="">
+    <div class="judgeimg judgeerror"></div><p>正确答案：D</p>解析：<p></p></div>
+  </li>
+  <li>
+    <div class="t_num">9.</div>
+    <div class="question">
+<xmp>(单选题)下列不属于浏览器内置对象的是（）。</xmp>    </div> 
+    <div class="t_select">
+      <ul>
+        <li class="clearfloat"><span><input id="9_A" name="name_9" type="radio" value="A" onclick="addAnswerToCookie();"> A.</span><span class="ans"><xmp>navigator</xmp></span></li>
+        <li class="clearfloat"><span><input id="9_B" name="name_9" type="radio" value="B" onclick="addAnswerToCookie();"> B.</span><span class="ans"><xmp>document</xmp></span></li>
+        <li class="clearfloat"><span><input id="9_C" name="name_9" type="radio" value="C" onclick="addAnswerToCookie();"> C.</span><span class="ans"><xmp>window</xmp></span></li>
+        <li class="clearfloat"><span><input id="9_D" name="name_9" type="radio" value="D" onclick="addAnswerToCookie();"> D.</span><span class="ans"><xmp>request</xmp></span></li>
+      </ul>
+    </div>
+    <div id="9_answer" class="exam_result" style="">
+    <div class="judgeimg judgeerror"></div><p>正确答案：D</p>解析：<p></p></div>
+  </li>
+  <li>
+    <div class="t_num">10.</div>
+    <div class="question">
+<xmp>(单选题)其 html 代码如下：
+    <body onload="initialClock();">
+        <span id="mySpan"></span>
+    </body>
+相应的 JavaScript 代码如下：
+    function initialClock() {
+        //<< 插入代码 >>;       
+    };
+    function timerFunc() {
+        var v = new Date();
+        document.getElementById("mySpan").innerHTML = v.toLocaleTimeString();
+    }
+现需要在 span 元素中实现动态时钟的显示，”插入代码“处所需要的代码是（）。</xmp>    </div> 
+    <div class="t_select">
+      <ul>
+        <li class="clearfloat"><span><input id="10_A" name="name_10" type="radio" value="A" onclick="addAnswerToCookie();"> A.</span><span class="ans"><xmp>window.setInterval(timerFunc,1000);</xmp></span></li>
+        <li class="clearfloat"><span><input id="10_B" name="name_10" type="radio" value="B" onclick="addAnswerToCookie();"> B.</span><span class="ans"><xmp>window.setInterval(timerFunc(),1000);</xmp></span></li>
+        <li class="clearfloat"><span><input id="10_C" name="name_10" type="radio" value="C" onclick="addAnswerToCookie();"> C.</span><span class="ans"><xmp>window.setTimeout(timerFunc,1000);</xmp></span></li>
+        <li class="clearfloat"><span><input id="10_D" name="name_10" type="radio" value="D" onclick="addAnswerToCookie();"> D.</span><span class="ans"><xmp>window.setTimeout(timerFunc(),1000);</xmp></span></li>
+      </ul>
+    </div>
+    <div id="10_answer" class="exam_result" style="">
+    <div class="judgeimg judgeerror"></div><p>正确答案：A</p>解析：<p></p></div>
+  </li>
+  <li>
+    <div class="t_num">11.</div>
+    <div class="question">
+<xmp>(单选题)需要在原有浏览器窗口中打开地址为 http://tts.tarena.com.cn 的页面，且保留历史访问记录。下列选项中，正确的是（）。</xmp>    </div> 
+    <div class="t_select">
+      <ul>
+        <li class="clearfloat"><span><input id="11_A" name="name_11" type="radio" value="A" onclick="addAnswerToCookie();"> A.</span><span class="ans"><xmp>location.href = "http://tts.tarena.com.cn";</xmp></span></li>
+        <li class="clearfloat"><span><input id="11_B" name="name_11" type="radio" value="B" onclick="addAnswerToCookie();"> B.</span><span class="ans"><xmp>window.open("http://tts.tarena.com.cn");</xmp></span></li>
+        <li class="clearfloat"><span><input id="11_C" name="name_11" type="radio" value="C" onclick="addAnswerToCookie();"> C.</span><span class="ans"><xmp>location.replace("http://tts.tarena.com.cn");</xmp></span></li>
+        <li class="clearfloat"><span><input id="11_D" name="name_11" type="radio" value="D" onclick="addAnswerToCookie();"> D.</span><span class="ans"><xmp>history.go("http://tts.tarena.com.cn");</xmp></span></li>
+      </ul>
+    </div>
+    <div id="11_answer" class="exam_result" style="">
+    <div class="judgeimg judgeerror"></div><p>正确答案：A</p>解析：<p></p></div>
+  </li>
+  <li>
+    <div class="t_num">12.</div>
+    <div class="question">
+<xmp>(单选题)关于 event 对象，下列描述中，错误的是（）。</xmp>    </div> 
+    <div class="t_select">
+      <ul>
+        <li class="clearfloat"><span><input id="12_A" name="name_12" type="radio" value="A" onclick="addAnswerToCookie();"> A.</span><span class="ans"><xmp>任何事件触发后将会产生一个 event 对象</xmp></span></li>
+        <li class="clearfloat"><span><input id="12_B" name="name_12" type="radio" value="B" onclick="addAnswerToCookie();"> B.</span><span class="ans"><xmp>event 对象记录事件发生时的鼠标位置、键盘按键状态和触发对象等信息</xmp></span></li>
+        <li class="clearfloat"><span><input id="12_C" name="name_12" type="radio" value="C" onclick="addAnswerToCookie();"> C.</span><span class="ans"><xmp>event 对象的 cancelBubble 属性，用于设置是否取消事件冒泡</xmp></span></li>
+        <li class="clearfloat"><span><input id="12_D" name="name_12" type="radio" value="D" onclick="addAnswerToCookie();"> D.</span><span class="ans"><xmp>event 对象的 srcElement 属性，用于获取触发事件的节点对象</xmp></span></li>
+      </ul>
+    </div>
+    <div id="12_answer" class="exam_result" style="">
+    <div class="judgeimg judgeerror"></div><p>正确答案：D</p>解析：<p></p></div>
+  </li>
+  <li>
+    <div class="t_num">13.</div>
+    <div class="question">
+<xmp>(单选题)有变量 obj 表示页面上的某个元素。现需要修改该元素的显示方式，即将该元素显示为行内元素。下列选项中，正确的是（）。</xmp>    </div> 
+    <div class="t_select">
+      <ul>
+        <li class="clearfloat"><span><input id="13_A" name="name_13" type="radio" value="A" onclick="addAnswerToCookie();"> A.</span><span class="ans"><xmp>obj.style.display = 'inline';</xmp></span></li>
+        <li class="clearfloat"><span><input id="13_B" name="name_13" type="radio" value="B" onclick="addAnswerToCookie();"> B.</span><span class="ans"><xmp>obj.style.display = 'none';</xmp></span></li>
+        <li class="clearfloat"><span><input id="13_C" name="name_13" type="radio" value="C" onclick="addAnswerToCookie();"> C.</span><span class="ans"><xmp>obj.style.show = 'inline';</xmp></span></li>
+        <li class="clearfloat"><span><input id="13_D" name="name_13" type="radio" value="D" onclick="addAnswerToCookie();"> D.</span><span class="ans"><xmp>obj.style.show = 'none';</xmp></span></li>
+      </ul>
+    </div>
+    <div id="13_answer" class="exam_result" style="">
+    <div class="judgeimg judgeerror"></div><p>正确答案：A</p>解析：<p></p></div>
+  </li>
+  <li>
+    <div class="t_num">14.</div>
+    <div class="question">
+<xmp>(单选题)HTML 页面上有一个超级链接，要实现当鼠标移入该超级链接时，超级链接的文本背景色变为灰色。下列选项中，能实现此功能的是（）。</xmp>    </div> 
+    <div class="t_select">
+      <ul>
+        <li class="clearfloat"><span><input id="14_A" name="name_14" type="radio" value="A" onclick="addAnswerToCookie();"> A.</span><span class="ans"><xmp><a href="#" onmouseover="this.style.background.color='gray';">注册</a></xmp></span></li>
+        <li class="clearfloat"><span><input id="14_B" name="name_14" type="radio" value="B" onclick="addAnswerToCookie();"> B.</span><span class="ans"><xmp><a href="#" onmouseout="this.style.background-color='gray';">注册</a></xmp></span></li>
+        <li class="clearfloat"><span><input id="14_C" name="name_14" type="radio" value="C" onclick="addAnswerToCookie();"> C.</span><span class="ans"><xmp><a href="#" onmouseover="this.style.backgroundColor=gray;">注册</a></xmp></span></li>
+        <li class="clearfloat"><span><input id="14_D" name="name_14" type="radio" value="D" onclick="addAnswerToCookie();"> D.</span><span class="ans"><xmp><a href="#" onmouseover="this.style.backgroundColor='gray';">注册</a></xmp></span></li>
+      </ul>
+    </div>
+    <div id="14_answer" class="exam_result" style="">
+    <div class="judgeimg judgeerror"></div><p>正确答案：D</p>解析：<p></p></div>
+  </li>
+  <li>
+    <div class="t_num">15.</div>
+    <div class="question">
+<xmp>(单选题)如果不给cookie设置过期时间，那么cookie默认保存时间是（）。</xmp>    </div> 
+    <div class="t_select">
+      <ul>
+        <li class="clearfloat"><span><input id="15_A" name="name_15" type="radio" value="A" onclick="addAnswerToCookie();"> A.</span><span class="ans"><xmp>立刻过期</xmp></span></li>
+        <li class="clearfloat"><span><input id="15_B" name="name_15" type="radio" value="B" onclick="addAnswerToCookie();"> B.</span><span class="ans"><xmp>cookie无法设置</xmp></span></li>
+        <li class="clearfloat"><span><input id="15_C" name="name_15" type="radio" value="C" onclick="addAnswerToCookie();"> C.</span><span class="ans"><xmp>在浏览器会话结束时过期</xmp></span></li>
+        <li class="clearfloat"><span><input id="15_D" name="name_15" type="radio" value="D" onclick="addAnswerToCookie();"> D.</span><span class="ans"><xmp>永不过期</xmp></span></li>
+      </ul>
+    </div>
+    <div id="15_answer" class="exam_result" style="">
+    <div class="judgeimg judgeerror"></div><p>正确答案：C</p>解析：<p></p></div>
+  </li>
+  <li>
+    <div class="t_num">16.</div>
+    <div class="question">
+<xmp>(多选题)有 html 代码如下：
+    <select id="datas" size="3">
+      <option>aa</option>
+      <option>bb</option>
+      <option>cc</option>
+    </select>
+  还有 JavaScript 代码如下：
+    var list = document.getElementById('datas');
+ 现需要将 html 代码中的列表框，修改为下拉列表框。下列选项中，正确的是（）。</xmp>    </div> 
+    <div class="t_select">
+      <ul>
+        <li class="clearfloat"><span><input id="16_A" name="name_16" type="checkbox" value="A" onclick="addAnswerToCookie();"> A.</span><span class="ans"><xmp>list.removeAttribute("size");</xmp></span></li>
+        <li class="clearfloat"><span><input id="16_B" name="name_16" type="checkbox" value="B" onclick="addAnswerToCookie();"> B.</span><span class="ans"><xmp>list.removeAttributeNode(list.attributes[1]);</xmp></span></li>
+        <li class="clearfloat"><span><input id="16_C" name="name_16" type="checkbox" value="C" onclick="addAnswerToCookie();"> C.</span><span class="ans"><xmp>list.removeAttributeNode("size");</xmp></span></li>
+        <li class="clearfloat"><span><input id="16_D" name="name_16" type="checkbox" value="D" onclick="addAnswerToCookie();"> D.</span><span class="ans"><xmp>list.removeAttribute(list.attributes[1]);</xmp></span></li>
+      </ul>
+    </div>
+    <div id="16_answer" class="exam_result" style="">
+    <div class="judgeimg judgeerror"></div><p>正确答案：AB</p>解析：<p></p></div>
+  </li>
+  <li>
+    <div class="t_num">17.</div>
+    <div class="question">
+<xmp>(多选题)有 html 代码如下：
+      <input type="checkbox" name="state" value="1" />未付款
+     <input type="checkbox" name="state" value="2" />未发货
+    <input type="checkbox" name="state" value="3" />已发货
+下列选项中，能获取第二个多选框的 value 值的是（）。</xmp>    </div> 
+    <div class="t_select">
+      <ul>
+        <li class="clearfloat"><span><input id="17_A" name="name_17" type="checkbox" value="A" onclick="addAnswerToCookie();"> A.</span><span class="ans"><xmp>document.getElementsByTagName('state')[1].attributes["value"].value</xmp></span></li>
+        <li class="clearfloat"><span><input id="17_B" name="name_17" type="checkbox" value="B" onclick="addAnswerToCookie();"> B.</span><span class="ans"><xmp>document.getElementsByName('input')[1].attributes["value"].value</xmp></span></li>
+        <li class="clearfloat"><span><input id="17_C" name="name_17" type="checkbox" value="C" onclick="addAnswerToCookie();"> C.</span><span class="ans"><xmp>document.getElementsByTagName('input')[1].attributes["value"].value</xmp></span></li>
+        <li class="clearfloat"><span><input id="17_D" name="name_17" type="checkbox" value="D" onclick="addAnswerToCookie();"> D.</span><span class="ans"><xmp>document.getElementsByName('state')[1].attributes["value"].value</xmp></span></li>
+      </ul>
+    </div>
+    <div id="17_answer" class="exam_result" style="">
+    <div class="judgeimg judgeerror"></div><p>正确答案：CD</p>解析：<p></p></div>
+  </li>
+  <li>
+    <div class="t_num">18.</div>
+    <div class="question">
+<xmp>(多选题)有 html 代码如下：
+     <input type="text" id="t1" />
+下列选项中，能向文本框中写入文本的是（）。</xmp>    </div> 
+    <div class="t_select">
+      <ul>
+        <li class="clearfloat"><span><input id="18_A" name="name_18" type="checkbox" value="A" onclick="addAnswerToCookie();"> A.</span><span class="ans"><xmp>document.getElementById("t1").setAttribute("value","aa");</xmp></span></li>
+        <li class="clearfloat"><span><input id="18_B" name="name_18" type="checkbox" value="B" onclick="addAnswerToCookie();"> B.</span><span class="ans"><xmp>document.getElementById("t1").innerHTML = "bb";</xmp></span></li>
+        <li class="clearfloat"><span><input id="18_C" name="name_18" type="checkbox" value="C" onclick="addAnswerToCookie();"> C.</span><span class="ans"><xmp>document.getElementsByTagName("input")[0].setAttribute("value","cc");</xmp></span></li>
+        <li class="clearfloat"><span><input id="18_D" name="name_18" type="checkbox" value="D" onclick="addAnswerToCookie();"> D.</span><span class="ans"><xmp>document.getElementsByTagName("input")[0].innerHTML = "dd";</xmp></span></li>
+      </ul>
+    </div>
+    <div id="18_answer" class="exam_result" style="">
+    <div class="judgeimg judgeerror"></div><p>正确答案：AC</p>解析：<p></p></div>
+  </li>
+  <li>
+    <div class="t_num">19.</div>
+    <div class="question">
+<xmp>(多选题)有 html 代码如下：
+    <a id="bdlink" href="javascript:void(0);">百度搜索</a>
+  还有 JavaScript 代码如下：
+var a = document.getElementById("bdlink");
+为了将该超级链接元素的 href 属性的值修改为“＃”，下列选项中，正确的是（）。</xmp>    </div> 
+    <div class="t_select">
+      <ul>
+        <li class="clearfloat"><span><input id="19_A" name="name_19" type="checkbox" value="A" onclick="addAnswerToCookie();"> A.</span><span class="ans"><xmp>a.attributes["href"].value = "#";</xmp></span></li>
+        <li class="clearfloat"><span><input id="19_B" name="name_19" type="checkbox" value="B" onclick="addAnswerToCookie();"> B.</span><span class="ans"><xmp>a.attributes["href"] = "#";</xmp></span></li>
+        <li class="clearfloat"><span><input id="19_C" name="name_19" type="checkbox" value="C" onclick="addAnswerToCookie();"> C.</span><span class="ans"><xmp>a.setAttribute("href","#");</xmp></span></li>
+        <li class="clearfloat"><span><input id="19_D" name="name_19" type="checkbox" value="D" onclick="addAnswerToCookie();"> D.</span><span class="ans"><xmp>a.setAttributeNode("href","#");</xmp></span></li>
+      </ul>
+    </div>
+    <div id="19_answer" class="exam_result" style="">
+    <div class="judgeimg judgeerror"></div><p>正确答案：AC</p>解析：<p></p></div>
+  </li>
+  <li>
+    <div class="t_num">20.</div>
+    <div class="question">
+<xmp>(多选题)有 html 代码如下：
+    <a id="bdlink" href="javascript:void(0);">百度搜索</a>
+  还有 JavaScript 代码如下：
+var a = document.getElementById("bdlink");
+为了获取该超级链接元素的 href 属性的值，下列选项中，正确的是（）。</xmp>    </div> 
+    <div class="t_select">
+      <ul>
+        <li class="clearfloat"><span><input id="20_A" name="name_20" type="checkbox" value="A" onclick="addAnswerToCookie();"> A.</span><span class="ans"><xmp>a.attributes["href"].value</xmp></span></li>
+        <li class="clearfloat"><span><input id="20_B" name="name_20" type="checkbox" value="B" onclick="addAnswerToCookie();"> B.</span><span class="ans"><xmp>a.getAttribute("href")</xmp></span></li>
+        <li class="clearfloat"><span><input id="20_C" name="name_20" type="checkbox" value="C" onclick="addAnswerToCookie();"> C.</span><span class="ans"><xmp>a.attributes[1].value</xmp></span></li>
+        <li class="clearfloat"><span><input id="20_D" name="name_20" type="checkbox" value="D" onclick="addAnswerToCookie();"> D.</span><span class="ans"><xmp>a.getAttributeNode("href").value</xmp></span></li>
+      </ul>
+    </div>
+    <div id="20_answer" class="exam_result" style="">
+    <div class="judgeimg judgeerror"></div><p>正确答案：ABCD</p>解析：<p></p></div>
+  </li>
+</ul>
+</div>
+<div class="exam_btn"></div>
+</div>
+</div>
+<div class="footer_wrap">
+  <div class="footer clearfloat">
+    <div class="footer_logo"></div>
+    <div class="footer_con">
+      <p class="about"><a href="http://qsserver.tmooc.cn/qsserver/source/web/result/web/exam/2017/7/17/5468526_1500258427236.html">关于我们</a> | <a href="http://qsserver.tmooc.cn/qsserver/source/web/result/web/exam/2017/7/17/5468526_1500258427236.html">服务支持</a> |  <a href="http://qsserver.tmooc.cn/qsserver/source/web/result/web/exam/2017/7/17/5468526_1500258427236.html">咨询与反馈</a> | <a href="http://qsserver.tmooc.cn/qsserver/source/web/result/web/exam/2017/7/17/5468526_1500258427236.html">最新动态</a> | <a href="http://qsserver.tmooc.cn/qsserver/source/web/result/web/exam/2017/7/17/5468526_1500258427236.html">代理合作</a> | <a href="http://qsserver.tmooc.cn/qsserver/source/web/result/web/exam/2017/7/17/5468526_1500258427236.html">名师堂</a></p>
+      <p>达内时代科技集团有限公司 2013-2014</p>
+      <p>中关村中心企业合作：62117598    UID中心企业合作：82168421、82168831</p>
+    </div>
+    <div class="footer_share"></div>
+  </div>
+</div>
+
+
+</body></html>

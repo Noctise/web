@@ -1,0 +1,78 @@
+//视频播放
+	function showVideoMode(evt){
+	    var ccvid_ = $(evt).data('vid');
+	    var tar_ = $('#js_pop_area');
+	    tar_.show().find('.cus-pop-close').unbind().click(function(){
+	        $(this).siblings('#js_pop_video').html('');
+	        tar_.hide();
+        });
+        console.log('ccvid_', ccvid_);
+       var voidId =  $(evt).attr('id');
+       console.log('voidId---', voidId);
+        if(voidId == "centervideo"){
+        	showVideoCenter(evt);
+        } else {
+        	judgmentVide(ccvid_, 'js_pop_video');
+        	$('#js_pop_video').show();
+    		$('.xdyplayer').hide();
+
+        }
+	}
+	//判断视频类型
+	function judgmentVide(cc_vid, t_id){
+        if(navigator.userAgent.match(/(iPhone|iPad|Android|ios)/i)){
+            initVideoH5(cc_vid, t_id, '100%', '100%');
+        }else{
+            initVideo(cc_vid, t_id, '100%', '100%');
+        }
+    }
+	function initVideoH5(cc_vid, t_id, w, h){
+	    console.log('h5');
+	    var CC_UID = "0DD1F081022C163E";//liao
+	    var CC_PLAYERID = "C550161F45FAA381";
+        $.ajax({
+            type: "post", 
+            url: E_URL + "/video/judgeVideoId", 
+            dataType: "json",
+            data : {"videoId": cc_vid},
+            async:false,
+            success: function (data) {
+                if( data.result == 1 ){
+                    CC_UID = "C9B64FC6B11AB7BA";//hanxl
+                }
+            }
+        });
+        //下面方式支持不同的播放环境，包括电脑、手机等多种终端
+        var str="<script src=\"http://p.bokecc.com/player?vid="+ cc_vid
+        +"&siteid="+ CC_UID 
+        +"&autoStart=false&playerid="+ CC_PLAYERID 
+        +"&width=\""+ w +"\"&height=\""+ h +"\"&playertype=1\" type=\"text/javascript\"><\/script>";
+        $("#"+ t_id).html(str);
+	}
+	function initVideo(cc_vid, t_id, w, h){
+	    console.log('pc');
+	    var CC_UID = "0DD1F081022C163E";
+        var CC_PLAYERID = "C550161F45FAA381";
+        var video_swfobj = new SWFObject('http://p.bokecc.com/flash/player.swf', CC_PLAYERID, w, h, '8');
+        video_swfobj.addVariable("userid", CC_UID);
+        video_swfobj.addVariable("videoid", cc_vid);
+        video_swfobj.addVariable("mode", "api");
+        video_swfobj.addVariable("autostart", "false");
+        video_swfobj.addVariable("jscontrol", "true");
+        video_swfobj.addParam('allowFullscreen', 'true');
+        video_swfobj.addParam('allowScriptAccess', 'always');
+        video_swfobj.addParam('wmode', 'transparent');
+        video_swfobj.write(t_id);
+    }
+	
+   //	中心视频播放处理
+	function showVideoCenter(event) {
+		
+		var videoUrl = $(event).attr('data-vurl');
+		$('.xdyplayer').show();
+    	$('#js_pop_video').hide();
+		createVideo(videoUrl);
+		
+}
+	
+	

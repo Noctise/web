@@ -1,0 +1,144 @@
+function submitexam2(sub_exam){
+	console.log("2."+sub_exam);
+	var strUrl=window.location.href; 
+	var arrUrl=strUrl.split("/"); 
+	var strPage=arrUrl[arrUrl.length-1].split(".")[0]; 
+	
+	var questionArr=new Array();
+	var linum=$(".exam_test>ul>li");
+	var isFinish=true;
+	var notFinishQuestion="";
+	for(i=0;i<linum.length;i++){
+		var formval="";	//文本框的值
+		if(linum.eq(i).find("textarea").length==0){ //判断是否为文本域
+				var inputtype="";
+				inputtype=linum.eq(i).find("input").eq(0).attr("type");
+				switch(inputtype){
+					case "radio":
+					formval=linum.eq(i).find("input:checked").val();
+					break;
+				case "checkbox":					
+					linum.eq(i).find("input:checked").each(function(j){					
+						if(j==0){
+							formval=$(this).val();			
+							}else{
+								formval+=$(this).val();
+								}
+						});
+					break;
+				case "text":
+					linum.eq(i).find("input").each(function(j){
+						if(j==0){
+							formval=$(this).val();			
+							}else{
+								formval+="@#$"+$(this).val();
+								}
+						});
+					break;
+				}
+			
+			}else{
+				formval=linum.eq(i).find('textarea').val();	
+			}
+		
+			if(typeof(formval) == "undefined" || formval==""){
+				isFinish=false;
+				notFinishQuestion=notFinishQuestion+(i+1)+',';
+			}
+			var questionOrder=$("#order_"+(i+1)).attr("data");
+			questionArr[i]={"order":questionOrder,"result":formval};
+		}
+		if(sub_exam!=null){
+			isFinish=true;
+		}
+		if(isFinish==false){
+			if(confirm('您的第'+notFinishQuestion+'题未做答，是否提交？')){
+				
+			}else{
+				return;
+			}
+		}
+
+		var userId=getCookie("userId");
+		var examPaperId=getCookie("examPaperId_"+strPage);
+		var examuserId=getCookie("examUserId_"+strPage);
+		$.ajax({
+			type : "POST",
+			url : remoteUrl + "web/"+userId+"/newExam/submitExam/"+examPaperId+"/"+examuserId,
+			dataType : "json",
+			contentType : "application/json",
+			data : JSON.stringify(questionArr),
+			success : function(data) {
+				if(data.status==1){
+					if(sub_exam!=null){}else{
+						alert("提交成功！点击确定退出考试");
+					}
+					delCookie("answer_"+strPage);
+					window.history.back();
+					//window.location.href=rootUrl + "index.html";
+				}else if(data.status==-1 || data.status==2){
+					if(sub_exam!=null){}else{
+						alert("您已经提交过！点击确定退出考试");
+					}
+					delCookie("answer_"+strPage);
+					window.history.back();
+					//window.location.href=rootUrl + "index.html";
+				}else{
+					alert("提交失败，请稍后重新提交！");
+				}
+			}
+			
+		});		
+	}
+
+
+
+//恢复答案
+function recoverAnswer2(){
+	var strUrl=window.location.href; 
+	var arrUrl=strUrl.split("/"); 
+	var strPage=arrUrl[arrUrl.length-1].split(".")[0]; 
+	
+	var cookieValue=getCookie("answer_"+strPage);
+
+	if(typeof(cookieValue)!="undefined" && cookieValue.length>0){
+		var ary=cookieValue.split("|");
+		for(var i=0;i<ary.length;i++){
+			var idAndValue=ary[i].split(",");
+			var input=document.getElementById(idAndValue[0]);
+			if(idAndValue[1]=="1"){
+				input.checked=true;
+			}else{
+				input.checked=false;
+			}
+		}
+	}
+	
+}
+//保存答案到cookie
+function addAnswerToCookie2(){
+	var strUrl=window.location.href; 
+	var arrUrl=strUrl.split("/"); 
+	var strPage=arrUrl[arrUrl.length-1].split(".")[0]; 
+	
+	
+	var cookieValue="";
+	var inputs=document.getElementsByTagName("input");//得到所以input
+	for(var i=0;i<inputs.length;i++){
+		var input=inputs[i];
+		if(input.type=='radio'||input.type=='checkbox'){//如果是单选或多选
+			var inputId=input.id;
+			if(input.checked){
+				cookieValue+=inputId+",1";
+			}else{
+				cookieValue+=inputId+",0";
+			}
+			cookieValue+="|";
+		}
+	}
+	if(cookieValue.length>0){
+		cookieValue=cookieValue.substring(0,cookieValue.length-1);
+	}
+	//alert(cookieValue);
+	addCookie("answer_"+strPage,cookieValue,3);
+}

@@ -1,0 +1,125 @@
+
+		/*----------------------������Ƶ�������ش��뿪ʼ-----------------------------------------*/
+				var poster ="";
+	      var thumbnail ="";
+	      var spritecss = "";
+	      var json = "";
+		    var currentVidioURL=""; 
+		
+		 // ��ȡurl����
+		      function getQueryString(name) {
+		        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+		        var r = window.location.search.substr(1).match(reg);
+		        if (r != null) {
+		            return unescape(r[2]);
+		        }
+		        return null;
+		      }
+
+		   // ajax
+		      function request(url, funSucc, funFail){  
+		        var oAjax = null;  
+
+		        if (window.XMLHttpRequest) {  
+		          oAjax = new XMLHttpRequest();  
+		        } else {  
+		          oAjax = new ActiveXObject("Microsoft.XMLHTTP");  
+		        }  
+
+		        oAjax.open('GET', url, true);
+
+		        oAjax.send();  
+
+		        oAjax.onreadystatechange= function() {
+		          if (oAjax.readyState === 4) {  
+		            if (oAjax.status === 200) {  
+		              // responseText��ʾ�첽���ص����  
+		              funSucc(oAjax.responseText);  
+		            } else {
+		              funFail();
+		            }  
+		          }   
+		        }   
+		      } 
+		   			 
+			//����������ʵ��		      
+		     function createVideo(videoURL) {
+		        var domain = videoURL.substring(0,videoURL.lastIndexOf('.'));
+		        //��ǰ��Ƶ·����ֵ
+		        currentVidioURL=videoURL;
+		        if (domain) {
+		          poster = domain + '.jpg';
+		          thumbnail = domain + '.combine.jpg';
+		          spritecss = domain + '.css';
+		          json = domain + '.json';		          
+					request(json, success,fail);	          
+		        }
+		      }
+		      
+		      //�ɹ���ִ��
+		     function success(data) {
+		            var info = JSON.parse(data);
+		            // ʵ��
+		            window.ins = new XDYplayer(
+		              {
+		                video: {
+		                  src: currentVidioURL,
+		                  pic: poster
+		                },
+		                thumbnail: {
+		                  src: thumbnail,
+		                  css: spritecss,
+		                  total: info.numIcons
+		                }
+		              }
+		            );
+		            
+		          //�����ȡ���Ž�Ⱥ���Ƶ��ʱ���ĺ���
+		            window.xdyplayer = {
+		                getCurrentTime: function() {
+		                  var player = document.querySelector('.xdyplayer-video');
+		                  console.log(player.currentTime);
+		                  return player.currentTime;
+		                },
+		                getDuration: function() {
+		                  var player = document.querySelector('.xdyplayer-video');
+		                  console.log(player.duration);
+		                  return player.duration;
+		                }
+		              }
+		          }
+		      //û��json�ļ���ʱ��
+		     function fail() {
+		            // ʵ��
+		            window.ins = new XDYplayer(
+		              {
+		                video: {
+		                  src: currentVidioURL
+		                }
+		              }
+		            );
+		            
+		            //�����ȡ���Ž�Ⱥ���Ƶ��ʱ���ĺ���
+		            window.xdyplayer = {
+		                    getCurrentTime: function() {
+		                      var player = document.querySelector('.xdyplayer-video');
+		                      console.log(player.currentTime);
+		                      return player.currentTime;
+		                    },
+		                    getDuration: function() {
+		                      var player = document.querySelector('.xdyplayer-video');
+		                      console.log(player.duration);
+		                      return player.duration;
+		                    }
+		                  }
+		            console.log('��Ƶ�޽�ͼ');
+		          } 
+		          
+		  //ҳ�������ִ��
+	/*		$(function(){
+				//����������
+			      createVideo(videoBase + videoName + "/" +firstVideoUrl);
+			      checkLearningSchedule();
+			});*/
+		      
+	/*----------------------������Ƶ�������ش������-----------------------------------------*/
