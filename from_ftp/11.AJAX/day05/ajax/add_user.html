@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+ <head>
+   <meta charset="utf-8">
+ </head>
+  <body>
+  <h1>ajax 添加用户</h1>
+  <form action="#">
+    用户名<input type="text" id="uname" /><br/>
+    密码<input type="password" id="upwd" /><br/>
+    <input id="btn" type="button" value="添加" />
+  </form>
+  <script>
+    //*1:获取btn按钮
+    //*2:为其绑定点击事件
+    btn.onclick = function(){
+      //2.0: 获取用户名和密码
+      var u = uname.value;
+      var p = upwd.value;
+      //2.1: 创建对象XHR  16:35--16:45
+      var xhr = new XMLHttpRequest();
+      //2.2：绑定事件onreadystatechange
+      xhr.onreadystatechange = function(){
+        alert(xhr.responseText);
+      }
+      xhr.open('GET',
+      'add_user.php?uname='+u+'&upwd='+p,true);
+      //2.4: 发送请求
+      xhr.send(null);
+    }
+  </script>
+ </body>
+</html>

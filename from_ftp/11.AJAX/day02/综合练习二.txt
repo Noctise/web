@@ -1,0 +1,146 @@
+综合练习:根据注释编写SQL
+1:删除数据库dangdang
+#IF EXISTS 判断当前dangdang是否存在
+#如果dangdang存在删除
+#如果不存在不删除
+DROP DATABASE IF EXISTS dangdang;
+2:创建数据库dangdang 数据库编码utf8
+#utf8国际化编码(支持所有国家地区文字)
+CREATE DATABASE dangdang CHARSET=utf8;
+3:进入dangdang库中
+USE dangdang;
+4:创建商品类别表 product_type
+  (编号,类别名称,该类别下商品数量)
+CREATE TABLE product_type(
+ id INT,
+ name VARCHAR(20),
+ tcount INT
+);
+5:添加五行记录
+  1 book     2
+  2 dvd      2
+  3 cd       2
+	4 mp3      2
+	5 software 2
+INSERT INTO product_type VALUES(1,'book',2);
+INSERT INTO product_type VALUES(2,'dvd',2);
+INSERT INTO product_type VALUES(3,'cd',2);
+INSERT INTO product_type VALUES(4,'mp3',2);
+INSERT INTO product_type VALUES(5,'software',2);
+6:创建商品信息表 product
+  (编号 id INT,
+	名称  name VARCHAR(100),
+	价格  price DOUBLE(12,2),
+	图片  pic  VARCHAR(100),
+	上架时间 pubtime DATETIME,
+	所属类别编号 did  INT)
+CREATE TABLE product(
+ id INT,
+ name VARCHAR(100),
+ price DOUBLE(12,2),
+ pic  VARCHAR(100),
+ pubtime DATETIME,
+ did     INT
+);
+7:添加10条记录
+INSERT INTO product VALUES(1,'js book1',100,'1.jpg',now(),1);
+INSERT INTO product VALUES(2,'css book2',99,'1.jpg',now(),1);
+INSERT INTO product VALUES(3,'js book3',100,'1.jpg',now(),2);
+INSERT INTO product VALUES(4,'css book4',99,'1.jpg',now(),2);
+INSERT INTO product VALUES(5,'js book5',100,'1.jpg',now(),3);
+INSERT INTO product VALUES(6,'css book6',99,'1.jpg',now(),3);
+INSERT INTO product VALUES(7,'js book7',100,'1.jpg',now(),4);
+INSERT INTO product VALUES(8,'css book8',99,'1.jpg',now(),4);
+INSERT INTO product VALUES(9,'js book9',100,'1.jpg',now(),5);
+INSERT INTO product VALUES(10,'css book0',99,'1.jpg',now(),5);
+INSERT INTO product VALUES(11,'css book0',99,'1.jpg','2000-10-10',5);
+
+
+8:(更新)记录所有2010后添加商品价格上调20%
+  * 1.2
+  SELECT * FROM product WHERE pubtime > '2010-01-01';
+  UPDATE product SET price = price*1.2
+	WHERE pubtime > '2010-01-01';
+9:更新记录,所有book类别商品价格下调5%
+  SELECT id FROM product_type WHERE name='book';
+	#子查询
+  UPDATE product SET price = price*0.95
+	WHERE did = 
+	(SELECT id FROM product_type 
+	WHERE name='book');
+10:删除记录,所有book类别商品
+   a:DELETE FROM product
+	   WHERE did = 
+	  (SELECT id FROM product_type
+	   WHERE name='book');
+	 b:UPDATE product_type SET tcount=0
+	   WHERE id = 1;
+11:查询商品表所有记录
+   SELECT * FROM product;
+12:查询商品表所有记录,条件价格大于100元商品
+   SELECT * FROM product WHERE price > 100;
+13:查询商品表所有记录,按价格升序
+   SELECT * FROM product ORDER BY price;
+15:查询商品表价格最高，最低商品价格
+   SELECT max(price),min(price) 
+	 FROM product;
+16:查询所有商品记录
+   SELECT * FROM product;
+17:查询所有商品类别记录
+   SELECT * FROM product_type;
+18:查询10号类别下所有商品
+   SELECT * FROM product_type
+	 WHERE id = 10;
+19:查询10号类别下所有商品数量
+   SELECT count(id) FROM product_type
+	 WHERE id = 10;
+20:查询2000-01-01 后上架商品
+   SELECT * FROM product
+	 WHERE pubtime > '2000-01-01';
+21:查询10号类别下所有商品价格最大值
+22:查询10号类别下所有商品价格最小值
+23:查询10号类别下所有商品价格平均值
+24:查询10号类别下所有商品价格总和值
+   SELECT max(price),min(price),avg(price)
+	 ,sum(price) FROM product
+	 WHERE did = 10;
+
+
+25:查询商品编号，商品名称，类别名称
+produce[id] produce[name] product_type[name]
+
+
+
+#多表查询
+#mysql标准语法
+0: SELECT p.id,p.name,t.name
+1:from 添加多个表名称
+  from product ,product_type
+2:每张表起一别名p t
+  from product p,product_type t
+3:分析二张表条件关联
+  p.did = t.id
+
+SELECT p.id,p.name,t.name
+FROM product p,product_type t
+WHERE p.did = t.id;
+
+#查询商品名称,商品价格,该商品类别名称
+1:将多个表名称放在FROM后
+FROM product ,product_type
+2:每一张表起别名
+FROM product p,product_type t
+3:查二张表关联
+WHERE p.did = t.id
+
+SELECT p.name,p.price,t.name
+FROM product p,product_type t
+WHERE p.did = t.id
+
+26:查询商品前3条记录,4-5条记录
+#mysql标准语法 LIMIT ?,? 分页查询
+#?起始行号(0开始)
+#?查询记录行数
+SELECT * FROM product LIMIT 0,3;
+SELECT * FROM product LIMIT 3,3;
+SELECT * FROM product LIMIT 6,3;

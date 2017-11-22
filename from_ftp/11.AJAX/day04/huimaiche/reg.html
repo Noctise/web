@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+ <head>
+   <meta charset="utf-8">
+ </head>
+  <body>
+  <h1>用户注册</h1>
+  <form action="reg.php" method="post" id="f1">
+    用户名<input type="text" name="uname" id="uname"/>
+    <span id="unameTip" style="color:red"></span>6~8位字母和数字<br/>
+    密码<input type="password" name="upwd" id="upwd"/>
+    <span id="upwdTip" style="color:red"></span>3~6位数字<br/>
+    <input type="submit" value="注册" /><br/>
+  </form>
+  <script>
+    //验证表单：用户名密码格式正确
+    //16:00--16:10
+    //1:事件 onsubmit 
+    //  事件触发条件:点击提交按钮之前事件
+    //  如果事件处理函数返回true  正常提交
+    //  如果事件处理函数返回false 禁止提交
+    //2:事件是表单元素
+    //3:正则表达式 
+    //    6~8位字母和数字  /^[a-z0-9]{6,8}$/i
+    //    3~6位数字        /^[0-9]{3,6}$/
+    
+    //1:获取表单元素为其绑定提交事件
+    f1.onsubmit = function(){
+     //2:创建二个正则表达式
+     var uReg = /^[a-z0-9]{6,8}$/i;
+     var pReg = /^[0-9]{3,6}$/; 
+     //3:验证用户名如果验证失败
+     if(!uReg.test(uname.value)){
+      //4:将出错写在unameTip
+      unameTip.innerHTML = '用户名格式不正确';
+      //5:return false;
+      return false;
+     }
+     //6:验证密码如果验证失败 16:48--16:53
+     if(!pReg.test(upwd.value)){
+      upwdTip.innerHTML = '密码格式不正确';
+     //7:将出错写在upwdTip
+      return false;
+     }
+     //9:验证通过 return true
+     return true;
+    }
+  </script>
+ </body>
+</html>

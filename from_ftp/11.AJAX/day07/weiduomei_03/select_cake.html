@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+ <head>
+   <meta charset="utf-8">
+ </head>
+  <body>
+  <h1>ajax jquery 蛋糕列表</h1>
+ 	  <select id="tid">
+		  <option value="1">巧克力</option>
+		  <option value="2">芝士</option>
+		  <option value="3">水果</option>
+		</select>
+		<table>
+      <thead>
+        <tr>
+          <td>蛋糕图片</td><td>蛋糕名称</td>
+        </tr>
+      </thead>
+      <tbody id="tb1">
+      </tbody>
+    </table>  
+  <script src="jquery-1.10.2.min.js">
+  </script>
+  <script>
+   //1:获取列表对象
+   //2:绑定事件  onchange
+   tid.onchange = function(){
+    //3:获取当前元素id
+    var id = this.value;
+    //4:发送ajax
+    $.ajax({
+      url:'select_cake.php',
+      data:{tid:id},
+      success:function(data){
+         //1:创建空字符串 
+         var html = "";
+         //2:循环拼接字符串建议使用:
+         //ES6 模块字符串
+         for(var i=0;i<data.length;i++){
+           var obj = data[i];
+           html += `
+        <tr>
+          <td><img width="100" height="100" src="img/${obj.pic}"/></td>
+          <td>${obj.dname}</td>
+        </tr>
+           `;//17:40--17:45
+         }
+         //3:将字符串保存 tbody
+         tb1.innerHTML = html;
+      }
+    });
+    //5:获取元素拼字符串??
+   }
+  </script>
+ </body>
+</html>

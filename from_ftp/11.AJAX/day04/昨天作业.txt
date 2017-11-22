@@ -1,0 +1,14 @@
+作业:阶段小项目:留言板   msg
+*1:创建sql脚本文件: tarena.sql
+  创建一个库msg,创建留言表t_msg
+  (留言编号mid/发布人姓名uname/联系电话phone/
+发布时间pubtime/留言内容content)
+  2:创建php:发表留言 msg_add.php
+    接收参数(uname/phone/content)并且添加数据
+		库，返回添加成功
+  3:创建html:创建表单 msg_add.html
+    表单内容：发布人姓名/联系电话/留言内容
+  4:创建php:浏览器所有留言
+	msg_select.php 
+	[参考今天删除产品列表]
+  5:创建php:删除指定留言msg_del.php

@@ -1,0 +1,43 @@
+综合练习:根据注释编写SQL
+1:删除数据库jd
+  DROP DATABASE jd;
+2:创建数据库jd 数据库编码utf8
+  CREATE DATABASE jd CHARSET=utf8;
+3:进入jd库中
+  USE jd;
+4:创建部门信息表 dept
+  (编号,部门名称,该部门人数)
+	CREATE TABLE dept(
+	  id    INT,
+		name  VARCHAR(20),
+		count INT
+	);
+5:添加三行记录
+  10 account  2
+  20 software 1
+  30 manager  2
+	INSERT INTO dept VALUES(10,'account',2);
+	INSERT INTO dept VALUES(20,'software',1);
+	INSERT INTO dept VALUES(30,'manager',2);
+
+6:创建员工信息表 emp
+  (编号,姓名,性别,工资,出生日期)
+	CREATE TABLE emp(
+	  id INT,
+		name VARCHAR(20),
+		sex VARCHAR(1),
+		sal DOUBLE(10,2),
+    bdate DATETIME
+	);
+7:添加5条记录
+INSERT INTO emp VALUES(1,'dx1','M',100000,'1997-10-1');
+INSERT INTO emp VALUES(2,'dx2','M',100001,'1996-10-1');
+INSERT INTO emp VALUES(3,'dx3','M',100001,'1998-10-1');
+INSERT INTO emp VALUES(4,'dx4','M',100010,'1999-10-1');
+INSERT INTO emp VALUES(5,'dx5','M',100001,'1997-10-1');
+
+INSERT INTO emp VALUES(6,'dx6','M',100000,'2007-10-1');
+INSERT INTO emp VALUES(7,'dx7','M',100001,'2006-10-1');
+INSERT INTO emp VALUES(8,'dx8','M',100001,'2008-10-1');
+INSERT INTO emp VALUES(9,'dx9','M',100010,'2009-10-1');
+INSERT INTO emp VALUES(0,'dx10','M',100001,'2007-10-1');

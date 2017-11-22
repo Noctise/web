@@ -1,0 +1,19 @@
+功能模块
+
+模块一:用户登录
+1:创建表、添加测试数据
+用户表:  uid/uname/upwd      jd_user
+产品表:  pid/pname/price/pic jd_product
+购物车表:cid/pid/count/uid   jd_cart
+cid   购物车表编号
+pid   产品编号
+count 数量
+uid   用户编号
+
+2:创建php/html
+模块二:查询产品列表
+
+
+模块三:添加到购物车
+模块四:查询购物车信息{删除/+/-}
+

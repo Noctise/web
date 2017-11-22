@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+ <head>
+   <meta charset="utf-8">
+ </head>
+  <body>
+  <h1>ajax 理解XHR状态</h1>
+  <script>
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function(){
+       //alert("状态"+xhr.readyState);
+       if(xhr.readyState===4 && xhr.status===200){
+         alert(xhr.responseText);
+       }
+    }
+    xhr.open('GET','01.php',true);
+    xhr.send(null);
+  </script>
+ </body>
+</html>

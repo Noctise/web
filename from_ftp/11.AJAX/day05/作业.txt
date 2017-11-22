@@ -1,0 +1,36 @@
+:作业与综合练习--重点 14:40--15:00
+  综合练习(惠买车)
+  a:编写sql:创建数据库 huimaiche 创建数据表 
+汽车信息表:car(cid,cname,pic,price,pubtime,type)
+注意事项:其中type范围 {'lt8' 'lt15' 'lt30' 'suv'}
+   用户信息表:user(uid,uname,upwd)
+  b:用户注册 
+编写php reg.php  接收客户端提交用户名和密码添加数据库
+编写html reg.html 提交表单，录入用户名和密码提交给reg.php
+(中文字母数字6~8)
+  c:用户登录
+     编写php login.php 接收客户端提交用户名和密码，查询用户名和密码是否正确.
+     SELECT * FROM user WHERE uname='tom' AND upwd='123';
+     编写html login.html 接收客户端提交用户名和密码，查询用户名和密码是否正确.(中文字母数字6~8)
+	d:添加汽车信息
+     编写php car_add.php 
+		 接收客户端提交汽车名/
+		 汽车图片/汽车价格/汽车类型添加数据库
+     编写html car_add.html 提交表单，
+		 录入汽车名/(汽车图片)/汽车价格/
+		 汽车类型提交car_add.php
+	e:浏览汽车信息列表
+	   编写php car_select.php 查询所有汽车信息
+	f:删除指定汽车
+	   编写php car_del.php  接收客户端提交汽车编号，并且删除该汽车
+
+  (增加功能:上传头像图片)
+  1：www.baidu.com     http://cn.bing.com/
+  2: 博客园 csdn                   专业
+	   http://www.w3school.com.cn/   快速
+		 http://www.runoob.com/        快速
+
+
+  a:创建服务器目录 huimaiche/uploads
+	b:创建html       upload.html
+	c:创建php        upload.php

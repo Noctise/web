@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+ <head>
+   <meta charset="utf-8">
+ </head>
+  <body>
+  <h1>ajax javascript 数据格式</h1>
+  <script>
+    //1:页面加载成功执行后续代码
+    window.onload = function(){
+     //2:创建XHR对象
+     var xhr = new XMLHttpRequest();
+     //3:绑定事件(javascript) eval()
+     xhr.onreadystatechange = function(){
+        //3.1 4  200
+        if(xhr.readyState===4&&xhr.status===200){
+            var input = xhr.responseText;
+            eval(input);
+        }
+     }
+     //4:打开连接
+     xhr.open("GET","js_04.php",true);
+     //5:发送请求
+     xhr.send(null);
+    }
+  </script>
+ </body>
+</html>

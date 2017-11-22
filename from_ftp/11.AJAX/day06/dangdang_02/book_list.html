@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+ <head>
+   <meta charset="utf-8">
+ </head>
+  <body>
+  <h1>ajax 显示图书列表</h1>
+   <table border="1" width="80%">
+    <thead>
+       <tr>
+         <td>图书名称</td>
+         <td>图书价格</td>
+         <td>操作</td>
+       </tr>
+    </thead>
+    <tbody id="tb1">
+    </tbody>
+   </table>
+  <script>
+    //1:创建事件 window.onload  17:50--17:55
+    window.onload = function(){
+      //1.1:创建对象XHR
+      var xhr = new XMLHttpRequest();
+      //1.2:绑定事件
+      xhr.onreadystatechange = function(){
+        if(xhr.readyState==4&&xhr.status===200){
+           tb1.innerHTML = xhr.responseText;
+        }
+      }
+      //1.3:打开连接
+      xhr.open('GET','book_list.php',true);
+      //1.4:发送请求
+      xhr.send(null);
+    }
+  </script>
+ </body>
+</html>

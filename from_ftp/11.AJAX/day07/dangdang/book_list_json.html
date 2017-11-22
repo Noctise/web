@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+ <head>
+   <meta charset="utf-8">
+ </head>
+  <body>
+  <h1>ajax json 显示图书列表信息</h1>
+   <table border="1" width="89%">
+     <thead>
+       <tr>
+         <td>图书编号</td>
+         <td>图书名称</td>
+         <td>图书价格</td>
+       </tr>
+     </thead>
+     <tbody id="tb1">
+     </tbody>
+   </table>
+  <script>
+    //1:页面元素加载成功后发送AJAX请求
+    //2:接收服务器返回JSON字符串转JS对象
+    window.onload = function(){
+      //a:创建XHR 对象
+      var xhr = new XMLHttpRequest();
+      //b:绑定事件(判断2次 4 200)
+      xhr.onreadystatechange = function(){
+        //b.1 (判断2次 4 200)
+        if(xhr.readyState===4&&xhr.status===200){ 
+          var input = xhr.responseText;
+          //b.2 将json字符串转JS对象
+          var obj = JSON.parse(input);
+          //b.3:拼接字符串创建DOM元素
+          var html = ""; //b.4:创建空字符串
+          for(var i=0;i<obj.length;i++){
+             var o = obj[i];//b.5:循环内获取
+             html += `      
+              <tr>
+               <td>${o.bid}</td>
+               <td>${o.bname}</td>
+               <td>${o.price}</td>
+              </tr>
+             `;
+          }//for 结束 11:27--11:30
+          tb1.innerHTML = html;//b.6:保存字符串
+        }
+
+      }
+      //c:打开连接
+      xhr.open('GET','book_list_json.php',true);
+      //d:发送请求
+      xhr.send(null);
+    }
+    //3:拼接字符串创建DOM元素
+  </script>
+ </body>
+</html>

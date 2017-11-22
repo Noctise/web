@@ -1,0 +1,44 @@
+功能模块:味多美蛋糕
+1:创建sql文件 weiduomei.sql
+2:创建库 weiduomei utf-8
+3:创建二张表
+  dm_cake_type 蛋糕类别表
+	(编号,类别名称,该类别下蛋糕数量)
+	1 巧克力 3
+	2 芝士   2
+	3 水果   2
+	dm_cake      蛋糕信息表
+	(编号,名称,    价格,图片,所属类别编号)
+	  1   黑巧克力 3000 1.jpg 1
+	添加7条记录
+4:添加蛋糕
+  add_cake.php  15:35--15:50  
+	接收客户端提交dname/pic/price/tid
+	保存入数据库
+	返回信息 json字符串
+	$_REQUEST['pic'] or 
+	die('{"code":-2,"msg":"图片是必须的"}');
+	echo '{"code":1,"msg":"添加成功"}'
+	add_cake.html
+	为客户提供四个输入框,一个button按钮,点击后
+	发送ajax请求
+  data:{dname:n,pic:p,price:d,tid:t}
+
+5:查询某类别下所有蛋糕
+  select_cake.php   16:50--17:05
+	1.1:接收客户端传送参数 tid 类别编号
+	1.2:查询数据库中指定类别编号下所有蛋糕
+	1.3:返回json
+	select_cake.html
+	创建下拉列表
+	  <select id="tid">
+		  <option value="1">巧克力</option>
+		  <option value="2">芝士</option>
+		  <option value="3">水果</option>
+		</select>
+		<table>...</table>
+  为列表绑定事件 onchange
+	1:获取当前列表value tid
+	2:发送ajax请求 GET select_cake.php
+	3:并且获取返回数据 json 拼接字符串保存
+	  tbody [蛋糕图片,蛋糕名称]

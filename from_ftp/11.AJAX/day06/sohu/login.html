@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+ <head>
+   <meta charset="utf-8">
+ </head>
+  <body>
+  <h1>ajax 用户登录</h1>
+  <form action="#">
+   用户名<input type="text" id="uname" /><br />
+   密码<input type="password" id="upwd" /><br />
+   <input id="btn1" type="button" value="登录"/><br />
+  </form>
+  <script>
+    //1:获取登录按钮
+    //2:绑定点击事件
+      btn1.onclick = function(){
+       //2.1:获取用户名和密码
+       var u = uname.value;
+       var p = upwd.value;
+       //2.2:创建对象XHR
+       var xhr = new XMLHttpRequest();
+       //2.3:绑定事件 
+       xhr.onreadystatechange = function(){
+         var input = xhr.responseText;
+         alert("|"+input+"|");
+         if(input==='login-succ'){
+           alert('登录成功');
+         }else{
+           alert("登录失败");
+         }
+       }
+       //2.4:创建连接
+       xhr.open('GET','login.php?uname='+u+'&upwd='+p,true);
+       //2.5:发送请求
+       xhr.send(null);
+      }
+  </script>
+ </body>
+</html>

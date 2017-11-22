@@ -1,0 +1,18 @@
+9:10---9:15 5遍
+1:创建一个数据库crm05
+CREATE DATABASE crm05 CHARSET=UTF8;
+2:进入crm05库中
+USE crm05;
+3:创建表 t_stu  (编号,姓名,年龄)
+CREATE TABLE t_stu(
+  id   INT,
+	name VARCHAR(20),
+	age  INT
+);
+4:添加二条记录
+INSERT INTO t_stu VALUES(1,'tom',19);
+INSERT INTO t_stu VALUES(2,'jerry',20);
+5:将编号为1学生姓名更新为 tom1
+UPDATE t_stu SET name='tom1' WHERE id = 1;
+6:删除编号为2的学生记录
+DELETE FROM t_stu WHERE id = 2;

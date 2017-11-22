@@ -1,0 +1,12 @@
+1:编写sql:sohu.sql 库sohu 表user(uid,uname,upwd)
+ 插入三行记录
+2:编写 login.php 接收客户端提交的uname和upwd，
+验证用户名密码是否正确，返回"login-succ"或者
+"login-err"
+3:编写login.html,输入用户名和密码后，
+点击"登录"按钮,通过AJAX 发送AJAX请求，
+若服务器返回"login-succ" 
+显示"登录成功，欢迎回来",
+若服务器返回"login-err" 显示"登录失败"
+
+#建议:php程序不要添加多余空格和回车

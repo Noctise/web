@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <style>
+     .container{
+        position:relative;
+     }
+     #suggest{
+       position:absolute;
+       list-style:none;
+       padding:0;
+       margin:0;
+       border:1px solid #aaa;
+       top:100%;
+       left:0;
+       width:230px;
+       display:none;
+     }
+     #suggest li{
+        line-height:2em;
+     }
+     #suggest li:hover{
+       background:#eee;
+     }
+   </style>
+ </head>
+  <body>
+  <h1>ajax 图书搜索提示</h1>
+  <div class="container">
+    <input id="kw"/>
+    <ul id="suggest">
+     <!-- <li>css指南</li> -->
+     <!-- <li>css</li> -->
+    </ul>
+  </div>
+  <script>
+    //1:获取输入框对象   16:35--16:45
+    //2:绑定事件 onkeyup
+    kw.onkeyup = function(){
+    //3:获取当前用户输入内容
+    var input = this.value;
+    //4:如果用户输入的内容为 ''
+    if(!input){
+     //5:隐藏列表
+     suggest.style.display='none';
+     //6:返回程序
+     return;
+    }
+    //7:发送AJAX 
+      //7.1:创建对象 XHR
+      var xhr = new XMLHttpRequest();
+      //7.2:绑定事件 ***16:55--17:05 排错
+      xhr.onreadystatechange=function(){
+        //7.2.1 获取服务器返回列表
+        //7.2.2 保存提示列表中
+        if(xhr.readyState===4&&xhr.status===200){
+         suggest.innerHTML = xhr.responseText;
+         //7.2.3 显示提示列表框
+         suggest.style.display = 'block';
+        }
+      }
+      //7.3:打开连接
+     xhr.open('GET','search.php?kw='+input,true);
+      //7.4:发送请求
+      xhr.send(null);
+    }
+  </script>
+ </body>
+</html>

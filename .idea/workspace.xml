@@ -5,25 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e04fa4d-efca-400d-b26b-c9e1bc4cdf46" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/101_homework.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/101_homework.rar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/葵花宝典.pdf" afterPath="$PROJECT_DIR$/doc/葵花宝典.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/100_homework.html" afterPath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/100_homework.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/day04/.idea/.name" afterPath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/.idea/.name" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/day04/.idea/encodings.xml" afterPath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/.idea/encodings.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/day04/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/.idea/jsLibraryMappings.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/day04/.idea/misc.xml" afterPath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/.idea/misc.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/day04/.idea/modules.xml" afterPath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/.idea/modules.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/day04/.idea/project.iml" afterPath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/.idea/project.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/day04/.idea/vcs.xml" afterPath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/.idea/vcs.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/day04/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/.idea/watcherTasks.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/day04/.idea/workspace.xml" afterPath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/day04/1_dropdown.html" afterPath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/1_dropdown.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/day04/2_accordion.html" afterPath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/2_accordion.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/day04/3_tabs.html" afterPath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/3_tabs.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/day04/css/bootstrap.css" afterPath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/css/bootstrap.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/day04/js/jquery-1.11.3.js" afterPath="$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/js/jquery-1.11.3.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -100,7 +82,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="120" />
     <option name="y" value="100" />
     <option name="width" value="1532" />
@@ -124,8 +106,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -133,47 +113,12 @@
               <item name="web" type="b2602c69:ProjectViewProjectNode" />
               <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="from_ftp" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="from_ftp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="10.JQUERY" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="from_ftp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="10.JQUERY" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="day 04" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="from_ftp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="10.JQUERY" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="day 04" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="day04" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="my_practice" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="my_practice" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="JQuery" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -237,6 +182,8 @@
       <workItem from="1510226307981" duration="946000" />
       <workItem from="1510274426992" duration="4259000" />
       <workItem from="1510534509621" duration="1961000" />
+      <workItem from="1510619925510" duration="88000" />
+      <workItem from="1510708006743" duration="20000" />
     </task>
     <task id="LOCAL-00001" summary="DOM">
       <created>1508896675455</created>
@@ -270,12 +217,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87911000" />
+    <option name="totallyTimeSpent" value="88019000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17628205" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14209402" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286638" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -413,27 +360,9 @@
     </entry>
     <entry file="file://E:/wulijingsai/intel.html" />
     <entry file="file://$PROJECT_DIR$/from_ftp/10.JQUERY/day01/5_child filter.html" />
-    <entry file="file://$USER_HOME$/Desktop/day01/9_dropdown.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="30" column="7" lean-forward="false" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/day01/10_tabs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/day01/14_form state selector.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/day01/9_dropdown.html" />
+    <entry file="file://$USER_HOME$/Desktop/day01/10_tabs.html" />
+    <entry file="file://$USER_HOME$/Desktop/day01/14_form state selector.html" />
     <entry file="file://$PROJECT_DIR$/my_practice/JQuery/day01/dropdown.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -535,27 +464,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/day04/3_tabs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/day04/2_accordion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/day04/1_dropdown.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/day04/3_tabs.html" />
+    <entry file="file://$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/day04/2_accordion.html" />
+    <entry file="file://$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/day04/1_dropdown.html" />
     <entry file="file://$PROJECT_DIR$/from_ftp/10.JQUERY/day 02/8_tabs_transition.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="470">
@@ -595,17 +506,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="754">
           <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/day04/100_homework.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/from_ftp/10.JQUERY/day 04/day04/day04/100_homework.html" />
   </component>
 </project>

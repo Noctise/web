@@ -1,0 +1,48 @@
+功能:当当网一些功能模块!!!!!!
+1:添加图书
+2:搜索提示
+  [c]
+	<li>css大全</li>
+	<li>css指南</li>
+3:显示图书列表
+
+a:创建sql文件dangdang.sql
+  :创建库 dangdang 
+	:创建表 dd_book
+	bid 编号 bname 名称 pic 图片
+	price 价格 pubdate 上架时间
+  :添加10条记录(中文)
+	css 2本 js3本 ..
+b:创建php程序 add_book.php 接收用户提交参数
+  bname,pic,pirce,pubdate
+	并且添加数据库 返回值
+	 图名不在 -2 图片不在 -3 价格不在-4 
+	 上架不在 -5 sql出错  -1
+	 正确将新添加记录 id返回 
+c:创建html程序 add_book.html 表单AJAX发送请求
+
+
+2:搜索提示15:40--15:50
+a:创建php程序 search.php 接收用户提交参数
+  kw {关键字} j js c css
+	查询数据库中dd_book.bname 中是否有包含该字
+	母记录;
+	#模糊查询 % 通配符代表  0位或多位字符
+  SELECT * FROM dd_book WHERE bname LIKE '%j%'
+注意事项:
+  #如果搜索kw不存在  '<li>关键字不存在</li>'
+  #如果数据正确 
+	 '<li>js大全</li>
+	 <li>js指南</li>
+	 ...
+	 '
+a:创建html程序 search.html
+
+3:显示图书列表(text/html;json;xml)
+  book_list.php
+	查询dd_book表中所有记录，$rows
+	将记录转换<tr><td>....输出
+	book_list.html
+	创建一个表格,table thead tbody
+	当网页加载完成自动发送ajax请求book_list.php
+	获取所有tr保存在tbody中

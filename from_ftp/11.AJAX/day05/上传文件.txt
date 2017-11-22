@@ -1,0 +1,19 @@
+
+1:上传文件工作原理 
+  文件分割-->合并操作 上传文件.png
+2:知识点
+  a:创建目录 uploads
+	  在服务器端创建目录
+  b:创建表单 html
+	  b.1:表单添加属性(只要上传文件表单才需要)
+		    enctype="multipart/form-data"
+    b.2:表单有一个条目(选择文件)
+		    type="file" name="file"
+    b.3:method="post"
+	c:创建php  php
+	  c.1:$_FILES 数组获取上传文件及其信息
+		   ["file"]["type"]  文件类型
+			 ["file"]["size"]  文件大小(字节)
+			 ["file"]["name"]  文件名
+			 ["file"]["error"] 错误信息
+			 4,000,000 字节(4MB)

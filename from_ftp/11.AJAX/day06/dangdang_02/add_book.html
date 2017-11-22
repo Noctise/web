@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+ <head>
+   <meta charset="utf-8">
+ </head>
+  <body>
+  <h1>ajax 添加图书信息</h1>
+   <form action="#">
+     新书名称<input id="bname" /><br/>
+     书籍图片<input id="pic" /><br/> 
+     书籍单价<input id="price" /><br/>
+     出牌日期<input id="pubdate" /><br/>
+     <input id="btn1" type="button" value="添加"/><br/>
+   </form>
+  <script>
+    //14:23--14:30
+    //1:获取添加按钮
+    //2:为按钮绑定点击事件
+    btn1.onclick = function(){
+     
+      //2.1:获取用户输入 4个值
+      var b = bname.value;
+      var p = pic.value;
+      var r = price.value;
+      var d = pubdate.value;
+      //2.2:创建XHR对象
+      var xhr = new XMLHttpRequest();
+      //2.3:为XHR绑定事件(接收服务器返回数据)
+      xhr.onreadystatechange = function(){
+         if(xhr.readyState===4&&xhr.status===200){
+            var num = parseInt(xhr.responseText);
+            if(num>0){
+              alert("新记录添加成功!编号为"+num);
+              bname.value = '';
+              pic.value = '';
+              price.value = '';
+              pubdate.value = '';
+            }else{
+              alert("新记录添加失败！错误代码是"+num);
+            }
+         }
+      }
+      //***发起POST请求
+      //a:open('POST');
+      //b:设置请求消息头
+      //c:发送数据
+      //*2.4:打开一个与服务器连接
+      xhr.open('POST','add_book.php',true);
+      //*2.5:设置请求消息头
+      xhr.setRequestHeader('Content-Type',
+      'application/x-www-form-urlencoded');
+      //*2.6:发送请求数据
+      xhr.send(`bname=${b}&pic=${p}&price=${r}&pubdate=${d}`);
+    }
+  </script>
+ </body>
+</html>

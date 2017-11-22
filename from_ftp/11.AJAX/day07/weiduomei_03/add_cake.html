@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+ <head>
+   <meta charset="utf-8">
+ </head>
+  <body>
+  <h1>ajax jquery 添加蛋糕</h1>
+  <form action="#">
+    名称<input id="dname" /><br/>
+    价格<input id="price" /><br/>
+    图片<input id="pic" /><br/>
+    类别<input id="tid" /><br/>
+    <input id="btn" type="button" value="添加"/><br/>
+  </form>
+  <script src="jquery-1.10.2.min.js">
+  </script>
+  <script>
+    //1:获取添加按钮
+    //2:为其绑定点击事件
+    btn.onclick = function(){
+     //3:获取四个参数    
+     var d = dname.value;  //蛋糕名称
+     var p = price.value;  //价格
+     var r = pic.value;    //图片
+     var t = tid.value;    //类别
+     //4:发送ajax请求
+     $.ajax({
+        type:"POST",
+        url:"add_cake.php",
+        data:{dname:d,pic:r,price:p,tid:t},
+        success:function(data){
+          if(data.code>0){
+            alert("添加成功");
+          }else{
+            alert("添加失败,原因:"+data.msg);
+          }
+        }
+     });
+    }
+  </script>
+ </body>
+</html>
