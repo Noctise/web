@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+ <head>
+   <meta charset="utf-8">
+ </head>
+  <body>
+  <h1>ajax jquery 其它方法</h1>
+  <ul id="menu">
+   ...
+  </ul>
+
+
+  <script src="jquery-1.10.2.min.js">
+  </script>
+  <script>
+   //1:发送get请求  9:28--9:33
+   $.get("02.php",{id:1},function(data){
+      console.log("1:get服务器返回数据:"+data);
+   });
+   //2:发送post请求
+   $.post("02.php",{id:10},function(data){
+     console.log("2:post服务器返回数据:"+data);
+   });
+   $.get("02.php");
+   //03.php json  04.php script 05.php html
+   //<li>苹果</li><li>桃子</li>
+   $.getJSON("03.php",function(data){
+      console.dir(data);
+   });
+   $.getScript("04.php",function(data){
+   });
+   $("#menu").load("05.php");
+  </script>
+ </body>
+</html>

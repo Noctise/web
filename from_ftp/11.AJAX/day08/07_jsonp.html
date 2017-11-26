@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+ <head>
+   <meta charset="utf-8">
+ </head>
+  <body>
+  <h1>跨域访问方式</h1>
+  <button id="btn1">使用jsonp方式解决跨域限制</button>
+  <script src="jquery-1.10.2.min.js"></script>
+  <script>
+    //*1:获取按钮 btn1   10:41--10:46
+    //*2:绑定点击事件
+    btn1.onclick = function(){ 
+    $.ajax({
+      url:'http://127.0.0.1/web1703/day08/06_jsonp.php',
+      dataType:"jsonp",
+      success:function(data){
+        console.log(data);
+      }
+    }); 
+    }
+    //7:创建函数 doResponse(data)
+    function doResponse(data){
+     //8:输出 data
+     console.log(data);//服务器返回数据
+    }
+  </script>
+ </body>
+</html>

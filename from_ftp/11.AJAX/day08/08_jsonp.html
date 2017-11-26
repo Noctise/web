@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+ <head>
+   <meta charset="utf-8">
+ </head>
+  <body>
+  <button id="btn1">使用jsonp方式解决跨域限制</button>
+  <script src="jquery-1.10.2.min.js"></script>
+  <script>
+    //08_jsonp.html
+  //http://localhost/web1703/day08/08_jsonp.html
+    btn1.onclick = function(){ 
+        //跨域访问不被允许
+        //下面程序错误--跨域 
+        $.get("http://127.0.0.1/web1703/day08/06_jsonp.php",function(data){
+          console.log(data);
+        }); 
+    }
+   
+  </script>
+ </body>
+</html>

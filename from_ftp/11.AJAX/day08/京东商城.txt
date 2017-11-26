@@ -1,0 +1,39 @@
+
+模块一: 用户登录
+  0:创建文件夹    jd
+  1:创建sql       sql/jd.sql 
+	2:分析程序创建  data/login.php
+  接收客户端提交的uname和upwd验证登录信息
+	返回 {"code":1,"msg":"login succ",
+	      "uname":"qiangdong",
+				"uid":10}
+  或者 {"code":-1,"msg":"用户名为空"}
+	SELECT uid FROM jd_user WHERE
+	uname='' AND upwd = '';
+
+	3:分析html创建  js/productlist.js
+    分析html标准  productlist.html 408 line
+		button id="bt-login"
+  4:复制html/css/img
+
+模块二: 产品列表
+  1:创建sql       sql/jd.sql
+	2:创建php       data/productlist.php
+	分页查询
+  LIMIT 开始记录行数(从0开始),
+	      一共查询几条记录        页数-1*3
+	SELECT pid FROM jd_product LIMIT 0,3   1页
+	SELECT pid FROM jd_product LIMIT 3,3   2页
+	SELECT pid FROM jd_product LIMIT 6,3   3页
+
+  3:在productlist.js 中添加程序
+	  34---43 line 一个产品信息
+	  a:当前页面加载成功后自动发送ajax请求 
+		b:获取返回数据拼接代码 
+
+
+模块二新功能:完成产品列表总页数
+  data/productpage.php 总页数
+	1:查询当前产品表中记录数
+	2:计算总页数 一页8条记录
+	  <ol class="pager"> 395

@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+ <head>
+   <meta charset="utf-8">
+ </head>
+  <body>
+  <h1>跨域访问方式</h1>
+  <button id="btn1">使用jsonp方式解决跨域限制</button>
+  <script>
+    //*1:获取按钮 btn1   10:41--10:46
+    //*2:绑定点击事件
+    btn1.onclick = function(){ 
+     //*3:创建标签script标签
+     //*4:src
+     var s = document.createElement("script");
+     s.src="http://127.0.0.1/web1703/day08/06_jsonp.php";
+     //*5:async=true
+     s.async = true;
+     //*6:将上述标签保存head最后一个子元素
+     document.head.appendChild(s);
+     //自动发送异步请求
+    }
+    //#注意:事件处理函数外
+    //7:创建函数 doResponse(data)
+    function doResponse(data){
+     //8:输出 data
+     console.log(data);//服务器返回数据
+    }
+  </script>
+ </body>
+</html>

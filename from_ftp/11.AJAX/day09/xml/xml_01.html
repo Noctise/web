@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+ <head>
+   <meta charset="utf-8">
+ </head>
+  <body>
+  <button id="btn1">原生:xml访问</button>
+  <button id="btn2">jq:xml访问</button>
+
+  <script src="jquery-1.10.2.min.js"></script>
+  <script>
+   //1:原生AJAX发送请求xml数据
+   btn1.onclick = function(){
+      //a:创建对象xhr 9:39--9:41
+      var xhr = new XMLHttpRequest();
+      //b:绑定事件
+      xhr.onreadystatechange=function(){
+        //b.1:获取服务器返回数据
+        if(xhr.readyState===4&&xhr.status===200){
+         var doc = xhr.responseXML;
+         //b.2:获取name 元素的值
+         var name = doc.querySelector("name");
+         console.log(name.innerHTML);
+        }
+      }
+      //c:打开连接
+      xhr.open("GET","xml_01.php",true);
+      //d:发送请求
+      xhr.send(null);
+   
+   }
+
+   //2:用jquery AJAX发送请求数据
+   btn2.onclick = function(){
+   $.ajax({
+    type:"GET",
+    url:"xml_01.php",
+    dataType:"xml",   //特殊指定服务器返回类型
+    success:function(data){
+     var name =  $(data).find("name");
+     console.log(name.html());
+    }
+   });
+   }
+  </script>
+ </body>
+</html>
