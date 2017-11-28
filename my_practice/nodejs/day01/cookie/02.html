@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<script>
+    var rs = document.cookie;
+    var arr = rs.split(";");
+    //console.log(rs);
+
+    //console.log(arr[0]);//uid = 11
+    //console.log(arr[1]);//uname=tom
+
+    //var sub = arr[0].split("=");
+    //console.log(sub[1]); //11
+
+    //读取所有cookie值保存js对象中
+    //cookie的name作为对象属相，
+    //cookie的value作为属性值
+    //1.读取cookie中所有值，用";"分割,返回数组
+    var cookieArray = document.cookie.split(";");
+    //2.创建空对象
+    var cookieObj = {};
+    //3.创建循环数组所有值
+    for(var i=0;i<cookieArray.length;i++) {
+        //4.再一次分割 "="
+        var sub = cookieArray[i].split("=");
+        //5.将所有name保存属性名，将所有val保存为属性值
+        var key = sub[0];
+        var val = sub[1];
+
+        cookieObj[key]=val;
+    }
+    //6.判断用户登陆是都成功cookie.uid
+    if(!cookieObj.uid){
+        location.href = 'productlist.html';
+    }
+</script>
+</body>
+</html>
