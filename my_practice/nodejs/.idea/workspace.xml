@@ -10,33 +10,65 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="14_app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day01/src/14_app.js">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/m4/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="3" column="12" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="25" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="15_app.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day01/src/15_app.js">
+      <file leaf-file-name="5.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/m5/5.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="13_ArrayUtils.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day01/src/13_ArrayUtils.js">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/m5/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="1" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="06_app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/06_app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="1" lean-forward="true" selection-start-line="0" selection-start-column="1" selection-end-line="1" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="05_app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/05_app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="10_fs_app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/10_fs_app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,6 +79,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="package_json" />
       </list>
     </option>
   </component>
@@ -59,6 +93,13 @@
         <option value="$PROJECT_DIR$/../../from_ftp/12.NODEJS/day01/src/8_app.js" />
         <option value="$PROJECT_DIR$/../../from_ftp/12.NODEJS/day01/src/10_app.js" />
         <option value="$PROJECT_DIR$/../../from_ftp/12.NODEJS/day01/src/11_app.js" />
+        <option value="$PROJECT_DIR$/day01/src/exercise.js" />
+        <option value="$PROJECT_DIR$/day01/NodeJs_all.md" />
+        <option value="$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/node_modules/circle/index.js" />
+        <option value="$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/node_modules/rectangle/index.js" />
+        <option value="$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/node_modules/circle/package.json" />
+        <option value="$PROJECT_DIR$/day02/src/node_modules/circle/index.js" />
+        <option value="$PROJECT_DIR$/day02/src/node_modules/circle/package.json" />
       </list>
     </option>
   </component>
@@ -68,12 +109,15 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/day02/src/node_modules" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="277" />
-    <option name="y" value="42" />
-    <option name="width" value="1454" />
-    <option name="height" value="907" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="250" />
+    <option name="y" value="86" />
+    <option name="width" value="1091" />
+    <option name="height" value="756" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -100,29 +144,36 @@
             <path>
               <item name="nodejs" type="b2602c69:ProjectViewProjectNode" />
               <item name="nodejs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="day01" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="day02" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="nodejs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="12.NODEJS" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="nodejs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="12.NODEJS" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="day01" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="nodejs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="12.NODEJS" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="day01" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nodejs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="day02" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="nodejs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="day02" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="node_modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="nodejs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="12.NODEJS" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="nodejs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="12.NODEJS" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="day02" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -149,26 +200,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.15_app.js">
+  <component name="RunManager" selected="Node.js.04_app.js">
+    <configuration name="04_app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="04_app.js" working-dir="$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src" />
     <configuration name="10_app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="10_app.js" working-dir="$PROJECT_DIR$/../../from_ftp/12.NODEJS/day01/src" />
     <configuration name="11_app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="11_app.js" working-dir="$PROJECT_DIR$/../../from_ftp/12.NODEJS/day01/src" />
     <configuration name="15_app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="15_app.js" working-dir="$PROJECT_DIR$/../../from_ftp/12.NODEJS/day01/src" />
-    <configuration name="6.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="6.js" working-dir="$PROJECT_DIR$/../../from_ftp/12.NODEJS/day01/src" />
-    <configuration name="8_app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="8_app.js" working-dir="$PROJECT_DIR$/../../from_ftp/12.NODEJS/day01/src" />
+    <configuration name="exercise.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="exercise.js" working-dir="$PROJECT_DIR$/day01/src" />
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.6.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.8_app.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.10_app.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.11_app.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.15_app.js" />
+      <item index="0" class="java.lang.String" itemvalue="Node.js.10_app.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.11_app.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.15_app.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.exercise.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.04_app.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.15_app.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.11_app.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.10_app.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.8_app.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.6.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.04_app.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.exercise.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.15_app.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.11_app.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.10_app.js" />
       </list>
     </recent_temporary>
   </component>
@@ -183,22 +234,24 @@
       <option name="presentableId" value="Default" />
       <updated>1511830929056</updated>
       <workItem from="1511830930593" duration="4702000" />
-      <workItem from="1511849149347" duration="9284000" />
+      <workItem from="1511849149347" duration="9588000" />
+      <workItem from="1511866302378" duration="740000" />
+      <workItem from="1511918057087" duration="6117000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13986000" />
+    <option name="totallyTimeSpent" value="21147000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="277" y="42" width="1454" height="907" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2532374" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19444445" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.509434" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5078534" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -228,6 +281,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/day01/src/exercise.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/day01/cookie/02.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
@@ -246,7 +307,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -254,7 +314,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
           <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -262,9 +321,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -272,9 +328,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -282,7 +335,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -290,9 +342,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="15" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -300,7 +349,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -308,15 +356,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day01/src/13_ArrayUtils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -324,14 +363,249 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="3" column="12" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day01/src/15_app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="208">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day01/src/13_ArrayUtils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day01/NodeJs_all.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="26">
+            <caret line="165" column="13" lean-forward="true" selection-start-line="165" selection-start-column="13" selection-end-line="165" selection-end-column="13" />
+            <folding>
+              <marker date="1511860691197" expanded="true" signature="906:945" ph="{...}" />
+              <marker date="1511860691197" expanded="true" signature="976:992" ph="//..." />
+              <marker date="1511860691197" expanded="true" signature="1016:1066" ph="{...}" />
+              <marker date="1511860691197" expanded="true" signature="1097:1110" ph="//..." />
+              <marker date="1511860691197" expanded="true" signature="1134:1163" ph="{...}" />
+              <marker date="1511860691197" expanded="true" signature="1493:1509" ph="{...}" />
+              <marker date="1511860691197" expanded="true" signature="1534:1551" ph="{...}" />
+              <marker date="1511860691197" expanded="true" signature="1575:1591" ph="{...}" />
+              <marker date="1511860691197" expanded="true" signature="1595:1611" ph="{...}" />
+              <marker date="1511860691197" expanded="true" signature="1655:1671" ph="..." />
+              <marker date="1511860691197" expanded="true" signature="1689:1706" ph="..." />
+              <marker date="1511860691197" expanded="true" signature="1723:1739" ph="..." />
+              <marker date="1511860691197" expanded="true" signature="1750:1766" ph="..." />
+              <marker date="1511860691197" expanded="true" signature="1852:2074" ph="{...}" />
+              <marker date="1511860691197" expanded="true" signature="1859:1887" ph="//..." />
+              <marker date="1511860691197" expanded="true" signature="1909:2000" ph="{...}" />
+              <marker date="1511860691197" expanded="true" signature="1918:1942" ph="//..." />
+              <marker date="1511860691197" expanded="true" signature="1955:1987" ph="{...}" />
+              <marker date="1511860691197" expanded="true" signature="2000:2032" ph="//..." />
+              <marker date="1511860691197" expanded="true" signature="2042:2072" ph="{...}" />
+              <marker date="1511860691197" expanded="true" signature="2246:2294" ph="//..." />
+              <marker date="1511860691197" expanded="true" signature="2337:2362" ph="{...}" />
+              <marker date="1511860691197" expanded="true" signature="2389:2414" ph="{...}" />
+              <marker date="1511860691197" expanded="true" signature="2415:2450" ph="//..." />
+              <marker date="1511860691197" expanded="true" signature="2515:2570" ph="//..." />
+              <marker date="1511860691197" expanded="true" signature="2657:2707" ph="//..." />
+              <marker date="1511860691197" expanded="true" signature="2776:2800" ph="{...}" />
+              <marker date="1511860691197" expanded="true" signature="2857:2882" ph="{...}" />
+              <marker date="1511860691197" expanded="true" signature="2954:2988" ph="//..." />
+              <marker date="1511860691197" expanded="true" signature="3057:3074" ph="//..." />
+              <marker date="1511860691197" expanded="true" signature="3095:3137" ph="//..." />
+              <marker date="1511860691197" expanded="true" signature="3339:3360" ph="{...}" />
+              <marker date="1511860691197" expanded="true" signature="3941:4017" ph="{...}" />
+              <marker date="1511860691197" expanded="true" signature="3978:3999" ph="{...}" />
+              <marker date="1511860691197" expanded="true" signature="4049:4082" ph="{...}" />
+              <marker date="1511860691197" expanded="true" signature="4083:4142" ph="//..." />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day01/src/exercise.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/homework_01.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/node_modules/circle/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/node_modules/circle/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/node_modules/rectangle/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/node_modules/rectangle/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day02/src/node_modules/circle/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/00_app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/01.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/01_app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/02_app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/03_app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day02/src/node_modules/circle/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/07_apps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/10_fs_app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/04_app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/05_app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/m4/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/m5/5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/m5/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../from_ftp/12.NODEJS/day02/src/06_app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="true" selection-start-line="0" selection-start-column="1" selection-end-line="1" selection-end-column="15" />
           <folding />
         </state>
       </provider>
