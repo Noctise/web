@@ -1,0 +1,20 @@
+作业2:使用Node创建一个web服务器，
+根据客户端请求地址不同，
+输出不同的html页面内容，如
+http://127.0.0.1:8080/login.html
+服务器应该返回 ./public/login.html中的内
+若请求资源不存在,则返回 404响应消息
+
+知识点
+1:客户端请求路径
+http://127.0.0.1:8080/login.html
+http://127.0.0.1:8080/search.html
+http://127.0.0.1:8080/index.html
+http://127.0.0.1:8080/index.jsp  error
+url.parse(url);
+2:读取文件内容
+fs.readFile(file,function(err,data){
+});
+3:如果发送客户端
+res.write(data);
+res.end();

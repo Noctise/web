@@ -4,7 +4,7 @@
 //1:加载文件模块   fs
 const fs = require("fs");
 //2:读取文件的内容 fs.readFileSync("");
-var path = "./public/index1.html";
+var path = "./public/index.html";
 var data = fs.readFileSync(path);
 //3:输出文件的内容
 console.log(data);

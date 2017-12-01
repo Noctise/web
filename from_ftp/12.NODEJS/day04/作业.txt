@@ -1,0 +1,19 @@
+作业:
+/userlist 
+服务器查询出数据库中
+所有用户信息jd/jd_user,以table形式输出.
+conn.query("SELECT * FROM jd_user",
+  (err,result)=>{
+  结果 
+	[{uid:1,uname:"qd"},{uid:2,uname:"nc"}]
+  res.write("<table>");
+	 for(...)
+	res.write("</table>");
+  结果 
+	[{uid:1,uname:"qd"},{uid:2,uname:"nc"}]
+  var html = "";
+	for(...){
+	  html += `<tr><td>${obj.uid}</td></tr>`;
+	}
+  res.end(html);
+});
