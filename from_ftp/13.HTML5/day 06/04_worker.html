@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+    <h1>在html中执行耗时(算法复杂/网络延迟)的JS任务</h1>
+    <button>按钮1</button>
+    <script>
+      var w = new Worker('js/4.js');
+      console.log("UI主线程继续执行后续代码");
+    </script>
+    <button>按钮2</button>
+    <p id="p0">运算中..</p>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+   <h1>08_sessionStorage.html</h1>
+   <script>
+     //1:创建变量,变量不能跨页面使用
+     var uname = "qingdong";
+     var age = 21;
+     document.write(uname);
+     //2:把变量保存 “会话级存储中”-浏览器内存
+     sessionStorage['loginName']=uname;
+     sessionStorage.setItem("age",age);
+   </script>
+   <a href="09_sessionStorage.html">跳转到下一个页面</a>
+</body>
+</html>

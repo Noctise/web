@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+    <h1>用户登录</h1>
+    <hr/>
+    <form action="#">
+      用户名 <input type="text" id="uname"/><br/>
+      密码 <input type="text" id="upwd"/><br/>
+      <input type="button" id="btn"/><br/>
+    </form>
+    <script>
+      //1:获取btn按钮
+      btn.onclick = function() {
+        //2:获取参数 uname
+        var u = uname.value;
+        //3:将uname保存sessionStorage
+        sessionStorage['loginName']=u;
+        //4:显示报警框 登录成功，3秒后自动跳转
+        alert("登录成功");
+        //5:定时器3秒后转换首页
+        setTimeout(function(){
+          location.href = '10_index.html';
+        },3000);
+      }
+    </script>
+</body>
+</html>

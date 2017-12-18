@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <h1>退出登录</h1>
+<p>您己退出登录，3秒后，自动跳转首页</p>
+  <script>
+    //14:46--14:49
+    //清除会话中己存储的数据
+    sessionStorage.removeItem('loginName');
+    //sessionStorage.clear();
+    setTimeout(function(){
+      location.href = "10_index.html";
+    },3000);
+  </script>
+</body>
+</html>
+

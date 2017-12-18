@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+    <h1>在html中执行耗时(算法复杂/网络延迟)的JS任务</h1>
+     请输入要进行累加计算数值
+    <input type="text" value="" id="inputNum">
+    <button id="btn1">开始计算</button>
+    <div id="result">计算中...</div>
+    <script>
+        //1:获取按钮 btn1
+        //2:为其绑定点击事件14:49--14:51
+        btn1.onclick = function() {
+          //3:获取用户输入的数值
+          var n = inputNum.value;
+          //4:创建Worker线程
+          var w7  = new Worker("js/7.js");
+          //5:给Worker线程发送消息
+          w7.postMessage(n);
+          //6:等待Worker线程返回消息
+          w7.onmessage = function(e) {
+            //7:将消息结果保存result
+            result.innerHTML = e.data;
+          }
+        }
+
+    </script>
+</body>
+</html>

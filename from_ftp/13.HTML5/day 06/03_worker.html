@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+    <h1>在html中执行耗时(算法复杂/网络延迟)的JS任务</h1>
+    <button>按钮1</button>
+    <script>
+      //11:36--11:38
+      //!!!!必须在网络环境下{apache/nodes/web}
+      //网页本地打开无效....dom exce...
+      var w = new Worker('js/3.js');
+      console.log("UI主线程继续执行后续代码");
+    </script>
+    <button>按钮2</button>
+
+</body>
+</html>

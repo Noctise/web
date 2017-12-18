@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    body{text-align: center}
+    #chosen{
+      border:1px solid #aaa;
+      width:210px;
+      min-height: 110px;
+      margin:0 auto;
+    }
+  </style>
+</head>
+<body>
+<H1>请选择此关出征的英雄</H1>
+<div id="chosen">
+  <img src="img/p0.png" id="p0"/>
+</div>
+<hr/>
+<div id="list">
+  <img src="img/p3.png" id="p3"/>
+  <img src="img/p4.png" id="p4"/>
+  <img src="img/p5.png" id="p5"/>
+</div>
+<script>
+  //0:创建全局变量    dId = null; 9:38-9:40
+  var dId = null;
+  //1:操作拖动源对象  #list img
+  //1.1:获取源对象中所有元素 3个图片
+  var planeList = document.querySelectorAll("#list img");
+  //1.2:创建一个循环 3个图片对象
+  for(var i=0;i<planeList.length;i++) {
+    //1.3:获取当前对象
+    var p = planeList[i];
+    //1.4:为当前对象绑定三个事件 ondragstart
+    p.ondragstart = function(e){
+      //获取当前id值并且保存全局变量中dId
+      dId = this.id;
+    }
+    //                         ondrag
+    p.ondrag = function(e){}
+    //                         ondragend
+    p.ondragend = function(e){}
+  }
+
+
+  //2:操作拖动目标对象
+  //进入到目标对象触发事件
+  chosen.ondragenter = function(e){}
+  //悬停到目标对象触发事件
+  chosen.ondragover = function(e){
+    e.preventDefault();
+  }
+  //移出到目标对象触发事件
+  chosen.ondragleave = function(e){}
+  //释放目标对象触发事件   9:48--9:50
+  chosen.ondrop = function(e){
+     //1:隐藏当前的问号飞机
+     p0.style.display="none";
+     //2:根据之前保存的被拖动飞机ID,查询对应的img元素
+     var p = document.getElementById(dId);
+     //3:选中div把列表中的飞机追加为自己的孩子,
+     //  源对象列表中不再有此元素
+     chosen.appendChild(p);
+     //4:若目标对象中->子元素数量己经为3个
+    //必须把p0后兄弟元素重新移回#list
+    if(chosen.children.length>=3){
+      //p0下一个兄弟元素
+      var n = p0.nextElementSibling;
+      list.appendChild(n);
+    }
+  }
+
+  //拖动 #chosen中飞机到 #list方 过程分析
+  //拖动源对象   #chosen > img
+  //拖动目标对象 #list
+  list.ondragenter = function(e){}
+  list.ondragover = function(e){
+    e.preventDefault();
+  }
+  list.ondragleave = function(e){}
+  list.ondrop = function(e){
+    //10:28--10:30
+    //1:判断拖动dId不是p0
+    if(dId!=='p0') {
+      //2:把拖动对象移动到list最后一个元素
+      var p = document.getElementById(dId);
+      list.appendChild(p);
+      //3:显示p0
+      p0.style.display = "block";
+    }
+  }
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

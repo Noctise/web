@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Insert a title</title>
+    <meta charset="utf-8">
+    <style></style>
+  </head>
+  <body>
+    <table border="1" width="80%">
+     <thead>
+      <tr>
+        <td>标题</td>
+        <td>价格</td>
+        <td>操作</td>
+      </tr>
+      </thead>
+      <tbody id="tb1">
+      </tbody>
+    </table>
+    <script src="jquery-1.11.3.js"></script>
+    <script>
+     $.ajax({   //10:26--10:36
+       type:"GET",
+       url:"/book",
+       success:function(data){
+         console.log("接收到服务器返回数据json");
+         //1:创建空字符串  10:15--10:20
+         var html = "";
+         //2:循环拼接
+         for(var book of data){
+          html += `
+           <tr>
+            <td>${book.title}</td>
+            <td>${book.price}</td>
+            <td>
+              <a href="${book.bid}" class="btn-del">删除</a>
+            </td>
+            </tr>           
+          `; 
+         }
+         //3:保存 tb1
+         $("#tb1").html(html);
+       }
+     });
+    </script>
+  </body>
+</html>

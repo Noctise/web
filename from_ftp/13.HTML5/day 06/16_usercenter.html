@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    .blue{background:#ddf;color:#33a;}
+    .pink{background:#fdf;color:#a3a;}
+    .dark{background:#333;color:#eee;}
+  </style>
+</head>
+<body>
+<h1>用户中心</h1>
+<script>
+  //读取之前曾经选中主题样式名,并且修改body样式
+  var t = localStorage['userTheme'];
+  if(t){
+    document.body.className = t;
+  }
+
+  //监视localStorage数据改变事件
+  window.onstorage = function(){
+    console.log("localStorage数据改变");
+    var t = localStorage['userTheme'];
+    if(t){
+      document.body.className = t;
+    }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+练习内容:
+1:编写SQL：创建数据库dangdang,
+书信息表book(bid/title
+price,pubdate,intro-内容简介)并插入4行记录
+
+2:使用express创建web服务器应用,
+可接收如下的静态请求
+/public/booklist.html
+/public/jquery.js
+/public/book_add.html
+/public/book_detail.html
+
+以及如下动态资地址--注意:下述地址使用AJAX请求
+1) GET /book
+   向客户端输出书籍表中所有记录,以JSON格式
+疑问:
+?发送html tr td 
+?为什么一定要发送JSON数据
+?程序/灵活/适用各种不同环境 
+ ajax/ios/安卓/..软件
+
+2) GET /book/:bid
+  向客户端输出指定编号书籍全部信息,以JSON格式
+3) POST /addbook
+  接客户端提交请求主体数据
+	(title/price/intro)
+  执行书籍添加操作保存数据库，
+	向客户端{code:1,bid:xx}
+

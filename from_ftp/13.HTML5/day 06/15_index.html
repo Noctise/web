@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+  <html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+      .blue{background:#ddf;color:#33a;}
+      .pink{background:#fdf;color:#a3a;}
+      .dark{background:#333;color:#eee;}
+    </style>
+</head>
+<body>
+ <h1>首页</h1>
+ <hr/>
+ <select id="selectTheme">
+   <option value="blue">蔚兰天空</option>
+   <option value="pink">芭比公主</option>
+   <option value="dark">暗黑主题 </option>
+ </select>
+
+ <p>这里首页中内容...</p>
+ <a href="16_usercenter.html">查看用户中心</a>
+ <script>
+    //1:获取下拉列表,并且绑定事件
+    selectTheme.onchange = function() {
+      //2:获取用户选择的样式值
+      var t = this.value;
+      //3:直接修改 body样式
+      document.body.className = t;
+      //4:将样式值永久保存
+      localStorage['userTheme']=t;
+    }
+
+ </script>
+</body>
+</html>

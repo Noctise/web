@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Insert a title</title>
+    <meta charset="utf-8">
+    <style></style>
+  </head>
+  <body>
+     <form action="#">
+       图书标题<input id="title"/><br/>
+       图书价格<input id="price"/><br/>
+       图书简介<input id="intro"/><br/>
+       <input id="btn" type="button" value="添加"/><br/>
+     </form>
+    <script src="jquery-1.11.3.js"></script>
+    <script>
+      $("#btn").click(function(){
+       var t = $("#title").val();
+       var p = $("#price").val();
+       var i = $("#intro").val();
+      $.ajax({//11:42--11:47
+        type:"POST",
+        url:"/addbook",
+        data:{title:t,price:p,intro:i},
+        success:function(data){
+          if(data.code>0){
+            alert("添加成功"+data.bid);
+          }
+        }
+      });      
+      });
+
+    </script>
+  </body>
+</html>

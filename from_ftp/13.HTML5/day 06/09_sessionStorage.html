@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <h1>09_sessionStorage</h1>
+  <script>
+    //1:JS变量不能直接跨页面使用;
+    //document.write(uname); error
+    //2:读取"会话级存储数据"
+    var n = sessionStorage['loginName'];
+    var a = sessionStorage['age'];
+    document.write(n+a);
+
+
+
+
+
+  </script>
+</body>
+</html>
