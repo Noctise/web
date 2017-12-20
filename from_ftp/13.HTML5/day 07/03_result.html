@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  单词测试结果
+  <hr/>
+  <ul>
+    <li>总数量   <span id="t1"></span></li>
+    <li>正确数量 <span id="c1"></span></li>
+    <li>错误数量 <span id="e1"></span></li>
+  </ul>
+  <hr/>
+  <a href="01_save.html">继续输入</a>
+  <a href="02_test.html">继续测试</a>
+  <script>
+    t1.innerHTML = sessionStorage['total'];
+    c1.innerHTML = sessionStorage['correct'];
+    e1.innerHTML = sessionStorage['error'];
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+    <h2>开始测试</h2>
+    <hr/>
+    <ul id="list">
+        <!--<li><span>red</span><input></li>-->
+        <!--<li><span>blue</span><input></li>-->
+    </ul>
+    <input type="button" value="提交试卷" id="btn1"/>
+    <script>
+      //创建空字符串
+      var html = "";
+      //循环localStorage所有key
+      for(var i=0;i<localStorage.length;i++) {
+        var k = localStorage.key(i);
+        //拼接字符串
+        html += `<li><span>${k}</span><input></li>`;
+      }
+      //保存在list标签中间
+      list.innerHTML = html;
+
+      //获取提交试卷按钮
+      //绑定点击事件
+      btn1.onclick = function() {
+        //创建三个变量  总单词数量 正确数量 错误数量
+        var total = localStorage.length;
+        var correct = 0;
+        var error = 0;
+        //获取所有用户中文输入 input
+        var inputList = document.querySelectorAll("#list input");
+        //创建循环 0-
+        for(var i=0;i<inputList.length;i++) {
+          //读取当前中文 用户输入答案
+          var c = inputList[i].value;
+          //读取当前英文!!!
+          var key = localStorage.key(i);
+          var e = localStorage[key];
+          //判断是否正确
+          if(c===e) {
+            //正确 正确数量++
+            correct++;
+          }
+        }//
+        //将总单词数量 正确数量 错误数量保存
+        sessionStorage['total']=total;
+        sessionStorage['correct']=correct;
+        sessionStorage['error']=total-correct;
+        //跳转 03_result.html
+        location.href = "03_result.html";
+      }
+
+    </script>
+</body>
+</html>

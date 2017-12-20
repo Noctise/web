@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <link rel="icon" href="img/favicon.ico"/>
+  <link rel="stylesheet" href="css/jd.css"/>
+  <title>用户中心 — 京东商城</title>
+  <style>
+    #main .left  h3{
+      margin: 2em 1em 0;
+    }
+    #main .left {
+      width: 210px;
+      float: left;
+    }
+    #main .right {
+      margin-left: 210px;
+      min-height: 400px;
+    }
+    .affix {
+      margin-left: 2em;
+      line-height: 2.4em;
+    }
+    .affix   li.active   a{
+      color: #e4393c;
+      font-weight: bold;
+    }
+    #main .right > div {
+      display: none;
+    }
+    #main .right > div.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <!--异步加载的页头-->
+  <div id="header">加载中...</div>
+  <!--页面主体-->
+  <div id="main">
+    <hr/>
+    <!--主体左侧-->
+    <div class="left">
+      <h3>用户中心</h3>
+      <ul class="affix">
+        <li class="active"><a href="#container-myorder">我的订单</a></li>
+        <li><a href="#container-buystat-canvas">消费统计(Canvas版)</a></li>
+        <li><a href="#container-buystat-svg">消费统计(SVG版)</a></li>
+        <li><a href="#container-lottery">幸运抽奖</a></li>
+      </ul>
+    </div>
+    <!--主体右侧-->
+    <div class="right">
+      <div id="container-myorder" class="active">
+        <table id="table-orders" width="100%" border="1">
+          <tbody></tbody>
+        </table>
+      </div>
+      <div id="container-buystat-canvas">
+        <canvas id="canvas-buystat"></canvas>
+      </div>
+      <div id="container-buystat-svg">
+        此处应该呈现一个SVG的统计图....
+      </div>
+      <div id="container-lottery">
+        <button id="bt-lottery">开始抽奖</button>
+        <hr/>
+        <canvas id="canvas-lottery" width="499" height="499"></canvas>
+      </div>
+    </div>
+  </div>
+  <!--异步加载的页尾-->
+  <div id="footer">加载中...</div>
+
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/fusioncharts.js"></script>
+  <script src="js/fusioncharts.charts.js"></script>
+  <script src="js/usercenter.js"></script>
+</body>
+</html>

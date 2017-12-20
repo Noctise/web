@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <h3>JS中的闭包陷阱</h3>
+  <button>1</button>
+  <button>2</button>
+  <button>3</button>
+  <script>
+    var list = document.querySelectorAll('button');
+    /*for(var i=0;i<list.length; i++){
+      var b = list[i];
+      b.onclick = function(){
+        //console.log(i);
+        console.log(b);
+      }
+    }*/
+/*
+
+    //把原本的一个闭包拆为三个
+    for(var i=0; i<list.length; i++){
+      var b = list[i];
+      b.onclick = outer(i);
+    }
+
+    function outer(num){
+      function inner(){
+        console.log(num);
+      }
+      return inner;
+    }
+
+*/
+    for(var i=0; i<list.length; i++){
+      var b = list[i];
+      b.onclick = (function(num){
+        return function(){
+          console.log(num);
+        }
+      })(i);
+    }
+
+    console.log('JS调用完成，i='+i);
+    //闭包：一种对象，向外公开了特定的数据，以及操作这个数据的方法
+    //变量i就1个
+  </script>
+</body>
+</html>
